@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-jqCOkK eZIEzi"
+    class="sc-dNLxif pltZG"
   >
     <div
-      class="sc-uJMKN gdHkAg"
+      class="sc-jqCOkK jvFkCU"
     >
       <div
-        class="sc-bbmXgH lnrfdk"
+        class="sc-uJMKN ejniWf"
       >
         <div
           class="sc-htoDjs jofOpB"
@@ -24,7 +24,7 @@ exports[`should render correctly 1`] = `
                 class="sc-VigVT gYjXev"
                 href="/"
               >
-                Klimaaftalen
+                Shift
               </a>
               <div
                 class="sc-fjdhpX dihIbi"
@@ -33,25 +33,25 @@ exports[`should render correctly 1`] = `
                   class="sc-jzJRlG ixPgTR"
                   href="/about"
                 >
-                  Om værktøjet
+                  About the tool
                 </a>
                 <a
                   class="sc-jzJRlG ixPgTR"
                   href="/beskrivelser"
                 >
-                  Beskrivelser af scenarier
+                  Descriptions of scenarios
                 </a>
                 <a
                   class="sc-jzJRlG ixPgTR"
                   href="/forudsaetninger"
                 >
-                  Forudsætninger
+                  Preconditions
                 </a>
                 <a
                   class="sc-jzJRlG ixPgTR"
                   href="/abonner"
                 >
-                  Abbonér på opdateringer
+                  Subscribe to updates
                 </a>
               </div>
             </div>
@@ -80,7 +80,7 @@ exports[`should render correctly 1`] = `
               <div
                 class="sc-htpNat iILNAI"
               >
-                Scenarier
+                Scenarios
               </div>
               <div
                 class="sc-bxivhb iMdMiF"
@@ -104,19 +104,19 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb cfCnoV"
                 value="Regeringen_INT"
               >
-                Regeringens udspil
+                The Government
               </div>
               <div
                 class="sc-bxivhb cfCnoV"
                 value="Alternativet_INT"
               >
-                Alternativet
+                The Alternative
               </div>
               <div
                 class="sc-bxivhb cfCnoV"
                 value="Enhedslisten_INT"
               >
-                Enhedslisten
+                Red–Green Alliance
               </div>
               <div
                 class="sc-bxivhb cfCnoV"
@@ -140,7 +140,7 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb cfCnoV"
                 value="Socialdemokratiet_INT"
               >
-                Socialdemokratiet
+                Social Democrats
               </div>
               <hr
                 class="sc-ifAKCX hmriKC"
@@ -202,105 +202,77 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-chPdSV gAKhzr"
             >
-              Scenarie difference
+              Scenario difference
             </div>
           </div>
           <div
-            class="sc-kGXeez vWbLO"
+            class="sc-kgoBCf lnKAjo"
           >
-            (grøn minus rød)
-          </div>
-          <hr
-            class="sc-jTzLTM eBQVTV"
-          />
-          <div
-            class="sc-kAzzGY eDctbu"
-          >
-            <div
-              class="sc-kgoBCf fYbQsQ"
-            >
-              Danish
-            </div>
-            <label
-              class="sc-EHOje ehlzez"
-            >
-              <input
-                class="sc-gzVnrw hQhDNs"
-                type="checkbox"
-              />
-              <span
-                class="slider sc-bZQynM hqkVOt"
-              />
-            </label>
-            <div
-              class="sc-kgoBCf emjvUt"
-            >
-              English
-            </div>
+            (green minus red)
           </div>
           <hr
             class="sc-jTzLTM eBQVTV"
           />
           <div
-            class="sc-kpOJdX bhTErL"
+            class="sc-kGXeez cJjYUn"
           >
             <div
-              class="sc-dxgOiQ smxuf"
+              class="sc-kpOJdX fEcela"
             >
               <a
-                class="sc-ckVGcZ fVRzlZ"
+                class="sc-dxgOiQ fWpEPm"
                 href="http://www.tokni.com"
               >
-                Udviklet af Tokni
+                Developed by Tokni
               </a>
             </div>
           </div>
         </div>
         <div
-          class="sc-jKJlTe gdwYmG"
+          class="sc-ckVGcZ ktdxLt"
         >
           <div
-            class="sc-hMqMXs iUxuCD"
+            class="sc-eNQAEJ hJaTUO"
           >
             <img
               alt="logo"
-              class="sc-eNQAEJ bYUtWK"
+              class="sc-jKJlTe hyNJgo"
               src="./images/dtulogo_white.png"
             />
             <div
-              class="sc-kkGfuU dUTbQn"
+              class="sc-kEYyzF jeZPim"
             >
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-kkGfuU egOWIJ"
                 href="/about"
               >
-                Om
+                About
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-kkGfuU egOWIJ"
                 href="/beskrivelser"
               >
-                Beskrivelse
+                Description
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-kkGfuU egOWIJ"
                 href="/forudsaetninger"
               >
-                Forudsætn.
+                Precond.
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-kkGfuU egOWIJ"
                 href="/abonner"
               >
-                Abbonér
+                Subscribe
               </a>
             </div>
           </div>
           <hr
-            class="sc-kEYyzF lLBqv"
+            class="sc-hMqMXs ViLCD"
           />
           <div
-            class="sc-hSdWYo hnVnmz"
+            class="sc-iAyFgw gPDhun"
           >
             <div
               class="sc-bdVaJa erSRMf"
@@ -311,7 +283,7 @@ exports[`should render correctly 1`] = `
               <div
                 class="sc-htpNat kDXsHz"
               >
-                Scenarier
+                Scenarios
               </div>
               <div
                 class="sc-bxivhb idTADQ"
@@ -335,19 +307,19 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb cGEKnc"
                 value="Regeringen_INT"
               >
-                Regeringen
+                Government
               </div>
               <div
                 class="sc-bxivhb cGEKnc"
                 value="Alternativet_INT"
               >
-                Alternativet
+                The Alternative
               </div>
               <div
                 class="sc-bxivhb cGEKnc"
                 value="Enhedslisten_INT"
               >
-                Enhedslisten
+                Red–Green Alliance
               </div>
               <div
                 class="sc-bxivhb cGEKnc"
@@ -371,7 +343,7 @@ exports[`should render correctly 1`] = `
                 class="sc-bxivhb cGEKnc"
                 value="Socialdemokratiet_INT"
               >
-                Socialdemokratiet
+                Social Democrats
               </div>
               <hr
                 class="sc-ifAKCX hmriKC"
@@ -391,10 +363,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-kEYyzF lLBqv"
+            class="sc-hMqMXs ViLCD"
           />
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-hSdWYo jSOGuA"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -408,13 +380,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cvbbAY dxcdfd"
+              class="sc-eHgmQL gZovTX"
             >
               CCS
             </div>
           </div>
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-hSdWYo jSOGuA"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -428,24 +400,24 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cvbbAY mJlvR"
+              class="sc-eHgmQL gNzVLZ"
             >
-              Scenarie difference
+              Scenario difference
             </div>
           </div>
           <div
-            class="sc-brqgnP dWIsTX"
+            class="sc-jWBwVP inHXoN"
           >
-            (grøn minus rød)
+            (green minus red)
           </div>
           <hr
-            class="sc-kEYyzF lLBqv"
+            class="sc-hMqMXs ViLCD"
           />
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-hSdWYo jSOGuA"
           >
             <div
-              class="sc-jWBwVP fiugjA"
+              class="sc-cvbbAY fIXcRO"
             >
               Danish
             </div>
@@ -453,6 +425,7 @@ exports[`should render correctly 1`] = `
               class="sc-EHOje ehlzez"
             >
               <input
+                checked=""
                 class="sc-gzVnrw hQhDNs"
                 type="checkbox"
               />
@@ -461,22 +434,22 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-jWBwVP ezCpHZ"
+              class="sc-cvbbAY eGNcEq"
             >
               English
             </div>
           </div>
           <div
-            class="sc-cMljjf jcDXLk"
+            class="sc-brqgnP gnAaXk"
           >
             <div
-              class="sc-jAaTju kxrxNi"
+              class="sc-cMljjf dkHVDp"
             >
               <a
-                class="sc-jDwBTQ gQDQSf"
+                class="sc-jAaTju gvHfqC"
                 href="http://www.tokni.com"
               >
-                Udviklet af Tokni
+                Developed by Tokni
               </a>
             </div>
           </div>
@@ -484,138 +457,108 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-uJMKN gdHkAg"
+      class="sc-jqCOkK jvFkCU"
     >
       <div
-        class="sc-bbmXgH lnrfdk"
+        class="sc-uJMKN ejniWf"
       >
         <div
-          class="sc-gPEVay hhTqci"
+          class="sc-jDwBTQ eAcYUk"
         >
           <a
-            class="sc-iRbamj jKzfiN"
+            class="sc-gPEVay gMMHgW"
             href="/"
           >
-            Overblik
+            Overview
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gPEVay focZHD"
             href="/tab2"
           >
-            Hovedresultater
+            Main results
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gPEVay focZHD"
             href="/tab3"
           >
-            Forsyningssektoren
+            Supply sector
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gPEVay focZHD"
             href="/tab4"
           >
-            Transportsektoren
+            Transport sector
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gPEVay focZHD"
             href="/tab5"
           >
-            Industri
+            Industry
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gPEVay focZHD"
             href="/tab6"
           >
-            Husholdninger
+            Households
           </a>
         </div>
         <div
-          class="sc-jlyJG jXcwpR"
+          class="sc-iRbamj kWhBWQ"
         >
           <a
-            class="sc-gipzik dWrkMw"
+            class="sc-jlyJG jCGDfd"
             href="/"
           >
-            Overblik
+            Overview
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-jlyJG dJGPnb"
             href="/tab2"
           >
-            Resultater
+            Results
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-jlyJG dJGPnb"
             href="/tab3"
           >
-            Forsyning
+            Supply
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-jlyJG dJGPnb"
             href="/tab4"
           >
             Transport
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-jlyJG dJGPnb"
             href="/tab5"
           >
-            Industri
+            Industry
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-jlyJG dJGPnb"
             href="/tab6"
           >
-            Husholdninger
+            Households
           </a>
         </div>
         <div
-          class="sc-dVhcbM civynI"
+          class="sc-fMiknA faHkhO"
         >
           <div
-            class="sc-csuQGl esgcHv"
+            class="sc-gipzik dWJjOK"
           >
             <div
-              class="sc-Rmtcm jUItFr"
+              class="sc-csuQGl hBugRj"
             >
               <p
-                class="sc-bRBYWo ccSRck"
+                class="sc-Rmtcm gwGgYM"
               >
-                Energisystemanalysegruppen på DTU inviterer til debat om klima- og energipolitik med vores værktøj.
-              </p>
-              <p
-                class="sc-bRBYWo ccSRck"
-              >
-                Med dette værktøj kan du udforske forskellige scenarier i forbindelse med Klimaaftalen 2019. Vælg et scenario i venstre menu og se resultatet i graferne nedenfor.
-              </p>
-              <p
-                class="sc-bRBYWo ccSRck"
-              >
-                Værktøjet er udviklet til yderligere at åbne debatten om klima- og energi politik og gøre et kompleks system lettere at forstå. De scenarier der fremvises, skal forstås som tekno-økonomiske potentialer for udviklingen mod 2050, baseret på fuldt fremsyn. Resultater kan ikke konkluderes som den endelige eller korrekte retning for at opnå fossil frihed, men skal derimod vise os hvor langt vi kan nå, hvis teknikken og økonomien fungerer optimalt. Der er derfor behov for yderligere politikker til eksempelvis at håndtere adfærd, der ikke er økonomisk rationel og uperfekte markeder.
-              </p>
-              <p
-                class="sc-bRBYWo ccSRck"
-              >
-                En model er altid en simplificering af den virkelige verden. Ved sammenligning af scenarier skal der derfor tages hensyn til, at det kun er tekno-økonomiske virkemidler (tilskud, afgifter, forbud etc) der kan sammenlignes. Politikker målrettet fx adfærd inddrages ikke.
-              </p>
-              <p
-                class="sc-bRBYWo ccSRck"
-              >
-                De viste scenarier er baseret på beregninger i energisystemmodellen TIMES-DK. Energimodellen er baseret på de grundlæggende forudsætninger om finansiel vækst fra finansministeriet og transportbehovet fra landstrafik modellen. Desuden er der forudsat en teknologisk udvikling, læs mere om dette under forudsætninger.
-              </p>
-              <p
-                class="sc-bRBYWo ccSRck"
-              >
-                Scenario beskrivelserne og resultater er baseret på DTU’s fortolkning af regeringens udspil, udmeldinger fra andre partier samt egne scenarier. Scenarierne vil løbende blive opdateret når nye ting dukker op.
-              </p>
-              <p
-                class="sc-bRBYWo ccSRck"
-              >
-                Seneste opdatering: 3/6-2019
+                Welcome text
               </p>
             </div>
             <div
-              class="sc-hzDkRC ktKPqk"
+              class="sc-bRBYWo bBUwtS"
             >
               <span
                 class="octicon octicon-x"
@@ -623,7 +566,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-eqIVtm fnSkIv"
+            class="sc-dVhcbM gzGePL"
           >
             <div>
               <div
@@ -639,7 +582,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-hzDkRC kQVRFO"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -651,7 +594,7 @@ exports[`should render correctly 1`] = `
                       text-anchor="start"
                       x="90"
                     >
-                      CO2 emissioner og %-reduktion
+                      CO2 emissions and %-reduction
                     </tspan>
                   </text>
                   <g
@@ -1510,7 +1453,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="219.92664359861593"
                       >
-                        CO2 lagring     
+                        CO2 storage     
                       </tspan>
                     </text>
                     <text
@@ -2845,7 +2788,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-hzDkRC kQVRFO"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -2857,7 +2800,7 @@ exports[`should render correctly 1`] = `
                       text-anchor="start"
                       x="90"
                     >
-                      Anden drivhusgas udledning
+                      Other GHG emissions
                     </tspan>
                   </text>
                   <g
@@ -3379,7 +3322,7 @@ exports[`should render correctly 1`] = `
                       shape-rendering="auto"
                       style="fill: none;"
                       vector-effect="non-scaling-stroke"
-                      width="323.9778546712802"
+                      width="358.57993079584776"
                       x="90"
                       y="50"
                     />
@@ -3393,7 +3336,7 @@ exports[`should render correctly 1`] = `
                       style="fill: #5cbae6;"
                     />
                     <path
-                      d="M 199.6858131487889, 54
+                      d="M 213.52664359861592, 54
       m -4.8, 0
       a 4.8, 4.8 0 1,0 9.6,0
       a 4.8, 4.8 0 1,0 -9.6,0"
@@ -3402,7 +3345,7 @@ exports[`should render correctly 1`] = `
                       style="fill: #b6d957;"
                     />
                     <path
-                      d="M 319.2124567474048, 54
+                      d="M 333.05328719723184, 54
       m -4.8, 0
       a 4.8, 4.8 0 1,0 9.6,0
       a 4.8, 4.8 0 1,0 -9.6,0"
@@ -3420,7 +3363,7 @@ exports[`should render correctly 1`] = `
                       style="fill: #8cd3ff;"
                     />
                     <path
-                      d="M 199.6858131487889, 72.49000000000001
+                      d="M 213.52664359861592, 72.49000000000001
       m -4.8, 0
       a 4.8, 4.8 0 1,0 9.6,0
       a 4.8, 4.8 0 1,0 -9.6,0"
@@ -3440,20 +3383,20 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        LULUCF        
+                        legend.LULUCF   
                       </tspan>
                     </text>
                     <text
                       dx="0"
                       dy="3.195"
-                      x="206.0858131487889"
+                      x="219.92664359861593"
                       y="54"
                     >
                       <tspan
                         dx="0"
                         style="font-size: 9px; fill: #252525; font-family: 'Gill Sans', 'Gill Sans MT', 'Ser­avek', 'Trebuchet MS', sans-serif; stroke: transparent;"
                         text-anchor="start"
-                        x="206.0858131487889"
+                        x="219.92664359861593"
                       >
                         Lattergas       
                       </tspan>
@@ -3461,16 +3404,16 @@ exports[`should render correctly 1`] = `
                     <text
                       dx="0"
                       dy="3.195"
-                      x="325.6124567474048"
+                      x="339.4532871972318"
                       y="54"
                     >
                       <tspan
                         dx="0"
                         style="font-size: 9px; fill: #252525; font-family: 'Gill Sans', 'Gill Sans MT', 'Ser­avek', 'Trebuchet MS', sans-serif; stroke: transparent;"
                         text-anchor="start"
-                        x="325.6124567474048"
+                        x="339.4532871972318"
                       >
-                        Metan        
+                        legend.Metan    
                       </tspan>
                     </text>
                     <text
@@ -3485,22 +3428,22 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        Skov        
+                        legend.Skov     
                       </tspan>
                     </text>
                     <text
                       dx="0"
                       dy="3.195"
-                      x="206.0858131487889"
+                      x="219.92664359861593"
                       y="72.49000000000001"
                     >
                       <tspan
                         dx="0"
                         style="font-size: 9px; fill: #252525; font-family: 'Gill Sans', 'Gill Sans MT', 'Ser­avek', 'Trebuchet MS', sans-serif; stroke: transparent;"
                         text-anchor="start"
-                        x="206.0858131487889"
+                        x="219.92664359861593"
                       >
-                        Strålingseffekt 
+                        legend.Strålings
                       </tspan>
                     </text>
                   </g>
@@ -4115,7 +4058,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-fMiknA blKJNd"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -4127,7 +4070,7 @@ exports[`should render correctly 1`] = `
                       text-anchor="start"
                       x="90"
                     >
-                      Akkumuleret CO2 emissioner
+                      Accumulated CO2 emissions
                     </tspan>
                   </text>
                   <g
@@ -5099,7 +5042,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="130"
                       >
-                        Regeringens udspil
+                        The Government
                       </tspan>
                     </text>
                     <text
@@ -5115,7 +5058,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="155"
                       >
-                        Alternativet
+                        The Alternative
                       </tspan>
                     </text>
                     <text
@@ -5131,7 +5074,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="180"
                       >
-                        Enhedslisten
+                        Red–Green Alliance
                       </tspan>
                     </text>
                     <text
@@ -5195,7 +5138,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="280"
                       >
-                        Socialdemokratiet
+                        Social Democrats
                       </tspan>
                     </text>
                     <text
@@ -5287,7 +5230,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-hzDkRC kQVRFO"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -5299,7 +5242,7 @@ exports[`should render correctly 1`] = `
                       text-anchor="start"
                       x="90"
                     >
-                      Energiforbrug og VE-andel
+                      Energy consumpution and RE-share
                     </tspan>
                   </text>
                   <g
@@ -6251,7 +6194,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        Affald        
+                        Waste        
                       </tspan>
                     </text>
                     <text
@@ -6266,7 +6209,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="219.92664359861593"
                       >
-                        Benzin        
+                        Gasoline        
                       </tspan>
                     </text>
                     <text
@@ -6431,7 +6374,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        Kul        
+                        Coal        
                       </tspan>
                     </text>
                     <text
@@ -9173,7 +9116,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-hzDkRC kQVRFO"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -9185,7 +9128,7 @@ exports[`should render correctly 1`] = `
                       text-anchor="start"
                       x="90"
                     >
-                      Antal havmølleparker (á 800MW)
+                      Number of offshore wind energy parks (at 800MW)
                     </tspan>
                   </text>
                   <g
@@ -9883,7 +9826,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-hzDkRC kQVRFO"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -9895,7 +9838,7 @@ exports[`should render correctly 1`] = `
                       text-anchor="start"
                       x="90"
                     >
-                      Solcelle areal
+                      Solarcell area
                     </tspan>
                   </text>
                   <g
@@ -10460,7 +10403,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        Solceller Indust
+                        Solar PV (Indust
                       </tspan>
                     </text>
                     <text
@@ -10475,7 +10418,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="219.92664359861593"
                       >
-                        Solceller Mark  
+                        legend.Solceller
                       </tspan>
                     </text>
                     <text
@@ -10490,7 +10433,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="339.4532871972318"
                       >
-                        Solceller hushol
+                        Solar PV (Reside
                       </tspan>
                     </text>
                   </g>
@@ -10873,7 +10816,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-hzDkRC kQVRFO"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -10885,7 +10828,7 @@ exports[`should render correctly 1`] = `
                       text-anchor="start"
                       x="90"
                     >
-                      Andel importeret Biomasse
+                      Share of imported biomass
                     </tspan>
                   </text>
                   <g
@@ -11432,7 +11375,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        Biomasse andel  
+                        Biomass share   
                       </tspan>
                     </text>
                   </g>
@@ -11583,7 +11526,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-hzDkRC kQVRFO"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -11595,7 +11538,7 @@ exports[`should render correctly 1`] = `
                       text-anchor="start"
                       x="90"
                     >
-                      Omkostninger per person
+                      Costs per person
                     </tspan>
                   </text>
                   <g
@@ -12142,7 +12085,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        DKK/person/år   
+                        legend.DKK/perso
                       </tspan>
                     </text>
                   </g>
