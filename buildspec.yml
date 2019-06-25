@@ -1,0 +1,14 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm run build
+  post_build:
+    commands:
+      - aws s3 sync build/ s3://klimaaftalen
+      - aws cloudfront create-invalidation --distribution-id ERZ3N7LF28Q6C --paths "/*"
+  
