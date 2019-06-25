@@ -183,20 +183,20 @@ function ScenarioSelectionMenu(props) {
               {t("menu.desktop.about")}
             </MenuItem>
             <MenuItem
-              to="/beskrivelser"
-              selected={props.selectedChartgroup === "/beskrivelser"}
+              to="/descriptions"
+              selected={props.selectedChartgroup === "/descriptions"}
             >
               {t("menu.desktop.descriptions")}
             </MenuItem>
             <MenuItem
-              to="/forudsaetninger"
-              selected={props.selectedChartgroup === "/forudsaetninger"}
+              to="/preconditions"
+              selected={props.selectedChartgroup === "/preconditions"}
             >
               {t("menu.desktop.preconditions")}
             </MenuItem>
             <MenuItem
-              to="/abonner"
-              selected={props.selectedChartgroup === "/abonner"}
+              to="/subscribe"
+              selected={props.selectedChartgroup === "/subscribe"}
             >
               {t("menu.desktop.subscribe")}
             </MenuItem>

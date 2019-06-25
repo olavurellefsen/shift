@@ -208,7 +208,7 @@ export class App extends React.Component {
               />
               <Route path="/about" component={About} />
               <Route
-                path="/beskrivelser"
+                path="/descriptions"
                 render={() => {
                   return (
                     <PageRenderer
@@ -226,8 +226,8 @@ export class App extends React.Component {
                   );
                 }}
               />
-              <Route path="/forudsaetninger" component={Prerequisites} />
-              <Route path="/abonner" render={() => {
+              <Route path="/preconditions" component={Prerequisites} />
+              <Route path="/subscribe" render={() => {
                   return (
                     <PageRenderer
                       markdownFiles={[
