@@ -45,12 +45,6 @@ function Welcome(props) {
     <AlertContainer>
       <AlertBody>
         <AlertBodyParagraph>{t("welcome-text.welcome-1")}</AlertBodyParagraph>
-        <AlertBodyParagraph>{t("welcome-text.welcome-2")}</AlertBodyParagraph>
-        <AlertBodyParagraph>{t("welcome-text.welcome-3")}</AlertBodyParagraph>
-        <AlertBodyParagraph>{t("welcome-text.welcome-4")}</AlertBodyParagraph>
-        <AlertBodyParagraph>{t("welcome-text.welcome-5")}</AlertBodyParagraph>
-        <AlertBodyParagraph>{t("welcome-text.welcome-6")}</AlertBodyParagraph>
-        <AlertBodyParagraph>{t("welcome-text.welcome-7")}</AlertBodyParagraph>
       </AlertBody>
       <CloseWindowIcon
         onClick={event => props.closeWelcome(event, "showWelcome", false)}

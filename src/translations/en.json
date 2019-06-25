@@ -84,13 +84,7 @@
     }
   },
   "welcome-text": {
-    "welcome-1": "The energy system analysis group at the Technical University of Denmark (DTU) invites to a debate about climate and energy politics with our tool.",
-    "welcome-2": "With this tool you can explore different scenarios related to the Danish Climate Agreement 2019. Choose a scenario in the left menu and see the result in the charts below.",
-    "welcome-3": "The tool is developed to further open the debate about climate and energy politics and make a complex system easier to understand. The scenarios that are shown, should be understood as tecno-economical potentials for the development towards 2050, based on full foresight. Results cannot be concluded as the final or correct direction to obtain fossil freedom, but should on the contrary show us how far we can go, if the technology and the economics work optimally. There is therefore a need for additional policies for instance to manage behaviour that is not economically rational and imperfect markets.",
-    "welcome-4": "A model is always a simplification of the real world. When comparing scenarios you should take into account that only techno-economic instruments (subsidies, taxes, bans et cetera) can be compared. Policies aimed at e.g. behaviour are not included.",
-    "welcome-5": "The shown scenarios are based on calcuations in the energy system model TIMES-DK. The energy model is based on the basic preconditions about financial growth from the ministry of finance and the transport need from the land traffic model. Moreover, a technological development is assumed, which you can read more about under Preconditions.",
-    "welcome-6": "The scenario descriptions and the results are based on DTU's interpretation of the government's proposal, statements from other parties as well as our own scenarios. The scenarios will be updated continuously as new information becomes available.",
-    "welcome-7": "Most recent update: 9 May 2019"
+    "welcome-1": "Welcome text"
   },
   "chartTitle": {
     "CO2 emissioner og %-reduktion": "CO2 emissions and %-reduction",

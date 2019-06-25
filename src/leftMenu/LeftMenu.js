@@ -119,11 +119,11 @@ const ToggleSwitchText = styled.div`
   margin-left: 10px;
 `;
 
-const ToggleLanguageText = styled.div`
-  color: ${props => (props.selected ? "white" : "gray")};
-  margin-left: 10px;
-  margin-right: 10px;
-`;
+// const ToggleLanguageText = styled.div`
+//   color: ${props => (props.selected ? "white" : "gray")};
+//   margin-left: 10px;
+//   margin-right: 10px;
+// `;
 
 const ScenarioDifferenceText = styled.div`
   font-size: 0.7em;
@@ -146,7 +146,7 @@ const CopyrightNotice = styled.div`
   padding: 0 12px 5px 15px;
   margin: 0;
   width: 100%;
-  heigth: 26px;
+  height: 26px;
 `;
 
 const ExternalLink = styled.a`
@@ -161,14 +161,14 @@ function ScenarioSelectionMenu(props) {
   const { t, i18n } = useTranslation();
   const language = i18n.language;
 
-  const toggleLanguage = e => {
-    e.preventDefault();
-    if (language === "en") {
-      i18n.changeLanguage("dk");
-    } else {
-      i18n.changeLanguage("en");
-    }
-  };
+  // const toggleLanguage = e => {
+  //   e.preventDefault();
+  //   if (language === "en") {
+  //     i18n.changeLanguage("dk");
+  //   } else {
+  //     i18n.changeLanguage("en");
+  //   }
+  // };
 
   return (
     <MenuLayout>

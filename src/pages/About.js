@@ -38,24 +38,20 @@ const BodyLink = styled.a`
 
 export default () => (
   <AboutContainer>
-    <AboutHeader>Om Værktøjet</AboutHeader>
-    <AboutHeader2>ENERGIMODELLEN TIMES-DK</AboutHeader2>
+    <AboutHeader>About</AboutHeader>
+    <AboutHeader2>About the tool</AboutHeader2>
     <AboutBody>
-      TIMES-DK er et avanceret beregningsværktøj, der anvendes til at bygge
-      scenarier for energi-systemet i Danmark. Modellen dækker energiforbrug i
-      alle sektorer i Danmark. Den har en detaljeret repræsentation af{" "}
-      <b>el- og fjernvarme sektoren, bygninger, industri samt transport</b> og
-      kan dermed belyse målsætninger og politiske virkemidler på tværs af alle
-      sektorer. Den inkluderer det danske energiafgiftssystem, så ændringer og
-      det tilhørende provenu kan beregnes. Baseret på input om brændselspriser,
-      teknologipriser og politiker (f.eks. støtte, afgifter, regulering), finder
-      modellen den billigste kombination af teknologier i alle sektorer. Seneste
-      tilføjelse er en simpel repræsentation af emissioner af andre
-      drivhusgasser end CO2 fra{" "}
-      <b>jord- og skovbrug samt strålingseffekt fra fly</b>
-      således, at modellen nu inkluderer alle direkte udledte klimagasser.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat, 
+    tortor non tincidunt pretium, ex dui pellentesque arcu, molestie accumsan 
+    est enim sed est. In et tellus nec tellus laoreet gravida et ut dolor. Donec 
+    pretium tempor erat, nec posuere est sagittis in. Suspendisse arcu libero, 
+    ullamcorper nec velit a, lobortis pulvinar lectus. Nulla elit elit, rutrum a 
+    urna ac, congue luctus eros. Nulla tempor sed nulla ut tempor. Proin ut luctus 
+    erat. In ornare justo id tellus aliquam, eget cursus dui sodales. Integer 
+    hendrerit suscipit cursus. Proin convallis purus nec felis lobortis tincidunt. 
+    Mauris et enim quis quam vehicula blandit id varius quam. Morbi in cursus ex.
     </AboutBody>
-    <AboutBody>
+    {/* <AboutBody>
       Modellen er udviklet i samarbejde mellem DTU, COMETS projektet og
       Energistyrelsen. Der er et fortsat samarbejde om den løbende udvikling og
       forbedring af modellen.
@@ -353,6 +349,6 @@ export default () => (
       deres scenarier, af EC Joint Research Centre i Petten Holland (JRC) til
       analyser for kommissionen. Flere modelteams bruger også TIMES modeller til
       scenarieberegninger for IPCC.
-    </AboutBody>
+    </AboutBody> */}
   </AboutContainer>
 );
