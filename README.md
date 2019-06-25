@@ -1,7 +1,7 @@
-Klimaaftalen 2019
+Shift
 ============================
 
-This tool is developed by Tokni based data and charts from DTU Management Engineering's work with the TIMES-DK energy system model.
+This tool is developed by Tokni based data and charts from...
 
 ## Installation
 
@@ -21,7 +21,7 @@ Deployment version:
 
 - npm run build
 
-The public version is available at https://klimaaftalen.tokni.com and is updated via Amazon Web Services CodePipeline after each commit to the master branch.
+The public version is available at...
 
 ## Usage
 
