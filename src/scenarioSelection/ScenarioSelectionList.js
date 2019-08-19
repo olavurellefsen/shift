@@ -21,7 +21,7 @@ const ScenarioSelectionList = props => {
   let scenarioOptions = dimensionOptions
     .filter(option => option.ccs === props.showCCS)
     .map(option => {
-      let optionValue = option.name;
+      let optionValue = option.nameNoOptions;
       if (optionValue === "division_line") {
         return <MenuSeparatorLine key={option.id} />;
       } else {

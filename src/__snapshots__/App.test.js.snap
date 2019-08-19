@@ -37,19 +37,19 @@ exports[`should render correctly 1`] = `
                 </a>
                 <a
                   class="sc-jzJRlG ixPgTR"
-                  href="/beskrivelser"
+                  href="/descriptions"
                 >
                   Descriptions of scenarios
                 </a>
                 <a
                   class="sc-jzJRlG ixPgTR"
-                  href="/forudsaetninger"
+                  href="/preconditions"
                 >
                   Preconditions
                 </a>
                 <a
                   class="sc-jzJRlG ixPgTR"
-                  href="/abonner"
+                  href="/subscribe"
                 >
                   Subscribe to updates
                 </a>
@@ -250,19 +250,19 @@ exports[`should render correctly 1`] = `
               </a>
               <a
                 class="sc-kkGfuU egOWIJ"
-                href="/beskrivelser"
+                href="/descriptions"
               >
                 Description
               </a>
               <a
                 class="sc-kkGfuU egOWIJ"
-                href="/forudsaetninger"
+                href="/preconditions"
               >
                 Precond.
               </a>
               <a
                 class="sc-kkGfuU egOWIJ"
-                href="/abonner"
+                href="/subscribe"
               >
                 Subscribe
               </a>

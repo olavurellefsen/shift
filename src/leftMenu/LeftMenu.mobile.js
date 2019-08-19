@@ -154,20 +154,20 @@ function ScenarioSelectionMenu(props) {
               {t("menu.mobile.about")}
             </MenuItem>
             <MenuItem
-              to="/beskrivelser"
-              selected={props.selectedChartgroup === "/beskrivelser"}
+              to="/descriptions"
+              selected={props.selectedChartgroup === "/descriptions"}
             >
               {t("menu.mobile.descriptions")}
             </MenuItem>
             <MenuItem
-              to="/forudsaetninger"
-              selected={props.selectedChartgroup === "/forudsaetninger"}
+              to="/preconditions"
+              selected={props.selectedChartgroup === "/preconditions"}
             >
               {t("menu.mobile.preconditions")}
             </MenuItem>
             <MenuItem
-              to="/abonner"
-              selected={props.selectedChartgroup === "/abonner"}
+              to="/subscribe"
+              selected={props.selectedChartgroup === "/subscribe"}
             >
               {t("menu.mobile.subscribe")}
             </MenuItem>
@@ -178,12 +178,13 @@ function ScenarioSelectionMenu(props) {
           <ScenarioSelectionList
             updateScenarioSelection={props.updateScenarioSelection}
             name="scenarioSelection"
-            selectedValue={props.scenarioSelection.scenarioSelection}
-            selectedValue2={props.scenarioSelection.scenarioSelection2}
+            selectedValue={props.scenarioSelection.scenarioSelectionNoOptions}
+            selectedValue2={props.scenarioSelection.scenarioSelectionNoOptions2}
             dimensionOptions={props.scenarioCombinations.scenarioOptions}
             dimensionTitle={t("general.scenarios")}
             narrowVersion={true}
             showCCS={props.scenarioSelection.showCCS}
+            showBio={props.scenarioSelection.showBio}
           />
         </ScenarioSelection>
         <MenuSeparatorLine />
@@ -196,6 +197,33 @@ function ScenarioSelectionMenu(props) {
             {t("general.CCS")}
           </ToggleSwitchText>
         </ToggleDifference>
+        <ToggleDifference onClick={e => props.toggleShowOpt1(e)}>
+        <ToggleSwitch
+          dimmed={false}
+          checked={props.scenarioSelection.showOpt1}
+        />
+        <ToggleSwitchText selected={props.scenarioSelection.showOpt1}>
+          {t("general.opt1")}
+        </ToggleSwitchText>
+      </ToggleDifference>
+      <ToggleDifference onClick={e => props.toggleShowOpt2(e)}>
+        <ToggleSwitch
+          dimmed={false}
+          checked={props.scenarioSelection.showOpt2}
+        />
+        <ToggleSwitchText selected={props.scenarioSelection.showOpt2}>
+          {t("general.opt2")}
+        </ToggleSwitchText>
+      </ToggleDifference>
+      <ToggleDifference onClick={e => props.toggleShowOpt3(e)}>
+        <ToggleSwitch
+          dimmed={false}
+          checked={props.scenarioSelection.showOpt3}
+        />
+        <ToggleSwitchText selected={props.scenarioSelection.showOpt3}>
+          {t("general.opt3")}
+        </ToggleSwitchText>
+      </ToggleDifference>
         <ToggleDifference onClick={e => props.toggleDifference(e)}>
           <ToggleSwitch
             dimmed={props.scenarioSelection.scenarioSelection2 === ""}
@@ -242,7 +270,10 @@ ScenarioSelectionMenu.propTypes = {
   scenarioSelection: PropTypes.object.isRequired,
   scenarioCombinations: PropTypes.object.isRequired,
   toggleDifference: PropTypes.func.isRequired,
-  toggleShowCCS: PropTypes.func.isRequired
+  toggleShowCCS: PropTypes.func.isRequired,
+  toggleShowOpt1: PropTypes.func.isRequired,
+  toggleShowOpt2: PropTypes.func.isRequired,
+  toggleShowOpt3: PropTypes.func.isRequired
 };
 
 export default ScenarioSelectionMenu;

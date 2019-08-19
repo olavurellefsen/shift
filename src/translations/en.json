@@ -1,5 +1,5 @@
 {
-  "title": "Shift",
+  "title": "SHIFT",
   "menu": {
     "mobile": {
       "about": "About",
@@ -55,17 +55,17 @@
     "Socialdemokratiet_INT": "Social Democrats",
     "Carbon_scenario_1-5_degree_INT": "Carbon budget 1.5°C",
     "Carbon_scenario_1-5_degree_bio_INT": "Carbon budget 1.5°C",
-    "FP_NO_WIN_INT_With_CCS": "Frozen policy",
-    "DGSB_INT_With_CCS": "DGSB",
-    "Regeringen_INT_With_CCS": "The Government",
-    "Alternativet_INT_With_CCS": "The Alternative",
-    "Enhedslisten_INT_With_CCS": "Red–Green Alliance",
-    "LA_INT_With_CCS": "Liberal Alliance",
-    "Radikale_INT_With_CCS": "Radikale Venstre",
-    "SF_INT_With_CCS": "Socialistisk Folkeparti",
-    "Socialdemokratiet_INT_With_CCS": "Social Democrats",
-    "Carbon_scenario_1-5_degree_INT_With_CCS": "Carbon budget 1.5°C",
-    "Carbon_scenario_1-5_degree_bio_INT_With_CCS": "Carbon budget 1.5°C"
+    "FP_NO_WIN_INT_CCS": "Frozen policy",
+    "DGSB_INT_CCS": "DGSB",
+    "Regeringen_INT_CCS": "The Government",
+    "Alternativet_INT_CCS": "The Alternative",
+    "Enhedslisten_INT_CCS": "Red–Green Alliance",
+    "LA_INT_CCS": "Liberal Alliance",
+    "Radikale_INT_CCS": "Radikale Venstre",
+    "SF_INT_CCS": "Socialistisk Folkeparti",
+    "Socialdemokratiet_INT_CCS": "Social Democrats",
+    "Carbon_scenario_1-5_degree_INT_CCS": "Carbon budget 1.5°C",
+    "Carbon_scenario_1-5_degree_bio_INT_CCS": "Carbon budget 1.5°C"
   },
   "tabs": {
     "overview": "Overview",

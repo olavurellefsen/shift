@@ -2420,7 +2420,7 @@ export default {
         ]
       },
       {
-        "scenario": "Alternativet_INT_With_CCS",
+        "scenario": "Alternativet_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -7256,7 +7256,7 @@ export default {
         ]
       },
       {
-        "scenario": "Carbon_scenario_1-5_degree_INT_With_CCS",
+        "scenario": "Carbon_scenario_1-5_degree_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -12092,7 +12092,7 @@ export default {
         ]
       },
       {
-        "scenario": "Carbon_scenario_1-5_degree_bio_INT_With_CCS",
+        "scenario": "Carbon_scenario_1-5_degree_bio_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -16928,7 +16928,7 @@ export default {
         ]
       },
       {
-        "scenario": "DGSB_INT_With_CCS",
+        "scenario": "DGSB_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -21764,7 +21764,7 @@ export default {
         ]
       },
       {
-        "scenario": "Enhedslisten_INT_With_CCS",
+        "scenario": "Enhedslisten_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -26600,7 +26600,7 @@ export default {
         ]
       },
       {
-        "scenario": "FP_NO_WIN_INT_With_CCS",
+        "scenario": "FP_NO_WIN_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -31436,7 +31436,7 @@ export default {
         ]
       },
       {
-        "scenario": "Frozen_policy_INT_With_CCS",
+        "scenario": "Frozen_policy_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -36272,7 +36272,7 @@ export default {
         ]
       },
       {
-        "scenario": "LA_INT_With_CCS",
+        "scenario": "LA_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -41108,7 +41108,7 @@ export default {
         ]
       },
       {
-        "scenario": "Radikale_INT_With_CCS",
+        "scenario": "Radikale_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -45944,7 +45944,7 @@ export default {
         ]
       },
       {
-        "scenario": "Regeringen_INT_With_CCS",
+        "scenario": "Regeringen_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -50780,7 +50780,7 @@ export default {
         ]
       },
       {
-        "scenario": "SF_INT_With_CCS",
+        "scenario": "SF_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
@@ -55616,7 +55616,7 @@ export default {
         ]
       },
       {
-        "scenario": "Socialdemokratiet_INT_With_CCS",
+        "scenario": "Socialdemokratiet_INT_CCS",
         "indicators": [
           {
             "indicator": "_Datacenters elforbrug",
