@@ -31,10 +31,6 @@ const AboutBody = styled.p`
     font-size: 0.7em;
   `}
 `;
-const BodyLink = styled.a`
-  color: inherit;
-  text-decoration: underline;
-`;
 
 export default () => (
   <AboutContainer>
