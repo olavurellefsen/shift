@@ -18,7 +18,7 @@ import PageRenderer from "./pages/PageRenderer";
 import Prerequisites from "./pages/Prerequisites";
 import scenarioCombinations from "./data/scenarioCombinations";
 
-ReactGA.initialize("UA-145591344-1");
+ReactGA.initialize("UA-145591344-2");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Page = styled.div`
