@@ -53,6 +53,7 @@ const Charts = props => {
             chartName="_CO2 emissioner akkumuleret"
             chartTitle="Akkumuleret CO2 emissioner"
             showCCS={props.scenarioSelection.showCCS}
+            showBio={props.scenarioSelection.showBio}
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
             combinedChart={true}

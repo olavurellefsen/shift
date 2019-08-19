@@ -18,7 +18,7 @@ import PageRenderer from "./pages/PageRenderer";
 import Prerequisites from "./pages/Prerequisites";
 import scenarioCombinations from "./data/scenarioCombinations";
 
-ReactGA.initialize("UA-127032810-1");
+ReactGA.initialize("UA-145591344-1");
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Page = styled.div`
@@ -48,7 +48,7 @@ export const changeScenario = (name, value) => ({
   [name]: value
 });
 
-const default_scenario = "FP_NO_WIN_INT";
+const default_scenario = "Frozen_policy_INT";
 
 export class App extends React.Component {
   constructor(props) {
@@ -58,7 +58,12 @@ export class App extends React.Component {
       scenarioSelection2: "",
       showWelcome: true,
       showDifference: false,
-      showCCS: false
+      showCCS: false,
+      showOpt1: false,
+      showOpt2: false,
+      showOpt3: false,
+      scenarioSelectionNoOptions: default_scenario,
+      scenarioSelectionNoOptions2: "",
     };
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations;
   }
@@ -67,27 +72,41 @@ export class App extends React.Component {
     history: PropTypes.object,
     location: PropTypes.object
   };
-
+  UpdateScenarioNames = () => {
+    this.setState((state) => {
+      return {
+      "scenarioSelection": state.scenarioSelectionNoOptions + (state.showCCS ? "_CCS": "") + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
+      }
+    })
+    this.setState((state) => {
+      return {
+      "scenarioSelection2": state.scenarioSelectionNoOptions2 !== "" ? 
+      state.scenarioSelectionNoOptions2 + (state.showCCS ? "_CCS": "") + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "") :
+      ""
+      }
+    })
+  }
   UpdateScenarioSelection = (e, name, value) => {
     e.preventDefault();
-    if (this.state.scenarioSelection2 !== "") {
-      if (value === this.state.scenarioSelection) {
+    if (this.state.scenarioSelectionNoOptions2 !== "") {
+      if (value === this.state.scenarioSelectionNoOptions) {
         this.setState(
-          changeScenario("scenarioSelection", this.state.scenarioSelection2)
+          changeScenario("scenarioSelectionNoOptions", this.state.scenarioSelectionNoOptions2)
         );
-        this.setState(changeScenario("scenarioSelection2", ""));
+        this.setState(changeScenario("scenarioSelectionNoOptions2", ""));
       } else {
-        if (value === this.state.scenarioSelection2) {
-          this.setState(changeScenario("scenarioSelection2", ""));
+        if (value === this.state.scenarioSelectionNoOptions2) {
+          this.setState(changeScenario("scenarioSelectionNoOptions2", ""));
         } else {
-          this.setState(changeScenario("scenarioSelection2", value));
+          this.setState(changeScenario("scenarioSelectionNoOptions2", value));
         }
       }
     } else {
-      if (value !== this.state.scenarioSelection) {
-        this.setState(changeScenario("scenarioSelection2", value));
+      if (value !== this.state.scenarioSelectionNoOptions) {
+        this.setState(changeScenario("scenarioSelectionNoOptions2", value));
       }
     }
+    this.UpdateScenarioNames();
   };
 
   CloseWelcomeWidget = () => {
@@ -101,26 +120,34 @@ export class App extends React.Component {
 
   ToggleShowCCS = e => {
     e.preventDefault();
-    let newScenario = "";
-    let newScenario2 = "";
-    const oldScenario = this.state.scenarioSelection;
-    const oldScenario2 = this.state.scenarioSelection2;
-    if (this.state.showCCS) {
-      newScenario = oldScenario.substring(0, oldScenario.length - 9);
-      if (oldScenario2 !== "") {
-        newScenario2 = oldScenario2.substring(0, oldScenario2.length - 9);
-      }
-    } else {
-      newScenario = oldScenario + "_With_CCS";
-      if (oldScenario2 !== "") {
-        newScenario2 = oldScenario2 + "_With_CCS";
-      }
-    }
     this.setState({
-      showCCS: !this.state.showCCS,
-      scenarioSelection: newScenario,
-      scenarioSelection2: newScenario2
+      showCCS: !this.state.showCCS
     });
+    this.UpdateScenarioNames();
+  };
+
+  ToggleShowOpt1 = e => {
+    e.preventDefault();
+    this.setState({
+      showOpt1: !this.state.showOpt1
+    });
+    this.UpdateScenarioNames();
+  };
+
+  ToggleShowOpt2 = e => {
+    e.preventDefault();
+    this.setState({
+      showOpt2: !this.state.showOpt2
+    });
+    this.UpdateScenarioNames();
+  };
+
+  ToggleShowOpt3 = e => {
+    e.preventDefault();
+    this.setState({
+      showOpt3: !this.state.showOpt3
+    });
+    this.UpdateScenarioNames();
   };
 
   render() {
@@ -135,6 +162,9 @@ export class App extends React.Component {
               updateScenarioSelection={this.UpdateScenarioSelection}
               toggleDifference={this.ToggleDifference}
               toggleShowCCS={this.ToggleShowCCS}
+              toggleShowOpt1={this.ToggleShowOpt1}
+              toggleShowOpt2={this.ToggleShowOpt2}
+              toggleShowOpt3={this.ToggleShowOpt3}
             />
             <LeftMenuMobile
               selectedChartgroup={this.state.scenarioSelection}
@@ -143,6 +173,9 @@ export class App extends React.Component {
               updateScenarioSelection={this.UpdateScenarioSelection}
               toggleDifference={this.ToggleDifference}
               toggleShowCCS={this.ToggleShowCCS}
+              toggleShowOpt1={this.ToggleShowOpt1}
+              toggleShowOpt2={this.ToggleShowOpt2}
+              toggleShowOpt3={this.ToggleShowOpt2}
             />
           </Content>
         </Column>
@@ -208,30 +241,29 @@ export class App extends React.Component {
               />
               <Route path="/about" component={About} />
               <Route
-                path="/descriptions"
+                path="/beskrivelser"
                 render={() => {
                   return (
                     <PageRenderer
                       markdownFiles={[
                         "descriptions/0_intro.md",
-                        "descriptions/1_basicscenarios.md",
-                        "descriptions/2_enhedslisten.md",
-                        "descriptions/3_socialistiskfolkeparti.md",
-                        "descriptions/4_radikalevenstre.md",
-                        "descriptions/5_socialdemokratiet.md",
-                        "descriptions/6_alternativet.md",
-                        "descriptions/7_regeringen.md"
+                        "descriptions/1_reference.md",
+                        "descriptions/2_marienlyst.md",
+                        "descriptions/3_comets.md",
+                        "descriptions/4_co2_budget.md",
                       ]}
                     />
                   );
                 }}
               />
-              <Route path="/preconditions" component={Prerequisites} />
-              <Route path="/subscribe" render={() => {
+              <Route path="/forudsaetninger" component={Prerequisites} />
+              <Route path="/udfordringer"  render={() => {
                   return (
                     <PageRenderer
                       markdownFiles={[
-                        "descriptions/subscribe.md"
+                        "descriptions/challenges.md",
+                        "descriptions/udfordringer_omstilling.md",
+                        "descriptions/udfordringer_reduktion.md"
                       ]}
                     />
                   );
