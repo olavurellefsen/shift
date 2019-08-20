@@ -158,8 +158,7 @@ const ExternalLink = styled.a`
 `;
 
 function ScenarioSelectionMenu(props) {
-  const { t, i18n } = useTranslation();
-  const language = i18n.language;
+  const { t } = useTranslation();
 
   // const toggleLanguage = e => {
   //   e.preventDefault();
