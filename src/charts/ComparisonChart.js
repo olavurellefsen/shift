@@ -29,7 +29,7 @@ const StackedBarChart = props => {
   const chartName = props.chartName;
   const chartTitle = t("chartTitle." + props.chartTitle);
   const scenarios = scenarioCombinations.scenarioCombinations.scenarioOptions
-    .filter(o => o.ccs === props.showCCS)
+    .filter(o => o.ccs === props.showCCS && o.opt1 === props.showOpt1 && o.opt2 === props.showOpt2 && o.opt3 === props.showOpt3)
     .map(scenario => scenario.name);
 
     const chartValues0 = stackedBar.data.scenarios
@@ -105,6 +105,9 @@ StackedBarChart.defaultProps = {
 
 StackedBarChart.propTypes = {
   showCCS: PropTypes.bool,
+  showOpt1: PropTypes.bool,
+  showOpt2: PropTypes.bool,
+  showOpt3: PropTypes.bool,
   stackedBar: PropTypes.object,
   line: PropTypes.object,
   selectedScenario: PropTypes.string.isRequired,

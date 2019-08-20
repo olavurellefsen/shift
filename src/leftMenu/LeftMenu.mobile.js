@@ -184,7 +184,9 @@ function ScenarioSelectionMenu(props) {
             dimensionTitle={t("general.scenarios")}
             narrowVersion={true}
             showCCS={props.scenarioSelection.showCCS}
-            showBio={props.scenarioSelection.showBio}
+            showOpt1={props.scenarioSelection.showOpt1}
+            showOpt2={props.scenarioSelection.showOpt2}
+            showOpt3={props.scenarioSelection.showOpt3}
           />
         </ScenarioSelection>
         <MenuSeparatorLine />

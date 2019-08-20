@@ -75,14 +75,14 @@ export class App extends React.Component {
   UpdateScenarioNames = () => {
     this.setState((state) => {
       return {
-      "scenarioSelection": state.scenarioSelectionNoOptions + (state.showCCS ? "_CCS": "") + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
+      "scenarioSelection": state.scenarioSelectionNoOptions + (state.showCCS ? "_CCS": "")  + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
       }
     })
     this.setState((state) => {
       return {
       "scenarioSelection2": state.scenarioSelectionNoOptions2 !== "" ? 
-      state.scenarioSelectionNoOptions2 + (state.showCCS ? "_CCS": "") + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "") :
-      ""
+      state.scenarioSelectionNoOptions2 + (state.showCCS ? "_CCS": "") + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
+       : ""
       }
     })
   }
@@ -128,26 +128,26 @@ export class App extends React.Component {
 
   ToggleShowOpt1 = e => {
     e.preventDefault();
-    this.setState({
+    /*this.setState({
       showOpt1: !this.state.showOpt1
     });
-    this.UpdateScenarioNames();
+    this.UpdateScenarioNames();*/
   };
 
   ToggleShowOpt2 = e => {
     e.preventDefault();
-    this.setState({
+    /*this.setState({
       showOpt2: !this.state.showOpt2
     });
-    this.UpdateScenarioNames();
+    this.UpdateScenarioNames();*/
   };
 
   ToggleShowOpt3 = e => {
     e.preventDefault();
-    this.setState({
+    /*this.setState({
       showOpt3: !this.state.showOpt3
     });
-    this.UpdateScenarioNames();
+    this.UpdateScenarioNames();*/
   };
 
   render() {

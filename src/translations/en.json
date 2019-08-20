@@ -17,6 +17,9 @@
   "general": {
     "scenarios": "Scenarios",
     "CCS": "CCS",
+    "opt1": "Switch 1",
+    "opt2": "Switch 2",
+    "opt3": "Switch 3",
     "scenario-difference": "Scenario difference",
     "green-minus-red": "(green minus red)",
     "developed-by-Tokni": "Developed by Tokni"
