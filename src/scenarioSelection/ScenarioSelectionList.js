@@ -8,7 +8,8 @@ import {
   ScenarioOption,
   MenuSeparatorLine,
   IconContainer,
-  Icon
+  Icon,
+  ScenarioNameContainer
 } from "./ScenarioSelectionList.style";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLeaf, faDatabase, faBolt, faBatteryFull} from '@fortawesome/free-solid-svg-icons'
@@ -35,11 +36,14 @@ const ScenarioSelectionList = props => {
             value={optionValue}
             selected={optionValue === stringValue}
             selected2={optionValue === stringValue2}
-            onClick={event => handleChange(event, optionValue)}
             narrowVersion={narrowVersion}
           >
-            {narrowVersion === false && t("scenario."+option.short_description)}
-            {narrowVersion === true && t("scenario."+option.ultra_short_description)}
+            <ScenarioNameContainer
+              onClick={event => handleChange(event, optionValue)}
+            >
+              {narrowVersion === false && t("scenario."+option.short_description)}
+              {narrowVersion === true && t("scenario."+option.ultra_short_description)}
+            </ScenarioNameContainer>
             <IconContainer>
               <Icon 
                 onClick={event => {

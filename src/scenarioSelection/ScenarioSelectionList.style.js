@@ -44,6 +44,9 @@ export const ScenarioOption = styled.div`
     }
   }
 `;
+export const ScenarioNameContainer = styled.div`
+  display: flex;
+`;
 
 export const IconContainer = styled.div`
   display: flex;
