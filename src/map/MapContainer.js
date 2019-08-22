@@ -17,7 +17,7 @@ const countryColorsCSS = props =>
 
  const StyledEurope = styled.div`
   ${props => countryColorsCSS(props)}
-  fill: #cccccc;
+  fill: #616161;
   stroke: gray;
   stroke-width: 10;
   stroke-miterlimit: 22.9256;
