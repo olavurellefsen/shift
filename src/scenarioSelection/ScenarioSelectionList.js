@@ -18,7 +18,7 @@ const ScenarioSelectionList = props => {
   const handleChange = (event, value) => {
     props.updateScenarioSelection(event, props.name, value);
   };
-
+  const scenarioSwitches = props.options;
   const { dimensionOptions, dimensionTitle, narrowVersion } = props;
   let stringValue = props.selectedValue.toString();
   let stringValue2 = props.selectedValue2.toString();
@@ -41,16 +41,33 @@ const ScenarioSelectionList = props => {
             {narrowVersion === false && t("scenario."+option.short_description)}
             {narrowVersion === true && t("scenario."+option.ultra_short_description)}
             <IconContainer>
-              <Icon selected={false}>
+              <Icon 
+                onClick={event => {
+                  props.toggleOption(optionValue, 'ccs')
+                }} 
+                selected={scenarioSwitches[optionValue].ccs}
+              >
                 <FontAwesomeIcon icon={faDatabase}/>
               </Icon>
-              <Icon selected={false}>
+              <Icon 
+                onClick={event => {
+                  props.toggleOption(optionValue, 'opt1')
+                }} 
+                 selected={scenarioSwitches[optionValue].opt1}>
                 <FontAwesomeIcon icon={faLeaf}/>
               </Icon>
-              <Icon selected={true}>
+              <Icon 
+                onClick={event => {
+                  props.toggleOption(optionValue, 'opt2')
+                }} 
+                selected={scenarioSwitches[optionValue].opt2}>
                 <FontAwesomeIcon icon={faBolt}/>
               </Icon>
-              <Icon selected={false}>
+              <Icon 
+                onClick={event => {
+                  props.toggleOption(optionValue, 'opt3')
+                }} 
+                selected={scenarioSwitches[optionValue].opt3}>
                 <FontAwesomeIcon icon={faBatteryFull}/>
               </Icon>
             </IconContainer>
@@ -80,7 +97,9 @@ ScenarioSelectionList.propTypes = {
   showCCS: PropTypes.bool.isRequired,
   showOpt1: PropTypes.bool.isRequired,
   showOpt2: PropTypes.bool.isRequired,
-  showOpt3: PropTypes.bool.isRequired
+  showOpt3: PropTypes.bool.isRequired,
+  options: PropTypes.any.isRequired,
+  toggleOption: PropTypes.func.isRequired
 };
 
 export default ScenarioSelectionList;

@@ -49,7 +49,18 @@ export const changeScenario = (name, value) => ({
 });
 
 const default_scenario = "Frozen_policy_INT";
-
+const options = []
+scenarioCombinations.scenarioCombinations.scenarioOptions
+.filter( s => !s.ccs && !s.opt1 && !s.opt2 && !s.opt3)
+.forEach(s => {
+  options[s.nameNoOptions] = {}
+  options[s.nameNoOptions]['ccs'] = false
+  options[s.nameNoOptions]['opt1'] = false
+  options[s.nameNoOptions]['opt2'] = false
+  options[s.nameNoOptions]['opt3'] = false
+  }
+)
+ 
 export class App extends React.Component {
   constructor(props) {
     super(props);
@@ -62,6 +73,7 @@ export class App extends React.Component {
       showOpt1: false,
       showOpt2: false,
       showOpt3: false,
+      options: options,
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: "",
     };
@@ -150,6 +162,39 @@ export class App extends React.Component {
     this.UpdateScenarioNames();*/
   };
 
+  ToggleCCS = e => {
+    e.preventDefault();
+    this.setState({
+      showCCS: !this.state.showCCS
+    });
+    this.UpdateScenarioNames();
+  };
+
+  ToggleOpt1 = e => {
+    e.preventDefault();
+    /*this.setState({
+      showOpt1: !this.state.showOpt1
+    });
+    this.UpdateScenarioNames();*/
+  };
+
+  ToggleOpt2 = e => {
+    e.preventDefault();
+    /*this.setState({
+      showOpt2: !this.state.showOpt2
+    });
+    this.UpdateScenarioNames();*/
+  };
+
+  ToggleOption = (scenario, option) => {
+    let newOptions = this.state.options
+    newOptions[scenario][option] = !this.state.options[scenario][option] 
+    this.setState({
+      options: newOptions
+    });
+    this.UpdateScenarioNames();
+  };
+
   render() {
     return (
       <Page>
@@ -165,6 +210,8 @@ export class App extends React.Component {
               toggleShowOpt1={this.ToggleShowOpt1}
               toggleShowOpt2={this.ToggleShowOpt2}
               toggleShowOpt3={this.ToggleShowOpt3}
+              options={this.state.options}
+              toggleOption={this.ToggleOption}
             />
             <LeftMenuMobile
               selectedChartgroup={this.state.scenarioSelection}
@@ -176,6 +223,8 @@ export class App extends React.Component {
               toggleShowOpt1={this.ToggleShowOpt1}
               toggleShowOpt2={this.ToggleShowOpt2}
               toggleShowOpt3={this.ToggleShowOpt2}
+              options={this.state.options}
+              toggleOption={this.ToggleOption}
             />
           </Content>
         </Column>

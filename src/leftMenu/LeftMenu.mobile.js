@@ -187,6 +187,8 @@ function ScenarioSelectionMenu(props) {
             showOpt1={props.scenarioSelection.showOpt1}
             showOpt2={props.scenarioSelection.showOpt2}
             showOpt3={props.scenarioSelection.showOpt3}
+            options={props.options}
+          toggleOption={props.toggleOption}
           />
         </ScenarioSelection>
         <MenuSeparatorLine />
@@ -275,7 +277,9 @@ ScenarioSelectionMenu.propTypes = {
   toggleShowCCS: PropTypes.func.isRequired,
   toggleShowOpt1: PropTypes.func.isRequired,
   toggleShowOpt2: PropTypes.func.isRequired,
-  toggleShowOpt3: PropTypes.func.isRequired
+  toggleShowOpt3: PropTypes.func.isRequired,
+  options: PropTypes.any.isRequired,
+  toggleOption: PropTypes.func.isRequired
 };
 
 export default ScenarioSelectionMenu;
