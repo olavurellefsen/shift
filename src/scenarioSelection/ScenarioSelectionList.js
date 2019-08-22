@@ -41,10 +41,18 @@ const ScenarioSelectionList = props => {
             {narrowVersion === false && t("scenario."+option.short_description)}
             {narrowVersion === true && t("scenario."+option.ultra_short_description)}
             <IconContainer>
-              <Icon><FontAwesomeIcon icon={faDatabase}/></Icon>
-              <Icon><FontAwesomeIcon icon={faLeaf}/></Icon>
-              <Icon><FontAwesomeIcon icon={faBolt}/></Icon>
-              <Icon><FontAwesomeIcon icon={faBatteryFull}/></Icon>
+              <Icon selected={false}>
+                <FontAwesomeIcon icon={faDatabase}/>
+              </Icon>
+              <Icon selected={false}>
+                <FontAwesomeIcon icon={faLeaf}/>
+              </Icon>
+              <Icon selected={true}>
+                <FontAwesomeIcon icon={faBolt}/>
+              </Icon>
+              <Icon selected={false}>
+                <FontAwesomeIcon icon={faBatteryFull}/>
+              </Icon>
             </IconContainer>
           </ScenarioOption>
         );

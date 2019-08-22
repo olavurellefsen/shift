@@ -53,6 +53,12 @@ export const Icon = styled.div`
   display: flex;
   align-items: center;
   padding-left: 5px;
+  &:hover {
+    cursor: pointer;
+    color: black;
+  }
+  color: ${props =>
+    props.selected ? "blue" :  "rgb(184,176,183)"};
 `;
 
 export const MenuSeparatorLine = styled.hr`
