@@ -290,7 +290,7 @@ function ScenarioSelectionMenu(props) {
         </ToggleLanguageText>
       </ToggleDifference> */}
       <MenuSeparatorLine />
-      <MapContainer/>
+      <MapContainer selectedCountries={props.selectedCountries} selectCountry={props.selectCountry}/>
       <MenuSeparatorLine />
       <MenuFooter>
         <CopyrightNotice>
@@ -312,7 +312,9 @@ ScenarioSelectionMenu.propTypes = {
   toggleShowCCS: PropTypes.func.isRequired,
   toggleShowOpt1: PropTypes.func.isRequired,
   toggleShowOpt2: PropTypes.func.isRequired,
-  toggleShowOpt3: PropTypes.func.isRequired
+  toggleShowOpt3: PropTypes.func.isRequired,
+  selectedCountries: PropTypes.array.isRequired,
+  selectCountry: PropTypes.func.isRequired
 };
 
 export default ScenarioSelectionMenu;

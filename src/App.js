@@ -64,6 +64,7 @@ export class App extends React.Component {
       showOpt3: false,
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: "",
+      selectedCountries: ['no']
     };
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations;
   }
@@ -149,6 +150,18 @@ export class App extends React.Component {
     });
     this.UpdateScenarioNames();*/
   };
+  
+  selectCountry = (country) => {
+    let newSelectedCountries = this.state.selectedCountries
+    if (newSelectedCountries.includes(country)) {
+      newSelectedCountries = newSelectedCountries.filter(c => c !== country)
+    } else {
+      newSelectedCountries.push(country)
+    }
+    this.setState({
+      selectedCountries: newSelectedCountries
+    })
+  }
 
   render() {
     return (
@@ -165,6 +178,8 @@ export class App extends React.Component {
               toggleShowOpt1={this.ToggleShowOpt1}
               toggleShowOpt2={this.ToggleShowOpt2}
               toggleShowOpt3={this.ToggleShowOpt3}
+              selectedCountries={this.state.selectedCountries}
+              selectCountry={this.selectCountry}
             />
             <LeftMenuMobile
               selectedChartgroup={this.state.scenarioSelection}
@@ -176,6 +191,8 @@ export class App extends React.Component {
               toggleShowOpt1={this.ToggleShowOpt1}
               toggleShowOpt2={this.ToggleShowOpt2}
               toggleShowOpt3={this.ToggleShowOpt2}
+              selectedCountries={this.state.selectedCountries}
+              selectCountry={this.selecCountry}
             />
           </Content>
         </Column>
