@@ -3,52 +3,52 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-jbKcbu brDidm"
+    class="sc-dNLxif pltZG"
   >
     <div
-      class="sc-dNLxif kioCvL"
+      class="sc-jqCOkK jvFkCU"
     >
       <div
-        class="sc-jqCOkK deIspb"
+        class="sc-uJMKN ejniWf"
       >
         <div
-          class="sc-htoDjs jofOpB"
+          class="sc-dnqmqq dmfJkW"
         >
           <div
-            class="sc-dnqmqq hqSuVt"
+            class="sc-iwsKbI BblwC"
           >
             <div
-              class="sc-iwsKbI dlotpe"
+              class="sc-gZMcBi hrCtrc"
             >
               <a
-                class="sc-VigVT gYjXev"
+                class="sc-jTzLTM fGARAL"
                 href="/"
               >
                 SHIFT
               </a>
               <div
-                class="sc-fjdhpX dihIbi"
+                class="sc-jzJRlG gEBvef"
               >
                 <a
-                  class="sc-jzJRlG ixPgTR"
+                  class="sc-cSHVUG bQpHgl"
                   href="/about"
                 >
                   About the tool
                 </a>
                 <a
-                  class="sc-jzJRlG ixPgTR"
+                  class="sc-cSHVUG bQpHgl"
                   href="/descriptions"
                 >
                   Descriptions of scenarios
                 </a>
                 <a
-                  class="sc-jzJRlG ixPgTR"
+                  class="sc-cSHVUG bQpHgl"
                   href="/preconditions"
                 >
                   Preconditions
                 </a>
                 <a
-                  class="sc-jzJRlG ixPgTR"
+                  class="sc-cSHVUG bQpHgl"
                   href="/subscribe"
                 >
                   Subscribe to updates
@@ -56,20 +56,20 @@ exports[`should render correctly 1`] = `
               </div>
             </div>
             <div
-              class="sc-gZMcBi hugnTh"
+              class="sc-gqjmRU jJmbTH"
             >
               <img
                 alt="logo"
-                class="sc-gqjmRU kIZIOL"
+                class="sc-VigVT cCumIa"
                 src="./images/dtulogo_white.png"
               />
             </div>
           </div>
           <hr
-            class="sc-jTzLTM eBQVTV"
+            class="sc-fjdhpX bpLxdE"
           />
           <div
-            class="sc-cSHVUG bybmNH"
+            class="sc-kAzzGY nnhTZ"
           >
             <div
               class="sc-bdVaJa erSRMf"
@@ -109,10 +109,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-jTzLTM eBQVTV"
+            class="sc-fjdhpX bpLxdE"
           />
           <div
-            class="sc-kAzzGY eDctbu"
+            class="sc-chPdSV cEPpDx"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -126,13 +126,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-chPdSV hEZGsH"
+              class="sc-kgoBCf gqMQpV"
             >
               CCS
             </div>
           </div>
           <div
-            class="sc-kAzzGY eDctbu"
+            class="sc-chPdSV cEPpDx"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -146,13 +146,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-chPdSV hEZGsH"
+              class="sc-kgoBCf gqMQpV"
             >
               Switch 1
             </div>
           </div>
           <div
-            class="sc-kAzzGY eDctbu"
+            class="sc-chPdSV cEPpDx"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -166,13 +166,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-chPdSV hEZGsH"
+              class="sc-kgoBCf gqMQpV"
             >
               Switch 2
             </div>
           </div>
           <div
-            class="sc-kAzzGY eDctbu"
+            class="sc-chPdSV cEPpDx"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -186,16 +186,16 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-chPdSV hEZGsH"
+              class="sc-kgoBCf gqMQpV"
             >
               Switch 3
             </div>
           </div>
           <hr
-            class="sc-jTzLTM eBQVTV"
+            class="sc-fjdhpX bpLxdE"
           />
           <div
-            class="sc-kAzzGY eDctbu"
+            class="sc-chPdSV cEPpDx"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -209,27 +209,37 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-chPdSV gAKhzr"
+              class="sc-kgoBCf jOjcwk"
             >
               Scenario difference
             </div>
           </div>
           <div
-            class="sc-kgoBCf lnKAjo"
+            class="sc-kGXeez vWbLO"
           >
             (green minus red)
           </div>
           <hr
-            class="sc-jTzLTM eBQVTV"
+            class="sc-fjdhpX bpLxdE"
           />
           <div
-            class="sc-kGXeez cJjYUn"
+            class="sc-htoDjs knfRxB"
+          >
+            <svg>
+              europe.svg
+            </svg>
+          </div>
+          <hr
+            class="sc-fjdhpX bpLxdE"
+          />
+          <div
+            class="sc-kpOJdX bhTErL"
           >
             <div
-              class="sc-kpOJdX fEcela"
+              class="sc-dxgOiQ bucUsQ"
             >
               <a
-                class="sc-dxgOiQ fWpEPm"
+                class="sc-ckVGcZ fVRzlZ"
                 href="http://www.tokni.com"
               >
                 Developed by Tokni
@@ -238,39 +248,39 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-ckVGcZ ktdxLt"
+          class="sc-jKJlTe gdwYmG"
         >
           <div
-            class="sc-eNQAEJ hJaTUO"
+            class="sc-hMqMXs iUxuCD"
           >
             <img
               alt="logo"
-              class="sc-jKJlTe hyNJgo"
+              class="sc-eNQAEJ bYUtWK"
               src="./images/dtulogo_white.png"
             />
             <div
-              class="sc-kEYyzF jeZPim"
+              class="sc-kkGfuU dUTbQn"
             >
               <a
-                class="sc-kkGfuU egOWIJ"
+                class="sc-iAyFgw cojSpE"
                 href="/about"
               >
                 About
               </a>
               <a
-                class="sc-kkGfuU egOWIJ"
+                class="sc-iAyFgw cojSpE"
                 href="/descriptions"
               >
                 Description
               </a>
               <a
-                class="sc-kkGfuU egOWIJ"
+                class="sc-iAyFgw cojSpE"
                 href="/preconditions"
               >
                 Precond.
               </a>
               <a
-                class="sc-kkGfuU egOWIJ"
+                class="sc-iAyFgw cojSpE"
                 href="/subscribe"
               >
                 Subscribe
@@ -278,10 +288,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-hMqMXs ViLCD"
+            class="sc-kEYyzF lLBqv"
           />
           <div
-            class="sc-iAyFgw gPDhun"
+            class="sc-hSdWYo hnVnmz"
           >
             <div
               class="sc-bdVaJa erSRMf"
@@ -321,10 +331,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-hMqMXs ViLCD"
+            class="sc-kEYyzF lLBqv"
           />
           <div
-            class="sc-hSdWYo jSOGuA"
+            class="sc-eHgmQL jTRUFG"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -338,13 +348,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-eHgmQL gZovTX"
+              class="sc-cvbbAY dxcdfd"
             >
               CCS
             </div>
           </div>
           <div
-            class="sc-hSdWYo jSOGuA"
+            class="sc-eHgmQL jTRUFG"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -358,13 +368,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-eHgmQL gZovTX"
+              class="sc-cvbbAY dxcdfd"
             >
               Switch 1
             </div>
           </div>
           <div
-            class="sc-hSdWYo jSOGuA"
+            class="sc-eHgmQL jTRUFG"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -378,13 +388,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-eHgmQL gZovTX"
+              class="sc-cvbbAY dxcdfd"
             >
               Switch 2
             </div>
           </div>
           <div
-            class="sc-hSdWYo jSOGuA"
+            class="sc-eHgmQL jTRUFG"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -398,13 +408,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-eHgmQL gZovTX"
+              class="sc-cvbbAY dxcdfd"
             >
               Switch 3
             </div>
           </div>
           <div
-            class="sc-hSdWYo jSOGuA"
+            class="sc-eHgmQL jTRUFG"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -418,24 +428,24 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-eHgmQL gNzVLZ"
+              class="sc-cvbbAY mJlvR"
             >
               Scenario difference
             </div>
           </div>
           <div
-            class="sc-jWBwVP inHXoN"
+            class="sc-brqgnP dWIsTX"
           >
             (green minus red)
           </div>
           <hr
-            class="sc-hMqMXs ViLCD"
+            class="sc-kEYyzF lLBqv"
           />
           <div
-            class="sc-hSdWYo jSOGuA"
+            class="sc-eHgmQL jTRUFG"
           >
             <div
-              class="sc-cvbbAY fIXcRO"
+              class="sc-jWBwVP ezCpHZ"
             >
               Danish
             </div>
@@ -452,19 +462,19 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cvbbAY eGNcEq"
+              class="sc-jWBwVP fiugjA"
             >
               English
             </div>
           </div>
           <div
-            class="sc-brqgnP gnAaXk"
+            class="sc-cMljjf jcDXLk"
           >
             <div
-              class="sc-cMljjf dkHVDp"
+              class="sc-jAaTju kxrxNi"
             >
               <a
-                class="sc-jAaTju gvHfqC"
+                class="sc-jDwBTQ gQDQSf"
                 href="http://www.tokni.com"
               >
                 Developed by Tokni
@@ -475,108 +485,108 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-dNLxif kioCvL"
+      class="sc-jqCOkK jvFkCU"
     >
       <div
-        class="sc-jqCOkK deIspb"
+        class="sc-uJMKN ejniWf"
       >
         <div
-          class="sc-jDwBTQ eAcYUk"
+          class="sc-gPEVay hhTqci"
         >
           <a
-            class="sc-gPEVay gMMHgW"
+            class="sc-iRbamj jKzfiN"
             href="/"
           >
             Overview
           </a>
           <a
-            class="sc-gPEVay focZHD"
+            class="sc-iRbamj bJNrlR"
             href="/tab2"
           >
             Main results
           </a>
           <a
-            class="sc-gPEVay focZHD"
+            class="sc-iRbamj bJNrlR"
             href="/tab3"
           >
             Supply sector
           </a>
           <a
-            class="sc-gPEVay focZHD"
+            class="sc-iRbamj bJNrlR"
             href="/tab4"
           >
             Transport sector
           </a>
           <a
-            class="sc-gPEVay focZHD"
+            class="sc-iRbamj bJNrlR"
             href="/tab5"
           >
             Industry
           </a>
           <a
-            class="sc-gPEVay focZHD"
+            class="sc-iRbamj bJNrlR"
             href="/tab6"
           >
             Households
           </a>
         </div>
         <div
-          class="sc-iRbamj kWhBWQ"
+          class="sc-jlyJG jXcwpR"
         >
           <a
-            class="sc-jlyJG jCGDfd"
+            class="sc-gipzik dWrkMw"
             href="/"
           >
             Overview
           </a>
           <a
-            class="sc-jlyJG dJGPnb"
+            class="sc-gipzik laWIvr"
             href="/tab2"
           >
             Results
           </a>
           <a
-            class="sc-jlyJG dJGPnb"
+            class="sc-gipzik laWIvr"
             href="/tab3"
           >
             Supply
           </a>
           <a
-            class="sc-jlyJG dJGPnb"
+            class="sc-gipzik laWIvr"
             href="/tab4"
           >
             Transport
           </a>
           <a
-            class="sc-jlyJG dJGPnb"
+            class="sc-gipzik laWIvr"
             href="/tab5"
           >
             Industry
           </a>
           <a
-            class="sc-jlyJG dJGPnb"
+            class="sc-gipzik laWIvr"
             href="/tab6"
           >
             Households
           </a>
         </div>
         <div
-          class="sc-fMiknA faHkhO"
+          class="sc-dVhcbM civynI"
         >
           <div
-            class="sc-gipzik dWJjOK"
+            class="sc-csuQGl esgcHv"
           >
             <div
-              class="sc-csuQGl hBugRj"
+              class="sc-Rmtcm jUItFr"
             >
               <p
-                class="sc-Rmtcm gwGgYM"
+                class="sc-bRBYWo ccSRck"
               >
                 Welcome text
               </p>
             </div>
             <div
-              class="sc-bRBYWo bBUwtS"
+              class="sc-hzDkRC ktKPqk"
             >
               <span
                 class="octicon octicon-x"
@@ -584,7 +594,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-dVhcbM gzGePL"
+            class="sc-eqIVtm fnSkIv"
           >
             <div>
               <div
@@ -600,7 +610,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-jhAzac ckZqLA"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -2806,7 +2816,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-jhAzac ckZqLA"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -4076,7 +4086,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-fBuWsC jjiNoL"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -4712,7 +4722,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-jhAzac ckZqLA"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -8598,7 +8608,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-jhAzac ckZqLA"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -9308,7 +9318,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-jhAzac ckZqLA"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -10298,7 +10308,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-jhAzac ckZqLA"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -11008,7 +11018,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-jhAzac ckZqLA"
                     dx="0"
                     dy="4.97"
                     x="90"
