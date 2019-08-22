@@ -224,43 +224,6 @@ function ScenarioSelectionMenu(props) {
         />
       </ScenarioSelection>
       <MenuSeparatorLine />
-      <ToggleDifference onClick={e => props.toggleShowCCS(e)}>
-        <ToggleSwitch
-          dimmed={false}
-          checked={props.scenarioSelection.showCCS}
-        />
-        <ToggleSwitchText selected={props.scenarioSelection.showCCS}>
-          {t("general.CCS")}
-        </ToggleSwitchText>
-      </ToggleDifference>
-      <ToggleDifference onClick={e => props.toggleShowOpt1(e)}>
-        <ToggleSwitch
-          dimmed={false}
-          checked={props.scenarioSelection.showOpt1}
-        />
-        <ToggleSwitchText selected={props.scenarioSelection.showOpt1}>
-          {t("general.opt1")}
-        </ToggleSwitchText>
-      </ToggleDifference>
-      <ToggleDifference onClick={e => props.toggleShowOpt2(e)}>
-        <ToggleSwitch
-          dimmed={false}
-          checked={props.scenarioSelection.showOpt2}
-        />
-        <ToggleSwitchText selected={props.scenarioSelection.showOpt2}>
-          {t("general.opt2")}
-        </ToggleSwitchText>
-      </ToggleDifference>
-      <ToggleDifference onClick={e => props.toggleShowOpt3(e)}>
-        <ToggleSwitch
-          dimmed={false}
-          checked={props.scenarioSelection.showOpt3}
-        />
-        <ToggleSwitchText selected={props.scenarioSelection.showOpt3}>
-          {t("general.opt3")}
-        </ToggleSwitchText>
-      </ToggleDifference>
-      <MenuSeparatorLine />
       <ToggleDifference onClick={e => props.toggleDifference(e)}>
         <ToggleSwitch
           dimmed={props.scenarioSelection.scenarioSelection2 === ""}

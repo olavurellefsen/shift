@@ -87,13 +87,13 @@ export class App extends React.Component {
   UpdateScenarioNames = () => {
     this.setState((state) => {
       return {
-      "scenarioSelection": state.scenarioSelectionNoOptions + (state.showCCS ? "_CCS": "")  + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
+      "scenarioSelection": state.scenarioSelectionNoOptions + (state.options[state.scenarioSelectionNoOptions].ccs ? "_CCS": "")  + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
       }
     })
     this.setState((state) => {
       return {
       "scenarioSelection2": state.scenarioSelectionNoOptions2 !== "" ? 
-      state.scenarioSelectionNoOptions2 + (state.showCCS ? "_CCS": "") + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
+      state.scenarioSelectionNoOptions2 + (state.options[state.scenarioSelectionNoOptions2].ccs ? "_CCS": "") + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
        : ""
       }
     })
