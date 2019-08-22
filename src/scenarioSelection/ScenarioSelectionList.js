@@ -6,8 +6,12 @@ import {
   ScenarioDivider,
   ScenarioHeader,
   ScenarioOption,
-  MenuSeparatorLine
+  MenuSeparatorLine,
+  IconContainer,
+  Icon
 } from "./ScenarioSelectionList.style";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLeaf, faDatabase, faBolt, faBatteryFull} from '@fortawesome/free-solid-svg-icons'
 
 const ScenarioSelectionList = props => {
   const { t } = useTranslation();
@@ -36,6 +40,12 @@ const ScenarioSelectionList = props => {
           >
             {narrowVersion === false && t("scenario."+option.short_description)}
             {narrowVersion === true && t("scenario."+option.ultra_short_description)}
+            <IconContainer>
+              <Icon><FontAwesomeIcon icon={faDatabase}/></Icon>
+              <Icon><FontAwesomeIcon icon={faLeaf}/></Icon>
+              <Icon><FontAwesomeIcon icon={faBolt}/></Icon>
+              <Icon><FontAwesomeIcon icon={faBatteryFull}/></Icon>
+            </IconContainer>
           </ScenarioOption>
         );
       }
