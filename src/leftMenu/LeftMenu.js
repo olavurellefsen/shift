@@ -215,10 +215,6 @@ function ScenarioSelectionMenu(props) {
           dimensionOptions={props.scenarioCombinations.scenarioOptions}
           dimensionTitle={t("general.scenarios")}
           narrowVersion={false}
-          showCCS={props.scenarioSelection.showCCS}
-          showOpt1={props.scenarioSelection.showOpt1}
-          showOpt2={props.scenarioSelection.showOpt2}
-          showOpt3={props.scenarioSelection.showOpt3}
           options={props.options}
           toggleOption={props.toggleOption}
         />
@@ -270,10 +266,6 @@ ScenarioSelectionMenu.propTypes = {
   scenarioSelection: PropTypes.object.isRequired,
   scenarioCombinations: PropTypes.object.isRequired,
   toggleDifference: PropTypes.func.isRequired,
-  toggleShowCCS: PropTypes.func.isRequired,
-  toggleShowOpt1: PropTypes.func.isRequired,
-  toggleShowOpt2: PropTypes.func.isRequired,
-  toggleShowOpt3: PropTypes.func.isRequired,
   options: PropTypes.any.isRequired,
   toggleOption: PropTypes.func.isRequired
 };

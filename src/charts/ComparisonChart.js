@@ -27,9 +27,10 @@ const StackedBarChart = props => {
   const { t } = useTranslation();
   const stackedBar = props.stackedBar;
   const chartName = props.chartName;
+  const options = props.options;
   const chartTitle = t("chartTitle." + props.chartTitle);
   const scenarios = scenarioCombinations.scenarioCombinations.scenarioOptions
-    .filter(o => o.ccs === props.showCCS && o.opt1 === props.showOpt1 && o.opt2 === props.showOpt2 && o.opt3 === props.showOpt3)
+    .filter(o => o.ccs === options[o.nameNoOptions].ccs && o.opt1 === options[o.nameNoOptions].opt1 && o.opt2 === options[o.nameNoOptions].opt2 && o.opt3 === options[o.nameNoOptions].opt3)
     .map(scenario => scenario.name);
 
     const chartValues0 = stackedBar.data.scenarios
@@ -104,10 +105,6 @@ StackedBarChart.defaultProps = {
 };
 
 StackedBarChart.propTypes = {
-  showCCS: PropTypes.bool,
-  showOpt1: PropTypes.bool,
-  showOpt2: PropTypes.bool,
-  showOpt3: PropTypes.bool,
   stackedBar: PropTypes.object,
   line: PropTypes.object,
   selectedScenario: PropTypes.string.isRequired,
@@ -123,7 +120,8 @@ StackedBarChart.propTypes = {
   divideValues: PropTypes.number,
   label2: PropTypes.string,
   YPercentage: PropTypes.bool,
-  Y2Percentage: PropTypes.bool
+  Y2Percentage: PropTypes.bool,
+  options: PropTypes.any.isRequired
 };
 
 export default StackedBarChart;
