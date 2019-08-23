@@ -14,6 +14,14 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLeaf, faDatabase, faBolt, faBatteryFull} from '@fortawesome/free-solid-svg-icons'
 
+function cancelBubble(e){
+  //Stop propagation to the underlying div
+  //(used to prevent onclick for scenario being fired when clicking on an option)
+  e.cancelBubble = true;
+  if(e.stopPropagation)
+   e.stopPropagation();
+}
+
 const ScenarioSelectionList = props => {
   const { t } = useTranslation();
   const handleChange = (event, value) => {
@@ -37,9 +45,9 @@ const ScenarioSelectionList = props => {
             selected={optionValue === stringValue}
             selected2={optionValue === stringValue2}
             narrowVersion={narrowVersion}
+            onClick={event => {handleChange(event, optionValue)}}
           >
             <ScenarioNameContainer
-              onClick={event => handleChange(event, optionValue)}
             >
               {narrowVersion === false && t("scenario."+option.short_description)}
               {narrowVersion === true && t("scenario."+option.ultra_short_description)}
@@ -47,7 +55,8 @@ const ScenarioSelectionList = props => {
             <IconContainer>
               <Icon 
                 onClick={event => {
-                  props.toggleOption(optionValue, 'ccs')
+                  props.toggleOption(optionValue, 'ccs');
+                  cancelBubble(event)//prevent onclick for scenario being fired
                 }} 
                 selected={scenarioSwitches[optionValue].ccs}
               >
@@ -55,21 +64,24 @@ const ScenarioSelectionList = props => {
               </Icon>
               <Icon 
                 onClick={event => {
-                  props.toggleOption(optionValue, 'opt1')
+                  props.toggleOption(optionValue, 'opt1');
+                  cancelBubble(event)//prevent onclick for scenario being fired
                 }} 
                  selected={scenarioSwitches[optionValue].opt1}>
                 <FontAwesomeIcon icon={faLeaf}/>
               </Icon>
               <Icon 
                 onClick={event => {
-                  props.toggleOption(optionValue, 'opt2')
+                  props.toggleOption(optionValue, 'opt2');
+                  cancelBubble(event)//prevent onclick for scenario being fired
                 }} 
                 selected={scenarioSwitches[optionValue].opt2}>
                 <FontAwesomeIcon icon={faBolt}/>
               </Icon>
               <Icon 
                 onClick={event => {
-                  props.toggleOption(optionValue, 'opt3')
+                  props.toggleOption(optionValue, 'opt3');
+                  cancelBubble(event)//prevent onclick for scenario being fired
                 }} 
                 selected={scenarioSwitches[optionValue].opt3}>
                 <FontAwesomeIcon icon={faBatteryFull}/>
