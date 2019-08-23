@@ -57,8 +57,10 @@ export const Icon = styled.div`
   align-items: center;
   padding-left: 5px;
   &:hover {
-    cursor: pointer;
-    color: black;
+    cursor: ${props =>
+    props.available ? "pointer" :  "default"};
+    color: ${props =>
+    props.available ? "black" :  "default"};;
   }
   color: ${props =>
     props.selected ? "blue" :  "rgb(184,176,183)"};

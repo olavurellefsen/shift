@@ -180,7 +180,7 @@ function ScenarioSelectionMenu(props) {
             name="scenarioSelection"
             selectedValue={props.scenarioSelection.scenarioSelectionNoOptions}
             selectedValue2={props.scenarioSelection.scenarioSelectionNoOptions2}
-            dimensionOptions={props.scenarioCombinations.scenarioOptions}
+            scenarioCombinations={props.scenarioCombinations}
             dimensionTitle={t("general.scenarios")}
             narrowVersion={true}
             options={props.options}
