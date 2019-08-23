@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useTranslation } from "react-i18next";
+import ReactTooltip from 'react-tooltip'
 import {
   ScenarioList,
   ScenarioDivider,
@@ -58,6 +59,7 @@ const ScenarioSelectionList = props => {
                   props.toggleOption(optionValue, 'ccs');
                   cancelBubble(event)//prevent onclick for scenario being fired
                 }} 
+                data-tip={t("options.ccs")}
                 selected={scenarioSwitches[optionValue].ccs}
               >
                 <FontAwesomeIcon icon={faDatabase}/>
@@ -67,6 +69,7 @@ const ScenarioSelectionList = props => {
                   props.toggleOption(optionValue, 'opt1');
                   cancelBubble(event)//prevent onclick for scenario being fired
                 }} 
+                data-tip={t("options.opt1")}
                  selected={scenarioSwitches[optionValue].opt1}>
                 <FontAwesomeIcon icon={faLeaf}/>
               </Icon>
@@ -75,6 +78,7 @@ const ScenarioSelectionList = props => {
                   props.toggleOption(optionValue, 'opt2');
                   cancelBubble(event)//prevent onclick for scenario being fired
                 }} 
+                data-tip={t("options.opt2")}
                 selected={scenarioSwitches[optionValue].opt2}>
                 <FontAwesomeIcon icon={faBolt}/>
               </Icon>
@@ -83,9 +87,11 @@ const ScenarioSelectionList = props => {
                   props.toggleOption(optionValue, 'opt3');
                   cancelBubble(event)//prevent onclick for scenario being fired
                 }} 
+                data-tip={t("options.opt3")}
                 selected={scenarioSwitches[optionValue].opt3}>
                 <FontAwesomeIcon icon={faBatteryFull}/>
               </Icon>
+              <ReactTooltip place="top" type="dark" effect="solid"/>
             </IconContainer>
           </ScenarioOption>
         );
