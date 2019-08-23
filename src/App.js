@@ -48,7 +48,7 @@ export const changeScenario = (name, value) => ({
   [name]: value
 });
 
-const default_scenario = "Frozen_policy_INT";
+const default_scenario = "Reference";
 
 export class App extends React.Component {
   constructor(props) {
