@@ -56,7 +56,7 @@ const ScenarioSelectionList = props => {
               <Icon 
                 available={scenarioCombinations.optionsAvailable[optionValue].ccs}
                 onClick={event => {
-                  if (scenarioCombinations.optionsAvailable[optionValue].opt1) {
+                  if (scenarioCombinations.optionsAvailable[optionValue].ccs) {
                     props.toggleOption(optionValue, 'ccs');
                   }
                   cancelBubble(event)//prevent onclick for scenario being fired

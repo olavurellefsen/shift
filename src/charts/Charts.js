@@ -178,6 +178,7 @@ const Charts = props => {
               Y2Percentage={false}
               stackedBar={stackedBar}
               line={line}
+            options={options}
             />
             <StackedBarDiffChart
               chartName="_Energi forbrug i Danmark"
