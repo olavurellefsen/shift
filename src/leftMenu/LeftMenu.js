@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import ScenarioSelectionList from "../scenarioSelection/ScenarioSelectionList";
 import ToggleSwitch from "./ToggleSwitch";
 import { useTranslation } from "react-i18next";
+import MapContainer from '../map/MapContainer'
 
 const MenuLayout = styled.div`
   display: none;
@@ -157,6 +158,7 @@ const ExternalLink = styled.a`
   }
 `;
 
+
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
 
@@ -249,6 +251,8 @@ function ScenarioSelectionMenu(props) {
         </ToggleLanguageText>
       </ToggleDifference> */}
       <MenuSeparatorLine />
+      <MapContainer selectedCountries={props.selectedCountries} selectCountry={props.selectCountry}/>
+      <MenuSeparatorLine />
       <MenuFooter>
         <CopyrightNotice>
           <ExternalLink href="http://www.tokni.com">
@@ -267,7 +271,9 @@ ScenarioSelectionMenu.propTypes = {
   scenarioCombinations: PropTypes.object.isRequired,
   toggleDifference: PropTypes.func.isRequired,
   options: PropTypes.any.isRequired,
-  toggleOption: PropTypes.func.isRequired
+  toggleOption: PropTypes.func.isRequired,
+  selectedCountries: PropTypes.array.isRequired,
+  selectCountry: PropTypes.func.isRequired
 };
 
 export default ScenarioSelectionMenu;

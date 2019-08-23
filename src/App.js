@@ -72,6 +72,7 @@ export class App extends React.Component {
       options: options,
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: "",
+      selectedCountries: ['no']
     };
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations;
   }
@@ -143,6 +144,17 @@ export class App extends React.Component {
     this.UpdateScenarioNames();
   };
 
+  selectCountry = (country) => {
+    let newSelectedCountries = this.state.selectedCountries
+    if (newSelectedCountries.includes(country)) {
+      newSelectedCountries = newSelectedCountries.filter(c => c !== country)
+    } else {
+      newSelectedCountries.push(country)
+    }
+    this.setState({
+      selectedCountries: newSelectedCountries
+    })
+  }
   render() {
     return (
       <Page>
@@ -156,6 +168,8 @@ export class App extends React.Component {
               toggleDifference={this.ToggleDifference}
               options={this.state.options}
               toggleOption={this.ToggleOption}
+              selectedCountries={this.state.selectedCountries}
+              selectCountry={this.selectCountry}
             />
             <LeftMenuMobile
               selectedChartgroup={this.state.scenarioSelection}
@@ -165,6 +179,8 @@ export class App extends React.Component {
               toggleDifference={this.ToggleDifference}
               options={this.state.options}
               toggleOption={this.ToggleOption}
+              selectedCountries={this.state.selectedCountries}
+              selectCountry={this.selecCountry}
             />
           </Content>
         </Column>
