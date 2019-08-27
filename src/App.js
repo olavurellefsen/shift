@@ -256,7 +256,16 @@ export class App extends React.Component {
                   />
                 )}
               />
-              <Route path="/about" component={About} />
+              <Route path="/about" 
+              render={() => {
+                  return (
+                    <PageRenderer
+                      markdownFiles={[
+                        "descriptions/about.md",
+                      ]}
+                    />
+                  );
+                }} />
               <Route
                 path="/beskrivelser"
                 render={() => {
