@@ -13,7 +13,6 @@ import ChartsTab3 from "./charts/ChartsTab3";
 import ChartsTab4 from "./charts/ChartsTab4";
 import ChartsTab5 from "./charts/ChartsTab5";
 import ChartsTab6 from "./charts/ChartsTab6";
-import About from "./pages/About";
 import PageRenderer from "./pages/PageRenderer";
 import Prerequisites from "./pages/Prerequisites";
 import scenarioCombinations from "./data/scenarioCombinations";
