@@ -51,8 +51,8 @@ export const AppLogo = styled.img`
 `;
 
 export const PartnerLogo = styled.img`
-  width: 250px;
-  height: 70px;
+  width: 180px;
+  padding: 20px;
   margin-left: 5px;
   border: 0;
 `;
@@ -138,16 +138,14 @@ export const ScenarioDifferenceText = styled.div`
 export const MenuFooter = styled.div`
   padding: 15px 12px 5px 15px;
   margin: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
 export const CopyrightNotice = styled.div`
-  padding: 0 12px 5px 15px;
+  padding: 40px 12px 5px 15px;
   margin: 0;
-  width: 100%;
   height: 26px;
 `;
 

@@ -23,7 +23,7 @@ exports[`should render correctly 1`] = `
               <img
                 alt="logo"
                 class="sc-VigVT jeJcSD"
-                src="./images/shift_logo.png"
+                src="./images/shift_logo_white.png"
               />
               <div
                 class="sc-cSHVUG bOgbCJ"
@@ -223,15 +223,15 @@ exports[`should render correctly 1`] = `
             class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-dxgOiQ fSQKZw"
+            class="sc-dxgOiQ guZSpe"
           >
             <img
               alt="logo"
-              class="sc-jTzLTM cSiyBe"
-              src="./images/nordic_energy_research.png"
+              class="sc-jTzLTM GmlEG"
+              src="./images/nordic_energy_research_cropped.png"
             />
             <div
-              class="sc-ckVGcZ emDZZy"
+              class="sc-ckVGcZ fwQCyJ"
             >
               <a
                 class="sc-jKJlTe jsOtGW"
@@ -251,7 +251,7 @@ exports[`should render correctly 1`] = `
             <img
               alt="logo"
               class="sc-hMqMXs cNCIga"
-              src="./images/shift_logo.png"
+              src="./images/shift_logo_white.png"
             />
             <div
               class="sc-hSdWYo iKXSKU"
@@ -434,12 +434,12 @@ exports[`should render correctly 1`] = `
             (green minus red)
           </div>
           <div
-            class="sc-jDwBTQ kMiioo"
+            class="sc-jDwBTQ fsAVFV"
           >
             <img
               alt="logo"
-              class="sc-kEYyzF feuLIj"
-              src="./images/nordic_energy_research.png"
+              class="sc-kEYyzF cQOclW"
+              src="./images/nordic_energy_research_cropped.png"
             />
             <div
               class="sc-gPEVay CWZqG"

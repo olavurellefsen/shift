@@ -28,7 +28,7 @@ function ScenarioSelectionMenu(props) {
       <MenuHeader>
         <MenuHeaderLeft>
           
-        <AppLogo src="./images/shift_logo.png" alt="logo" />
+        <AppLogo src="./images/shift_logo_white.png" alt="logo" />
           <MenuRoutes>
             <MenuItem
               to="/about"
@@ -142,9 +142,8 @@ function ScenarioSelectionMenu(props) {
       <MenuSeparatorLine />
       <MapContainer selectedCountries={props.selectedCountries} selectCountry={props.selectCountry}/>
       <MenuSeparatorLine />
-      <MenuFooter>
-      
-        <PartnerLogo src="./images/nordic_energy_research.png" alt="logo" />
+      <MenuFooter>      
+        <PartnerLogo src="./images/nordic_energy_research_cropped.png" alt="logo" />
         <CopyrightNotice>
           <ExternalLink href="http://www.tokni.com">
           {t("general.developed-by-Tokni")}

@@ -24,9 +24,8 @@ export const AppLogo = styled.img`
 `;
 
 export const PartnerLogo = styled.img`
-  width: 100px;
-  height: 35px;
-  margin-left: 5px;
+  width: 70px;
+  padding: 15px 0px 15px 0px;
   border: 0;
 `;
 
@@ -110,7 +109,6 @@ export const ScenarioDifferenceText = styled.div`
 export const MenuFooter = styled.div`
   padding: 5px;
   margin: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
