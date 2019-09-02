@@ -22,8 +22,7 @@ const MenuLayout = styled.div`
 `;
 
 const AppLogo = styled.img`
-  width: 45px;
-  height: 67px;
+  width: 80px;
   margin: 5px;
   border: 0;
 `;
@@ -145,7 +144,7 @@ function ScenarioSelectionMenu(props) {
     return (
       <MenuLayout>
         <MenuHeader>
-          <AppLogo src="./images/dtulogo_white.png" alt="logo" />
+          <AppLogo src="./images/shift_logo_white.png" alt="logo" />
           <MenuRoutes>
             <MenuItem
               to="/about"
