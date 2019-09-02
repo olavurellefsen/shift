@@ -14,6 +14,13 @@
       "subscribe": "Subscribe to updates"
     }
   },
+  "options": {
+    "ccs": "Short description of ccs",
+    "opt1": "Short description of opt1",
+    "opt2": "Short description of opt2",
+    "opt3": "Short description of opt3",
+    "unavailable": "(unavailable)"
+  },
   "general": {
     "scenarios": "Scenarios",
     "CCS": "CCS",

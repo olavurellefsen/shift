@@ -48,7 +48,18 @@ export const changeScenario = (name, value) => ({
 });
 
 const default_scenario = "Frozen_policy_INT";
-
+const options = []
+scenarioCombinations.scenarioCombinations.scenarioOptions
+.filter( s => !s.ccs && !s.opt1 && !s.opt2 && !s.opt3)
+.forEach(s => {
+  options[s.nameNoOptions] = {}
+  options[s.nameNoOptions]['ccs'] = false
+  options[s.nameNoOptions]['opt1'] = false
+  options[s.nameNoOptions]['opt2'] = false
+  options[s.nameNoOptions]['opt3'] = false
+  }
+)
+ 
 export class App extends React.Component {
   constructor(props) {
     super(props);
@@ -57,10 +68,7 @@ export class App extends React.Component {
       scenarioSelection2: "",
       showWelcome: true,
       showDifference: false,
-      showCCS: false,
-      showOpt1: false,
-      showOpt2: false,
-      showOpt3: false,
+      options: options,
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: "",
       selectedCountries: ['no']
@@ -75,13 +83,21 @@ export class App extends React.Component {
   UpdateScenarioNames = () => {
     this.setState((state) => {
       return {
-      "scenarioSelection": state.scenarioSelectionNoOptions + (state.showCCS ? "_CCS": "")  + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
+      "scenarioSelection": state.scenarioSelectionNoOptions 
+      + (state.options[state.scenarioSelectionNoOptions].ccs ? "_CCS": "")  
+      + (false ? "_opt1" : "") 
+      + (false ? "_opt2" : "") 
+      + (false ? "_opt3" : "")
       }
     })
     this.setState((state) => {
       return {
       "scenarioSelection2": state.scenarioSelectionNoOptions2 !== "" ? 
-      state.scenarioSelectionNoOptions2 + (state.showCCS ? "_CCS": "") + (state.showOpt1 ? "_opt1" : "") + (state.showOpt2 ? "_opt2" : "") + (state.showOpt3 ? "_opt3" : "")
+      state.scenarioSelectionNoOptions2 
+      + (state.options[state.scenarioSelectionNoOptions2].ccs ? "_CCS": "") 
+      + (false ? "_opt1" : "") 
+      + (false ? "_opt2" : "") 
+      + (false ? "_opt3" : "")
        : ""
       }
     })
@@ -118,38 +134,15 @@ export class App extends React.Component {
     this.setState({ showDifference: !this.state.showDifference });
   };
 
-  ToggleShowCCS = e => {
-    e.preventDefault();
+  ToggleOption = (scenario, option) => {
+    let newOptions = this.state.options
+    newOptions[scenario][option] = !this.state.options[scenario][option] 
     this.setState({
-      showCCS: !this.state.showCCS
+      options: newOptions
     });
     this.UpdateScenarioNames();
   };
 
-  ToggleShowOpt1 = e => {
-    e.preventDefault();
-    /*this.setState({
-      showOpt1: !this.state.showOpt1
-    });
-    this.UpdateScenarioNames();*/
-  };
-
-  ToggleShowOpt2 = e => {
-    e.preventDefault();
-    /*this.setState({
-      showOpt2: !this.state.showOpt2
-    });
-    this.UpdateScenarioNames();*/
-  };
-
-  ToggleShowOpt3 = e => {
-    e.preventDefault();
-    /*this.setState({
-      showOpt3: !this.state.showOpt3
-    });
-    this.UpdateScenarioNames();*/
-  };
-  
   selectCountry = (country) => {
     let newSelectedCountries = this.state.selectedCountries
     if (newSelectedCountries.includes(country)) {
@@ -161,7 +154,6 @@ export class App extends React.Component {
       selectedCountries: newSelectedCountries
     })
   }
-
   render() {
     return (
       <Page>
@@ -173,10 +165,8 @@ export class App extends React.Component {
               scenarioCombinations={this.scenarioCombinations}
               updateScenarioSelection={this.UpdateScenarioSelection}
               toggleDifference={this.ToggleDifference}
-              toggleShowCCS={this.ToggleShowCCS}
-              toggleShowOpt1={this.ToggleShowOpt1}
-              toggleShowOpt2={this.ToggleShowOpt2}
-              toggleShowOpt3={this.ToggleShowOpt3}
+              options={this.state.options}
+              toggleOption={this.ToggleOption}
               selectedCountries={this.state.selectedCountries}
               selectCountry={this.selectCountry}
             />
@@ -186,10 +176,8 @@ export class App extends React.Component {
               scenarioCombinations={this.scenarioCombinations}
               updateScenarioSelection={this.UpdateScenarioSelection}
               toggleDifference={this.ToggleDifference}
-              toggleShowCCS={this.ToggleShowCCS}
-              toggleShowOpt1={this.ToggleShowOpt1}
-              toggleShowOpt2={this.ToggleShowOpt2}
-              toggleShowOpt3={this.ToggleShowOpt2}
+              options={this.state.options}
+              toggleOption={this.ToggleOption}
               selectedCountries={this.state.selectedCountries}
               selectCountry={this.selecCountry}
             />

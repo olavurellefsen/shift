@@ -12,64 +12,54 @@ exports[`should render correctly 1`] = `
         class="sc-hqyNC eszutO"
       >
         <div
-          class="sc-dnqmqq dmfJkW"
+          class="sc-gqjmRU gIEwTt"
         >
           <div
-            class="sc-iwsKbI BblwC"
+            class="sc-VigVT ifaTjs"
           >
             <div
-              class="sc-gZMcBi hrCtrc"
+              class="sc-jTzLTM gQvNwv"
             >
-              <a
-                class="sc-jTzLTM fGARAL"
-                href="/"
-              >
-                SHIFT
-              </a>
+              <img
+                alt="logo"
+                class="sc-VigVT jeJcSD"
+                src="./images/shift_logo_white.png"
+              />
               <div
-                class="sc-jzJRlG gEBvef"
+                class="sc-cSHVUG bOgbCJ"
               >
                 <a
-                  class="sc-cSHVUG bQpHgl"
+                  class="sc-kAzzGY bARBob"
                   href="/about"
                 >
                   About SHIFT
                 </a>
                 <a
-                  class="sc-cSHVUG bQpHgl"
+                  class="sc-kAzzGY bARBob"
                   href="/descriptions"
                 >
                   Descriptions of scenarios
                 </a>
                 <a
-                  class="sc-cSHVUG bQpHgl"
+                  class="sc-kAzzGY bARBob"
                   href="/preconditions"
                 >
                   Preconditions
                 </a>
                 <a
-                  class="sc-cSHVUG bQpHgl"
+                  class="sc-kAzzGY bARBob"
                   href="/subscribe"
                 >
                   Subscribe to updates
                 </a>
               </div>
             </div>
-            <div
-              class="sc-gqjmRU jJmbTH"
-            >
-              <img
-                alt="logo"
-                class="sc-VigVT cCumIa"
-                src="./images/dtulogo_white.png"
-              />
-            </div>
           </div>
           <hr
-            class="sc-fjdhpX bpLxdE"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-kAzzGY nnhTZ"
+            class="sc-chPdSV ihCfSB"
           >
             <div
               class="sc-bdVaJa erSRMf"
@@ -83,36 +73,420 @@ exports[`should render correctly 1`] = `
                 Scenarios
               </div>
               <div
-                class="sc-bxivhb cfCnoV"
+                class="sc-bxivhb cdMxyv"
                 value="FP_NO_WIN_INT"
               >
-                Frozen policy
+                <div
+                  class="sc-ifAKCX WOpjk"
+                >
+                  Frozen policy
+                </div>
+                <div
+                  class="sc-EHOje fhxHOS"
+                >
+                  <div
+                    class="sc-bZQynM hGLnGC"
+                    currentitem="false"
+                    data-tip="Short description of ccs "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-database fa-w-14 "
+                      data-icon="database"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt1 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-leaf fa-w-18 "
+                      data-icon="leaf"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt2 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-bolt fa-w-10 "
+                      data-icon="bolt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt3 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-battery-full fa-w-20 "
+                      data-icon="battery-full"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </div>
               </div>
               <div
-                class="sc-bxivhb iMdMiF"
+                class="sc-bxivhb dYjocx"
                 value="Frozen_policy_INT"
               >
-                Reference
+                <div
+                  class="sc-ifAKCX WOpjk"
+                >
+                  Reference
+                </div>
+                <div
+                  class="sc-EHOje fhxHOS"
+                >
+                  <div
+                    class="sc-bZQynM hGLnGC"
+                    currentitem="false"
+                    data-tip="Short description of ccs "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-database fa-w-14 "
+                      data-icon="database"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt1 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-leaf fa-w-18 "
+                      data-icon="leaf"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt2 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-bolt fa-w-10 "
+                      data-icon="bolt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt3 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-battery-full fa-w-20 "
+                      data-icon="battery-full"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </div>
               </div>
               <div
-                class="sc-bxivhb cfCnoV"
+                class="sc-bxivhb cdMxyv"
                 value="DGSB_INT"
               >
-                DGSB
+                <div
+                  class="sc-ifAKCX WOpjk"
+                >
+                  DGSB
+                </div>
+                <div
+                  class="sc-EHOje fhxHOS"
+                >
+                  <div
+                    class="sc-bZQynM hGLnGC"
+                    currentitem="false"
+                    data-tip="Short description of ccs "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-database fa-w-14 "
+                      data-icon="database"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt1 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-leaf fa-w-18 "
+                      data-icon="leaf"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt2 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-bolt fa-w-10 "
+                      data-icon="bolt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt3 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-battery-full fa-w-20 "
+                      data-icon="battery-full"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </div>
               </div>
               <div
-                class="sc-bxivhb cfCnoV"
+                class="sc-bxivhb cdMxyv"
                 value="Regeringen_INT"
               >
-                The Government
+                <div
+                  class="sc-ifAKCX WOpjk"
+                >
+                  The Government
+                </div>
+                <div
+                  class="sc-EHOje fhxHOS"
+                >
+                  <div
+                    class="sc-bZQynM hGLnGC"
+                    currentitem="false"
+                    data-tip="Short description of ccs "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-database fa-w-14 "
+                      data-icon="database"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt1 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-leaf fa-w-18 "
+                      data-icon="leaf"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt2 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-bolt fa-w-10 "
+                      data-icon="bolt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt3 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-battery-full fa-w-20 "
+                      data-icon="battery-full"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <hr
-            class="sc-fjdhpX bpLxdE"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-chPdSV cEPpDx"
+            class="sc-kgoBCf byWwRs"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -126,13 +500,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-kgoBCf gqMQpV"
+              class="sc-kGXeez fEgAcW"
             >
               CCS
             </div>
           </div>
           <div
-            class="sc-chPdSV cEPpDx"
+            class="sc-kgoBCf byWwRs"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -146,13 +520,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-kgoBCf gqMQpV"
+              class="sc-kGXeez fEgAcW"
             >
               Switch 1
             </div>
           </div>
           <div
-            class="sc-chPdSV cEPpDx"
+            class="sc-kgoBCf byWwRs"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -166,13 +540,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-kgoBCf gqMQpV"
+              class="sc-kGXeez fEgAcW"
             >
               Switch 2
             </div>
           </div>
           <div
-            class="sc-chPdSV cEPpDx"
+            class="sc-kgoBCf byWwRs"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -186,60 +560,65 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-kgoBCf gqMQpV"
+              class="sc-kGXeez fEgAcW"
             >
               Switch 3
             </div>
           </div>
           <hr
-            class="sc-fjdhpX bpLxdE"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-chPdSV cEPpDx"
+            class="sc-kgoBCf byWwRs"
           >
             <label
-              class="sc-EHOje ehlzez"
+              class="sc-htoDjs fckYJd"
             >
               <input
-                class="sc-gzVnrw ebkkmM"
+                class="sc-iwsKbI kUzZMO"
                 type="checkbox"
               />
               <span
-                class="slider sc-bZQynM hqkVOt"
+                class="slider sc-dnqmqq jEuygr"
               />
             </label>
             <div
-              class="sc-kgoBCf jOjcwk"
+              class="sc-kGXeez iTVXCv"
             >
               Scenario difference
             </div>
           </div>
           <div
-            class="sc-kGXeez vWbLO"
+            class="sc-kpOJdX dlJvVT"
           >
             (green minus red)
           </div>
           <hr
-            class="sc-fjdhpX bpLxdE"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-htoDjs knfRxB"
+            class="sc-gZMcBi cYRTWn"
           >
             <svg>
               europe.svg
             </svg>
           </div>
           <hr
-            class="sc-fjdhpX bpLxdE"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-kpOJdX bhTErL"
+            class="sc-dxgOiQ guZSpe"
           >
+            <img
+              alt="logo"
+              class="sc-jTzLTM GmlEG"
+              src="./images/nordic_energy_research_cropped.png"
+            />
             <div
-              class="sc-dxgOiQ bucUsQ"
+              class="sc-ckVGcZ fwQCyJ"
             >
               <a
-                class="sc-ckVGcZ fVRzlZ"
+                class="sc-jKJlTe jsOtGW"
                 href="http://www.tokni.com"
               >
                 Developed by Tokni
@@ -248,39 +627,39 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-jKJlTe gdwYmG"
+          class="sc-eNQAEJ fgJgDc"
         >
           <div
-            class="sc-hMqMXs iUxuCD"
+            class="sc-kkGfuU hILZPB"
           >
             <img
               alt="logo"
-              class="sc-eNQAEJ bYUtWK"
-              src="./images/dtulogo_white.png"
+              class="sc-hMqMXs cNCIga"
+              src="./images/shift_logo_white.png"
             />
             <div
-              class="sc-kkGfuU dUTbQn"
+              class="sc-hSdWYo iKXSKU"
             >
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-eHgmQL hPgUJS"
                 href="/about"
               >
                 About
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-eHgmQL hPgUJS"
                 href="/descriptions"
               >
                 Description
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-eHgmQL hPgUJS"
                 href="/preconditions"
               >
                 Precond.
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-eHgmQL hPgUJS"
                 href="/subscribe"
               >
                 Subscribe
@@ -288,10 +667,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-kEYyzF lLBqv"
+            class="sc-iAyFgw cYuXFO"
           />
           <div
-            class="sc-hSdWYo hnVnmz"
+            class="sc-cvbbAY cuAgsZ"
           >
             <div
               class="sc-bdVaJa erSRMf"
@@ -305,36 +684,420 @@ exports[`should render correctly 1`] = `
                 Scenarios
               </div>
               <div
-                class="sc-bxivhb cGEKnc"
+                class="sc-bxivhb hpzanR"
                 value="FP_NO_WIN_INT"
               >
-                Frozen policy
+                <div
+                  class="sc-ifAKCX WOpjk"
+                >
+                  Frozen policy
+                </div>
+                <div
+                  class="sc-EHOje fhxHOS"
+                >
+                  <div
+                    class="sc-bZQynM hGLnGC"
+                    currentitem="false"
+                    data-tip="Short description of ccs "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-database fa-w-14 "
+                      data-icon="database"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt1 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-leaf fa-w-18 "
+                      data-icon="leaf"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt2 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-bolt fa-w-10 "
+                      data-icon="bolt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt3 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-battery-full fa-w-20 "
+                      data-icon="battery-full"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </div>
               </div>
               <div
-                class="sc-bxivhb idTADQ"
+                class="sc-bxivhb ctgxvv"
                 value="Frozen_policy_INT"
               >
-                Reference
+                <div
+                  class="sc-ifAKCX WOpjk"
+                >
+                  Reference
+                </div>
+                <div
+                  class="sc-EHOje fhxHOS"
+                >
+                  <div
+                    class="sc-bZQynM hGLnGC"
+                    currentitem="false"
+                    data-tip="Short description of ccs "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-database fa-w-14 "
+                      data-icon="database"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt1 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-leaf fa-w-18 "
+                      data-icon="leaf"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt2 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-bolt fa-w-10 "
+                      data-icon="bolt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt3 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-battery-full fa-w-20 "
+                      data-icon="battery-full"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </div>
               </div>
               <div
-                class="sc-bxivhb cGEKnc"
+                class="sc-bxivhb hpzanR"
                 value="DGSB_INT"
               >
-                DGSB
+                <div
+                  class="sc-ifAKCX WOpjk"
+                >
+                  DGSB
+                </div>
+                <div
+                  class="sc-EHOje fhxHOS"
+                >
+                  <div
+                    class="sc-bZQynM hGLnGC"
+                    currentitem="false"
+                    data-tip="Short description of ccs "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-database fa-w-14 "
+                      data-icon="database"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt1 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-leaf fa-w-18 "
+                      data-icon="leaf"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt2 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-bolt fa-w-10 "
+                      data-icon="bolt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt3 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-battery-full fa-w-20 "
+                      data-icon="battery-full"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </div>
               </div>
               <div
-                class="sc-bxivhb cGEKnc"
+                class="sc-bxivhb hpzanR"
                 value="Regeringen_INT"
               >
-                Government
+                <div
+                  class="sc-ifAKCX WOpjk"
+                >
+                  Government
+                </div>
+                <div
+                  class="sc-EHOje fhxHOS"
+                >
+                  <div
+                    class="sc-bZQynM hGLnGC"
+                    currentitem="false"
+                    data-tip="Short description of ccs "
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-database fa-w-14 "
+                      data-icon="database"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M448 73.143v45.714C448 159.143 347.667 192 224 192S0 159.143 0 118.857V73.143C0 32.857 100.333 0 224 0s224 32.857 224 73.143zM448 176v102.857C448 319.143 347.667 352 224 352S0 319.143 0 278.857V176c48.125 33.143 136.208 48.572 224 48.572S399.874 209.143 448 176zm0 160v102.857C448 479.143 347.667 512 224 512S0 479.143 0 438.857V336c48.125 33.143 136.208 48.572 224 48.572S399.874 369.143 448 336z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt1 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-leaf fa-w-18 "
+                      data-icon="leaf"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 576 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M546.2 9.7c-5.6-12.5-21.6-13-28.3-1.2C486.9 62.4 431.4 96 368 96h-80C182 96 96 182 96 288c0 7 .8 13.7 1.5 20.5C161.3 262.8 253.4 224 384 224c8.8 0 16 7.2 16 16s-7.2 16-16 16C132.6 256 26 410.1 2.4 468c-6.6 16.3 1.2 34.9 17.5 41.6 16.4 6.8 35-1.1 41.8-17.3 1.5-3.6 20.9-47.9 71.9-90.6 32.4 43.9 94 85.8 174.9 77.2C465.5 467.5 576 326.7 576 154.3c0-50.2-10.8-102.2-29.8-144.6z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt2 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-bolt fa-w-10 "
+                      data-icon="bolt"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 320 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="sc-bZQynM ekAjJp"
+                    currentitem="false"
+                    data-tip="Short description of opt3 (unavailable)"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-battery-full fa-w-20 "
+                      data-icon="battery-full"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 640 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="__react_component_tooltip place-top type-dark "
+                    data-id="tooltip"
+                  />
+                </div>
               </div>
             </div>
           </div>
           <hr
-            class="sc-kEYyzF lLBqv"
+            class="sc-iAyFgw cYuXFO"
           />
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-jWBwVP iWjSJw"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -348,13 +1111,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cvbbAY dxcdfd"
+              class="sc-brqgnP kBNvUR"
             >
               CCS
             </div>
           </div>
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-jWBwVP iWjSJw"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -368,13 +1131,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cvbbAY dxcdfd"
+              class="sc-brqgnP kBNvUR"
             >
               Switch 1
             </div>
           </div>
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-jWBwVP iWjSJw"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -388,13 +1151,13 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cvbbAY dxcdfd"
+              class="sc-brqgnP kBNvUR"
             >
               Switch 2
             </div>
           </div>
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-jWBwVP iWjSJw"
           >
             <label
               class="sc-EHOje ehlzez"
@@ -408,73 +1171,49 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cvbbAY dxcdfd"
+              class="sc-brqgnP kBNvUR"
             >
               Switch 3
             </div>
           </div>
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-jWBwVP iWjSJw"
           >
             <label
-              class="sc-EHOje ehlzez"
+              class="sc-htoDjs fckYJd"
             >
               <input
-                class="sc-gzVnrw ebkkmM"
+                class="sc-iwsKbI kUzZMO"
                 type="checkbox"
               />
               <span
-                class="slider sc-bZQynM hqkVOt"
+                class="slider sc-dnqmqq jEuygr"
               />
             </label>
             <div
-              class="sc-cvbbAY mJlvR"
+              class="sc-brqgnP fbGQMt"
             >
               Scenario difference
             </div>
           </div>
           <div
-            class="sc-brqgnP dWIsTX"
+            class="sc-jAaTju dVqVGJ"
           >
             (green minus red)
           </div>
-          <hr
-            class="sc-kEYyzF lLBqv"
-          />
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-jDwBTQ fsAVFV"
           >
+            <img
+              alt="logo"
+              class="sc-kEYyzF cQOclW"
+              src="./images/nordic_energy_research_cropped.png"
+            />
             <div
-              class="sc-jWBwVP ezCpHZ"
-            >
-              Danish
-            </div>
-            <label
-              class="sc-EHOje ehlzez"
-            >
-              <input
-                checked=""
-                class="sc-gzVnrw hQhDNs"
-                type="checkbox"
-              />
-              <span
-                class="slider sc-bZQynM hqkVOt"
-              />
-            </label>
-            <div
-              class="sc-jWBwVP fiugjA"
-            >
-              English
-            </div>
-          </div>
-          <div
-            class="sc-cMljjf jcDXLk"
-          >
-            <div
-              class="sc-jAaTju kxrxNi"
+              class="sc-gPEVay CWZqG"
             >
               <a
-                class="sc-jDwBTQ gQDQSf"
+                class="sc-iRbamj dCegxt"
                 href="http://www.tokni.com"
               >
                 Developed by Tokni
@@ -491,102 +1230,102 @@ exports[`should render correctly 1`] = `
         class="sc-hqyNC eszutO"
       >
         <div
-          class="sc-gPEVay hhTqci"
+          class="sc-jlyJG hasdQo"
         >
           <a
-            class="sc-iRbamj jKzfiN"
+            class="sc-gipzik gtjCac"
             href="/"
           >
             Overview
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gipzik dfvYdv"
             href="/tab2"
           >
             Main results
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gipzik dfvYdv"
             href="/tab3"
           >
             Supply sector
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gipzik dfvYdv"
             href="/tab4"
           >
             Transport sector
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gipzik dfvYdv"
             href="/tab5"
           >
             Industry
           </a>
           <a
-            class="sc-iRbamj bJNrlR"
+            class="sc-gipzik dfvYdv"
             href="/tab6"
           >
             Households
           </a>
         </div>
         <div
-          class="sc-jlyJG jXcwpR"
+          class="sc-csuQGl fNeTCM"
         >
           <a
-            class="sc-gipzik dWrkMw"
+            class="sc-Rmtcm eEUayA"
             href="/"
           >
             Overview
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-Rmtcm eqpEbc"
             href="/tab2"
           >
             Results
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-Rmtcm eqpEbc"
             href="/tab3"
           >
             Supply
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-Rmtcm eqpEbc"
             href="/tab4"
           >
             Transport
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-Rmtcm eqpEbc"
             href="/tab5"
           >
             Industry
           </a>
           <a
-            class="sc-gipzik laWIvr"
+            class="sc-Rmtcm eqpEbc"
             href="/tab6"
           >
             Households
           </a>
         </div>
         <div
-          class="sc-dVhcbM civynI"
+          class="sc-fAjcbJ dbknga"
         >
           <div
-            class="sc-csuQGl esgcHv"
+            class="sc-bRBYWo jonZiB"
           >
             <div
-              class="sc-Rmtcm jUItFr"
+              class="sc-hzDkRC ctHSPk"
             >
               <p
-                class="sc-bRBYWo ccSRck"
+                class="sc-jhAzac hmXDXQ"
               >
                 Welcome text
               </p>
             </div>
             <div
-              class="sc-hzDkRC ktKPqk"
+              class="sc-fBuWsC kjlUYw"
             >
               <span
                 class="octicon octicon-x"
@@ -594,7 +1333,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-eqIVtm fnSkIv"
+            class="sc-caSCKo iyklnM"
           >
             <div>
               <div
@@ -610,7 +1349,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -2816,7 +3555,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -4086,7 +4825,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-fMiknA blKJNd"
+                    class="sc-eqIVtm ytqxw"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -4722,7 +5461,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -8608,7 +9347,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -9318,7 +10057,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -10308,7 +11047,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -11018,7 +11757,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-jhAzac ckZqLA"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
