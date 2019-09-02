@@ -21,7 +21,9 @@ Deployment version:
 
 - npm run build
 
-The public version is available at...
+The public version is available at https://shift.tokni.com and is updated via Netlify after each commit to the master branch. A staging version is available at http://develop--shiftproject.netlify.com/
+
+
 
 ## Usage
 
