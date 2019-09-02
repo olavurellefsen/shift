@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-bbmXgH fmCZdz"
+    class="sc-jbKcbu brDidm"
   >
     <div
-      class="sc-gGBfsJ eSKHsV"
+      class="sc-dNLxif kioCvL"
     >
       <div
-        class="sc-jnlKLf cbrFZW"
+        class="sc-jqCOkK deIspb"
       >
         <div
           class="sc-gqjmRU gIEwTt"
@@ -1090,10 +1090,10 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-gGBfsJ eSKHsV"
+      class="sc-dNLxif kioCvL"
     >
       <div
-        class="sc-jnlKLf cbrFZW"
+        class="sc-jqCOkK deIspb"
       >
         <div
           class="sc-gipzik heINZO"
