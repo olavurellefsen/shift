@@ -1,8 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled from "styled-components";
-import breakpoint from "styled-components-breakpoint";
-import { Link } from "react-router-dom";
 import ScenarioSelectionList from "../scenarioSelection/ScenarioSelectionList";
 import ToggleSwitch from "./ToggleSwitch";
 import { useTranslation } from "react-i18next";
@@ -25,15 +22,6 @@ import {MenuLayout,
 
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
-
-  // const toggleLanguage = e => {
-  //   e.preventDefault();
-  //   if (language === "en") {
-  //     i18n.changeLanguage("dk");
-  //   } else {
-  //     i18n.changeLanguage("en");
-  //   }
-  // };
 
   return (
     <MenuLayout>
