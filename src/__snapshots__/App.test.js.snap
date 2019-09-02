@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-bbmXgH fmCZdz"
+    class="sc-uJMKN bpIpFs"
   >
     <div
-      class="sc-gGBfsJ eSKHsV"
+      class="sc-bbmXgH cmmiiI"
     >
       <div
-        class="sc-jnlKLf cbrFZW"
+        class="sc-gGBfsJ kubZzM"
       >
         <div
           class="sc-gqjmRU gIEwTt"
@@ -20,56 +20,46 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-jTzLTM gQvNwv"
             >
-              <a
-                class="sc-cSHVUG gKkidI"
-                href="/"
-              >
-                SHIFT
-              </a>
+              <img
+                alt="logo"
+                class="sc-VigVT jeJcSD"
+                src="./images/shift_logo_white.png"
+              />
               <div
-                class="sc-chPdSV gzzYpj"
+                class="sc-cSHVUG bOgbCJ"
               >
                 <a
-                  class="sc-kgoBCf gppgbO"
+                  class="sc-kAzzGY bARBob"
                   href="/about"
                 >
                   About the tool
                 </a>
                 <a
-                  class="sc-kgoBCf gppgbO"
+                  class="sc-kAzzGY bARBob"
                   href="/descriptions"
                 >
                   Descriptions of scenarios
                 </a>
                 <a
-                  class="sc-kgoBCf gppgbO"
+                  class="sc-kAzzGY bARBob"
                   href="/preconditions"
                 >
                   Preconditions
                 </a>
                 <a
-                  class="sc-kgoBCf gppgbO"
+                  class="sc-kAzzGY bARBob"
                   href="/subscribe"
                 >
                   Subscribe to updates
                 </a>
               </div>
             </div>
-            <div
-              class="sc-fjdhpX dHGLpi"
-            >
-              <img
-                alt="logo"
-                class="sc-jzJRlG fcvLhV"
-                src="./images/dtulogo_white.png"
-              />
-            </div>
           </div>
           <hr
-            class="sc-kAzzGY kGLYVL"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-kGXeez kXpdIW"
+            class="sc-chPdSV ihCfSB"
           >
             <div
               class="sc-bdVaJa erSRMf"
@@ -493,10 +483,93 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-kAzzGY kGLYVL"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-kpOJdX kmCMMW"
+            class="sc-kgoBCf byWwRs"
+          >
+            <label
+              class="sc-EHOje ehlzez"
+            >
+              <input
+                class="sc-gzVnrw hQhDNs"
+                type="checkbox"
+              />
+              <span
+                class="slider sc-bZQynM hqkVOt"
+              />
+            </label>
+            <div
+              class="sc-kGXeez fEgAcW"
+            >
+              CCS
+            </div>
+          </div>
+          <div
+            class="sc-kgoBCf byWwRs"
+          >
+            <label
+              class="sc-EHOje ehlzez"
+            >
+              <input
+                class="sc-gzVnrw hQhDNs"
+                type="checkbox"
+              />
+              <span
+                class="slider sc-bZQynM hqkVOt"
+              />
+            </label>
+            <div
+              class="sc-kGXeez fEgAcW"
+            >
+              Switch 1
+            </div>
+          </div>
+          <div
+            class="sc-kgoBCf byWwRs"
+          >
+            <label
+              class="sc-EHOje ehlzez"
+            >
+              <input
+                class="sc-gzVnrw hQhDNs"
+                type="checkbox"
+              />
+              <span
+                class="slider sc-bZQynM hqkVOt"
+              />
+            </label>
+            <div
+              class="sc-kGXeez fEgAcW"
+            >
+              Switch 2
+            </div>
+          </div>
+          <div
+            class="sc-kgoBCf byWwRs"
+          >
+            <label
+              class="sc-EHOje ehlzez"
+            >
+              <input
+                class="sc-gzVnrw hQhDNs"
+                type="checkbox"
+              />
+              <span
+                class="slider sc-bZQynM hqkVOt"
+              />
+            </label>
+            <div
+              class="sc-kGXeez fEgAcW"
+            >
+              Switch 3
+            </div>
+          </div>
+          <hr
+            class="sc-jzJRlG dYeAbs"
+          />
+          <div
+            class="sc-kgoBCf byWwRs"
           >
             <label
               class="sc-htoDjs fckYJd"
@@ -510,18 +583,18 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-dxgOiQ fMBcrO"
+              class="sc-kGXeez iTVXCv"
             >
               Scenario difference
             </div>
           </div>
           <div
-            class="sc-ckVGcZ kquGoF"
+            class="sc-kpOJdX dlJvVT"
           >
             (green minus red)
           </div>
           <hr
-            class="sc-kAzzGY kGLYVL"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
             class="sc-gZMcBi cYRTWn"
@@ -531,16 +604,21 @@ exports[`should render correctly 1`] = `
             </svg>
           </div>
           <hr
-            class="sc-kAzzGY kGLYVL"
+            class="sc-jzJRlG dYeAbs"
           />
           <div
-            class="sc-jKJlTe iigClc"
+            class="sc-dxgOiQ guZSpe"
           >
+            <img
+              alt="logo"
+              class="sc-jTzLTM GmlEG"
+              src="./images/nordic_energy_research_cropped.png"
+            />
             <div
-              class="sc-eNQAEJ eYuvoV"
+              class="sc-ckVGcZ fwQCyJ"
             >
               <a
-                class="sc-hMqMXs iMlvVt"
+                class="sc-jKJlTe jsOtGW"
                 href="http://www.tokni.com"
               >
                 Developed by Tokni
@@ -549,39 +627,39 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-kEYyzF kSWHfq"
+          class="sc-eNQAEJ fgJgDc"
         >
           <div
-            class="sc-iAyFgw gsFFXJ"
+            class="sc-kkGfuU hILZPB"
           >
             <img
               alt="logo"
-              class="sc-kkGfuU bQiFQs"
-              src="./images/dtulogo_white.png"
+              class="sc-hMqMXs cNCIga"
+              src="./images/shift_logo_white.png"
             />
             <div
-              class="sc-eHgmQL dtwjXz"
+              class="sc-hSdWYo iKXSKU"
             >
               <a
-                class="sc-cvbbAY jshPTp"
+                class="sc-eHgmQL hPgUJS"
                 href="/about"
               >
                 About
               </a>
               <a
-                class="sc-cvbbAY jshPTp"
+                class="sc-eHgmQL hPgUJS"
                 href="/descriptions"
               >
                 Description
               </a>
               <a
-                class="sc-cvbbAY jshPTp"
+                class="sc-eHgmQL hPgUJS"
                 href="/preconditions"
               >
                 Precond.
               </a>
               <a
-                class="sc-cvbbAY jshPTp"
+                class="sc-eHgmQL hPgUJS"
                 href="/subscribe"
               >
                 Subscribe
@@ -589,10 +667,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-hSdWYo kQwlsQ"
+            class="sc-iAyFgw cYuXFO"
           />
           <div
-            class="sc-jWBwVP kyeJAf"
+            class="sc-cvbbAY cuAgsZ"
           >
             <div
               class="sc-bdVaJa erSRMf"
@@ -1016,10 +1094,90 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-hSdWYo kQwlsQ"
+            class="sc-iAyFgw cYuXFO"
           />
           <div
-            class="sc-brqgnP kRfGuB"
+            class="sc-jWBwVP iWjSJw"
+          >
+            <label
+              class="sc-EHOje ehlzez"
+            >
+              <input
+                class="sc-gzVnrw hQhDNs"
+                type="checkbox"
+              />
+              <span
+                class="slider sc-bZQynM hqkVOt"
+              />
+            </label>
+            <div
+              class="sc-brqgnP kBNvUR"
+            >
+              CCS
+            </div>
+          </div>
+          <div
+            class="sc-jWBwVP iWjSJw"
+          >
+            <label
+              class="sc-EHOje ehlzez"
+            >
+              <input
+                class="sc-gzVnrw hQhDNs"
+                type="checkbox"
+              />
+              <span
+                class="slider sc-bZQynM hqkVOt"
+              />
+            </label>
+            <div
+              class="sc-brqgnP kBNvUR"
+            >
+              Switch 1
+            </div>
+          </div>
+          <div
+            class="sc-jWBwVP iWjSJw"
+          >
+            <label
+              class="sc-EHOje ehlzez"
+            >
+              <input
+                class="sc-gzVnrw hQhDNs"
+                type="checkbox"
+              />
+              <span
+                class="slider sc-bZQynM hqkVOt"
+              />
+            </label>
+            <div
+              class="sc-brqgnP kBNvUR"
+            >
+              Switch 2
+            </div>
+          </div>
+          <div
+            class="sc-jWBwVP iWjSJw"
+          >
+            <label
+              class="sc-EHOje ehlzez"
+            >
+              <input
+                class="sc-gzVnrw hQhDNs"
+                type="checkbox"
+              />
+              <span
+                class="slider sc-bZQynM hqkVOt"
+              />
+            </label>
+            <div
+              class="sc-brqgnP kBNvUR"
+            >
+              Switch 3
+            </div>
+          </div>
+          <div
+            class="sc-jWBwVP iWjSJw"
           >
             <label
               class="sc-htoDjs fckYJd"
@@ -1033,53 +1191,29 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cMljjf vOHUd"
+              class="sc-brqgnP fbGQMt"
             >
               Scenario difference
             </div>
           </div>
           <div
-            class="sc-jDwBTQ bkkeoR"
+            class="sc-jAaTju dVqVGJ"
           >
             (green minus red)
           </div>
-          <hr
-            class="sc-hSdWYo kQwlsQ"
-          />
           <div
-            class="sc-brqgnP kRfGuB"
+            class="sc-jDwBTQ fsAVFV"
           >
+            <img
+              alt="logo"
+              class="sc-kEYyzF cQOclW"
+              src="./images/nordic_energy_research_cropped.png"
+            />
             <div
-              class="sc-jAaTju fBfHvd"
-            >
-              Danish
-            </div>
-            <label
-              class="sc-htoDjs fckYJd"
-            >
-              <input
-                checked=""
-                class="sc-iwsKbI kqflzl"
-                type="checkbox"
-              />
-              <span
-                class="slider sc-dnqmqq jEuygr"
-              />
-            </label>
-            <div
-              class="sc-jAaTju gbbDrH"
-            >
-              English
-            </div>
-          </div>
-          <div
-            class="sc-gPEVay hNfaYz"
-          >
-            <div
-              class="sc-iRbamj cZwCTi"
+              class="sc-gPEVay CWZqG"
             >
               <a
-                class="sc-jlyJG iyewA"
+                class="sc-iRbamj dCegxt"
                 href="http://www.tokni.com"
               >
                 Developed by Tokni
@@ -1090,108 +1224,108 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-gGBfsJ eSKHsV"
+      class="sc-bbmXgH cmmiiI"
     >
       <div
-        class="sc-jnlKLf cbrFZW"
+        class="sc-gGBfsJ kubZzM"
       >
         <div
-          class="sc-gipzik heINZO"
+          class="sc-jlyJG hasdQo"
         >
           <a
-            class="sc-csuQGl hFghbR"
+            class="sc-gipzik gtjCac"
             href="/"
           >
             Overview
           </a>
           <a
-            class="sc-csuQGl jZDwjb"
+            class="sc-gipzik dfvYdv"
             href="/tab2"
           >
             Main results
           </a>
           <a
-            class="sc-csuQGl jZDwjb"
+            class="sc-gipzik dfvYdv"
             href="/tab3"
           >
             Supply sector
           </a>
           <a
-            class="sc-csuQGl jZDwjb"
+            class="sc-gipzik dfvYdv"
             href="/tab4"
           >
             Transport sector
           </a>
           <a
-            class="sc-csuQGl jZDwjb"
+            class="sc-gipzik dfvYdv"
             href="/tab5"
           >
             Industry
           </a>
           <a
-            class="sc-csuQGl jZDwjb"
+            class="sc-gipzik dfvYdv"
             href="/tab6"
           >
             Households
           </a>
         </div>
         <div
-          class="sc-Rmtcm hUjLYG"
+          class="sc-csuQGl fNeTCM"
         >
           <a
-            class="sc-bRBYWo bcDcex"
+            class="sc-Rmtcm eEUayA"
             href="/"
           >
             Overview
           </a>
           <a
-            class="sc-bRBYWo eFiXcE"
+            class="sc-Rmtcm eqpEbc"
             href="/tab2"
           >
             Results
           </a>
           <a
-            class="sc-bRBYWo eFiXcE"
+            class="sc-Rmtcm eqpEbc"
             href="/tab3"
           >
             Supply
           </a>
           <a
-            class="sc-bRBYWo eFiXcE"
+            class="sc-Rmtcm eqpEbc"
             href="/tab4"
           >
             Transport
           </a>
           <a
-            class="sc-bRBYWo eFiXcE"
+            class="sc-Rmtcm eqpEbc"
             href="/tab5"
           >
             Industry
           </a>
           <a
-            class="sc-bRBYWo eFiXcE"
+            class="sc-Rmtcm eqpEbc"
             href="/tab6"
           >
             Households
           </a>
         </div>
         <div
-          class="sc-caSCKo duJXGv"
+          class="sc-fAjcbJ dbknga"
         >
           <div
-            class="sc-hzDkRC detFNm"
+            class="sc-bRBYWo jonZiB"
           >
             <div
-              class="sc-jhAzac heJWtd"
+              class="sc-hzDkRC ctHSPk"
             >
               <p
-                class="sc-fBuWsC eeihxG"
+                class="sc-jhAzac hmXDXQ"
               >
                 Welcome text
               </p>
             </div>
             <div
-              class="sc-fMiknA khrkTO"
+              class="sc-fBuWsC kjlUYw"
             >
               <span
                 class="octicon octicon-x"
@@ -1199,7 +1333,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-gisBJw bOibLB"
+            class="sc-caSCKo iyklnM"
           >
             <div>
               <div
@@ -1215,7 +1349,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-dVhcbM eEgoWD"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -3421,7 +3555,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-dVhcbM eEgoWD"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -4691,7 +4825,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-fAjcbJ fJrLPI"
+                    class="sc-eqIVtm ytqxw"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -5327,7 +5461,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-dVhcbM eEgoWD"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -9213,7 +9347,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-dVhcbM eEgoWD"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -9923,7 +10057,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-dVhcbM eEgoWD"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -10913,7 +11047,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-dVhcbM eEgoWD"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -11623,7 +11757,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-dVhcbM eEgoWD"
+                    class="sc-fMiknA blKJNd"
                     dx="0"
                     dy="4.97"
                     x="90"
