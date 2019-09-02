@@ -11,6 +11,7 @@ import line from "../data/line";
 const Charts = props => {
   const selectedScenario = props.scenarioSelection.scenarioSelection;
   const selectedScenario2 = props.scenarioSelection.scenarioSelection2;
+  const options = props.scenarioSelection.options;
 
   return (
     <MainArea>
@@ -52,8 +53,6 @@ const Charts = props => {
           <ComparisonChart
             chartName="_CO2 emissioner akkumuleret"
             chartTitle="Akkumuleret CO2 emissioner"
-            showCCS={props.scenarioSelection.showCCS}
-            showBio={props.scenarioSelection.showBio}
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
             combinedChart={true}
@@ -65,6 +64,7 @@ const Charts = props => {
             Y2Percentage={false}
             stackedBar={stackedBar}
             line={line}
+            options={options}
           />
           <StackedBarChart
             chartName="_Energi forbrug i Danmark"
@@ -178,6 +178,7 @@ const Charts = props => {
               Y2Percentage={false}
               stackedBar={stackedBar}
               line={line}
+            options={options}
             />
             <StackedBarDiffChart
               chartName="_Energi forbrug i Danmark"

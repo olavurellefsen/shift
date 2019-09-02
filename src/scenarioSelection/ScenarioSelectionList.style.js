@@ -20,6 +20,8 @@ export const ScenarioHeader = styled.div`
 `;
 
 export const ScenarioOption = styled.div`
+  justify-content: space-between;
+  width: 100%;
   font-size: ${props => (props.narrowVersion ? "0.7em" : "0.9em")};
   display: flex;
   align-items: center;
@@ -37,11 +39,31 @@ export const ScenarioOption = styled.div`
     background-color: ${props =>
       props.selected ? "#b50404" : props.selected2 ? "green" : "#555"};
     > * {
-      display: block;
       font-weight: ${props =>
         props.selected ? "bold" : props.selected2 ? "bold" : "normal"};
     }
   }
+`;
+export const ScenarioNameContainer = styled.div`
+  display: flex;
+`;
+
+export const IconContainer = styled.div`
+  display: flex;
+`;
+
+export const Icon = styled.div`
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  &:hover {
+    cursor: ${props =>
+    props.available ? "pointer" :  "default"};
+    color: ${props =>
+    props.available ? "black" :  "default"};;
+  }
+  color: ${props =>
+    props.selected ? "blue" :  "rgb(184,176,183)"};
 `;
 
 export const MenuSeparatorLine = styled.hr`
