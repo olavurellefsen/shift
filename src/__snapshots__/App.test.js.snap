@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-uJMKN bpIpFs"
+    class="sc-frDJqD iKfdZz"
   >
     <div
-      class="sc-bbmXgH cmmiiI"
+      class="sc-kvZOFW jDpAug"
     >
       <div
-        class="sc-gGBfsJ kubZzM"
+        class="sc-hqyNC eszutO"
       >
         <div
           class="sc-gqjmRU gIEwTt"
@@ -32,7 +32,7 @@ exports[`should render correctly 1`] = `
                   class="sc-kAzzGY bARBob"
                   href="/about"
                 >
-                  About the tool
+                  About SHIFT
                 </a>
                 <a
                   class="sc-kAzzGY bARBob"
@@ -1224,10 +1224,10 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-bbmXgH cmmiiI"
+      class="sc-kvZOFW jDpAug"
     >
       <div
-        class="sc-gGBfsJ kubZzM"
+        class="sc-hqyNC eszutO"
       >
         <div
           class="sc-jlyJG hasdQo"
