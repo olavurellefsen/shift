@@ -5344,7 +5344,7 @@ export default {
         ]
       },
       {
-        "scenario": "Reference Bio",
+        "scenario": "Reference_bio",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
@@ -10686,7 +10686,7 @@ export default {
         ]
       },
       {
-        "scenario": "Reference Bio CCS",
+        "scenario": "Reference_ccs_bio",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
@@ -16028,7 +16028,7 @@ export default {
         ]
       },
       {
-        "scenario": "Reference CCS",
+        "scenario": "Reference_ccs",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
@@ -26712,7 +26712,7 @@ export default {
         ]
       },
       {
-        "scenario": "Share Optimism Bio",
+        "scenario": "Share Optimism_bio",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
@@ -32054,7 +32054,7 @@ export default {
         ]
       },
       {
-        "scenario": "Share Optimism Bio CCS",
+        "scenario": "Share Optimism_ccs_bio",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
@@ -37396,7 +37396,7 @@ export default {
         ]
       },
       {
-        "scenario": "Share Optimism CCS",
+        "scenario": "Share Optimism_ccs",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
@@ -48080,7 +48080,7 @@ export default {
         ]
       },
       {
-        "scenario": "Technology Optimism Bio",
+        "scenario": "Technology Optimism_bio",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
@@ -53422,7 +53422,7 @@ export default {
         ]
       },
       {
-        "scenario": "Technology Optimism Bio CCS",
+        "scenario": "Technology Optimism_ccs_bio",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
@@ -58764,7 +58764,7 @@ export default {
         ]
       },
       {
-        "scenario": "Technology Optimism CCS",
+        "scenario": "Technology Optimism_ccs",
         "indicators": [
           {
             "indicator": "Biomass primary supply",
