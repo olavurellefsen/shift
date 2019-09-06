@@ -1,4 +1,4 @@
-export default {scenarioCombinations : {scenarioOptions : [
+﻿export default {scenarioCombinations : {scenarioOptions : [
 { "id": 0, "name": "Reference Bio CCS", "short_description": "Reference Bio CCS", "ultra_short_description": "" },
 { "id": 1, "name": "Reference Bio", "short_description": "Reference Bio", "ultra_short_description": "" },
 { "id": 2, "name": "Reference CCS", "short_description": "Reference CCS", "ultra_short_description": "" },
@@ -16,4 +16,12 @@ regionOptions : [
 { "id": 0, "name": "Denmark", "country": "Denmark", "short_description": "Denmark", "ultra_short_description": "Denmark" },
 { "id": 1, "name": "Norway", "country": "Norway", "short_description": "Norway", "ultra_short_description": "Norway" },
 { "id": 2, "name": "Sweden", "country": "Sweden", "short_description": "Sweden", "ultra_short_description": "Sweden" }
-]}};
+               ], 
+    optionsAvailable:  {
+       "FP_NO_WIN_INT": {"ccs": true, "opt1": false, "opt2": false, "opt3": false},
+       "Frozen_policy_INT": {"ccs": true, "opt1": false, "opt2": false, "opt3": false},
+       "DGSB_INT": { "ccs": true, "opt1": false, "opt2": false, "opt3": false  },
+       "Regeringen_INT": { "ccs": true, "opt1": false, "opt2": false, "opt3": false},
+    }
+  }
+};

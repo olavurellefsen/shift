@@ -10,6 +10,7 @@ import line from "../data/line";
 const Charts = props => {
   const selectedScenario = props.scenarioSelection.scenarioSelection;
   const selectedScenario2 = props.scenarioSelection.scenarioSelection2;
+  const options = props.scenarioSelection.options;
 
   return (
     <MainArea>
@@ -49,6 +50,7 @@ const Charts = props => {
 			label='kt'
 			minY={0}
 			maxY={0} 
+            options={options}
 		  />
           <StackedBarChart
             chartName='District heating supply'
@@ -150,6 +152,7 @@ const Charts = props => {
    			  maxY={10}
               stackedBar={stackedBar}
               line={line}
+            options={options}
    		    />
             <StackedBarDiffChart
               chartName='District heating supply'
