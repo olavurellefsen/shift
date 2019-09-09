@@ -1510,7 +1510,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -6852,7 +6852,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -12194,7 +12194,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -17536,7 +17536,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -22878,7 +22878,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -28220,7 +28220,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -33562,7 +33562,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -38904,7 +38904,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -44246,7 +44246,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -49588,7 +49588,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -54930,7 +54930,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
@@ -60272,7 +60272,7 @@ export default {
             ]
           },
           {
-            "indicator": "Distric heating supply",
+            "indicator": "District heating supply",
             "regions": [
               {
                 "region": "Denmark",
