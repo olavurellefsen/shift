@@ -9,10 +9,6 @@ import Tabs from './tabs/Tabs'
 import TabsMobile from './tabs/Tabs.mobile'
 import Charts from './charts/Charts'
 import ChartsTab2 from './charts/ChartsTab2'
-import ChartsTab3 from './charts/ChartsTab3'
-import ChartsTab4 from './charts/ChartsTab4'
-import ChartsTab5 from './charts/ChartsTab5'
-import ChartsTab6 from './charts/ChartsTab6'
 import PageRenderer from './pages/PageRenderer'
 import Prerequisites from './pages/Prerequisites'
 import scenarioCombinations from './data/scenarioCombinations'
@@ -208,42 +204,6 @@ export class App extends React.Component {
                 path="/tab2"
                 render={() => (
                   <ChartsTab2
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab3"
-                render={() => (
-                  <ChartsTab3
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab4"
-                render={() => (
-                  <ChartsTab4
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab5"
-                render={() => (
-                  <ChartsTab5
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab6"
-                render={() => (
-                  <ChartsTab6
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
                   />
