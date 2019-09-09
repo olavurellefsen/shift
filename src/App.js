@@ -84,7 +84,7 @@ export class App extends React.Component {
       return {
         scenarioSelection:
           state.scenarioSelectionNoOptions +
-          (state.options[state.scenarioSelectionNoOptions].ccs ? '_CCS' : '') +
+          (state.options[state.scenarioSelectionNoOptions].ccs ? '_ccs' : '') +
           (false ? '_opt1' : '') +
           (false ? '_opt2' : '') +
           (false ? '_opt3' : ''),
@@ -96,7 +96,7 @@ export class App extends React.Component {
           state.scenarioSelectionNoOptions2 !== ''
             ? state.scenarioSelectionNoOptions2 +
               (state.options[state.scenarioSelectionNoOptions2].ccs
-                ? '_CCS'
+                ? '_ccs'
                 : '') +
               (false ? '_opt1' : '') +
               (false ? '_opt2' : '') +
