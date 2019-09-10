@@ -46,11 +46,11 @@ export const changeScenario = (name, value) => ({
 const default_scenario = "Reference";
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
-  .filter(s => !s.ccs && !s.opt1 && !s.opt2 && !s.opt3)
+  .filter(s => !s.ccs && !s.bio && !s.opt2 && !s.opt3)
   .forEach(s => {
     options[s.nameNoOptions] = {}
     options[s.nameNoOptions]['ccs'] = false
-    options[s.nameNoOptions]['opt1'] = false
+    options[s.nameNoOptions]['bio'] = false
     options[s.nameNoOptions]['opt2'] = false
     options[s.nameNoOptions]['opt3'] = false
   })
@@ -81,7 +81,7 @@ export class App extends React.Component {
         scenarioSelection:
           state.scenarioSelectionNoOptions +
           (state.options[state.scenarioSelectionNoOptions].ccs ? '_ccs' : '') +
-          (false ? '_opt1' : '') +
+          (false ? '_bio' : '') +
           (false ? '_opt2' : '') +
           (false ? '_opt3' : ''),
       }
@@ -94,7 +94,7 @@ export class App extends React.Component {
               (state.options[state.scenarioSelectionNoOptions2].ccs
                 ? '_ccs'
                 : '') +
-              (false ? '_opt1' : '') +
+              (false ? '_bio' : '') +
               (false ? '_opt2' : '') +
               (false ? '_opt3' : '')
             : '',

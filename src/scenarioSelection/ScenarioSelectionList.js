@@ -37,7 +37,7 @@ const ScenarioSelectionList = props => {
   let stringValue = props.selectedValue.toString()
   let stringValue2 = props.selectedValue2.toString()
   let scenarioOptions = scenarioCombinations.scenarioOptions
-    .filter(s => !s.ccs && !s.opt1 && !s.opt2 && !s.opt3) //ensure that each scenario is only listed once
+    .filter(s => !s.ccs && !s.bio && !s.opt2 && !s.opt3) //ensure that each scenario is only listed once
     .map(option => {
       let optionValue = option.nameNoOptions
       if (optionValue === 'division_line') {
@@ -84,22 +84,22 @@ const ScenarioSelectionList = props => {
               </Icon>
               <Icon
                 available={
-                  scenarioCombinations.optionsAvailable[optionValue].opt1
+                  scenarioCombinations.optionsAvailable[optionValue].bio
                 }
                 onClick={event => {
-                  if (scenarioCombinations.optionsAvailable[optionValue].opt1) {
-                    props.toggleOption(optionValue, 'opt1')
+                  if (scenarioCombinations.optionsAvailable[optionValue].bio) {
+                    props.toggleOption(optionValue, 'bio')
                   }
                   cancelBubble(event) //prevent onclick for scenario being fired
                 }}
                 data-tip={
-                  t('options.opt1') +
+                  t('options.bio') +
                   ' ' +
-                  (!scenarioCombinations.optionsAvailable[optionValue].opt1
+                  (!scenarioCombinations.optionsAvailable[optionValue].bio
                     ? t('options.unavailable')
                     : '')
                 }
-                selected={scenarioSwitches[optionValue].opt1}
+                selected={scenarioSwitches[optionValue].bio}
               >
                 <FontAwesomeIcon icon={faLeaf} />
               </Icon>
@@ -108,7 +108,7 @@ const ScenarioSelectionList = props => {
                   scenarioCombinations.optionsAvailable[optionValue].opt2
                 }
                 onClick={event => {
-                  if (scenarioCombinations.optionsAvailable[optionValue].opt1) {
+                  if (scenarioCombinations.optionsAvailable[optionValue].bio) {
                     props.toggleOption(optionValue, 'opt2')
                   }
                   cancelBubble(event) //prevent onclick for scenario being fired
@@ -129,7 +129,7 @@ const ScenarioSelectionList = props => {
                   scenarioCombinations.optionsAvailable[optionValue].opt3
                 }
                 onClick={event => {
-                  if (scenarioCombinations.optionsAvailable[optionValue].opt1) {
+                  if (scenarioCombinations.optionsAvailable[optionValue].bio) {
                     props.toggleOption(optionValue, 'opt3')
                   }
                   cancelBubble(event) //prevent onclick for scenario being fired

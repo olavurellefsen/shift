@@ -70,6 +70,7 @@ const StackedBarChart = props => {
     .map(scenario =>
       scenario.indicators
         .filter(o => o.indicator === chartName)
+        .filter(r => r.region === 'Denmark')
         .map(indicator =>
           indicator.indicatorGroups.map((chartGroup, i) => {
             if (

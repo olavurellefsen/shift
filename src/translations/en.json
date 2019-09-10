@@ -16,7 +16,7 @@
   },
   "options": {
     "ccs": "CCS",
-    "opt1": "Short description of opt1",
+    "bio": "Biomass import restrictions",
     "opt2": "Short description of opt2",
     "opt3": "Short description of opt3",
     "unavailable": "(unavailable)"
@@ -24,7 +24,7 @@
   "general": {
     "scenarios": "Scenarios",
     "CCS": "CCS",
-    "opt1": "Switch 1",
+    "bio": "Bio",
     "opt2": "Switch 2",
     "opt3": "Switch 3",
     "scenario-difference": "Scenario difference",
@@ -34,21 +34,21 @@
   "scenario": {
     "Reference": "Reference",
     "Share Optimism": "Share Optimism",
-    "Technology Optimism": "Technology Optimism"
+    "Technology Optimism": "Tech Optimism"
   },
   "scenario_code": {
     "Reference": "Reference",
-	"Reference_ccs": "Reference",
-	"Reference_bio": "Reference",
-	"Reference_ccs_bio": "Reference",
+    "Reference_ccs": "Reference",
+    "Reference_bio": "Reference",
+    "Reference_ccs_bio": "Reference",
     "Share Optimism": "Share Optimism",
     "Share Optimism_ccs": "Share Optimism",
     "Share Optimism_bio": "Share Optimism",
     "Share Optimism_ccs_bio": "Share Optimism",
-    "Technology Optimism": "Technology Optimism",
-	"Technology Optimism_ccs": "Technology Optimism",
-	"Technology Optimism_bio": "Technology Optimism",
-    "Technology Optimism_ccs_bio": "Technology Optimism"	
+    "Technology Optimism": "Tech Optimism",
+    "Technology Optimism_ccs": "Technology Optimism",
+    "Technology Optimism_bio": "Technology Optimism",
+    "Technology Optimism_ccs_bio": "Technology Optimism"
   },
   "tabs": {
     "overview": "Overview",
@@ -63,14 +63,14 @@
   },
   "chartTitle": {
     "Biomass Primary Supply": "Biomass Primary Supply",
-	"District Heating Supply": "District Heating Supply",
-	"Captured CO2": "Captured CO2",
+    "District Heating Supply": "District Heating Supply",
+    "Captured CO2": "Captured CO2",
     "CO2 Emissions": "CO2 Emissions",
-	"Households Fuel Consumption": "Households Fuel Consumption",
-	"Industry fuel consumption": "Industry Fuel Consumption",
-	"Power Production": "Power Production",
-	"Power Trade": "Power Trade",
-	"System Costs": "System Costs"
+    "Households Fuel Consumption": "Households Fuel Consumption",
+    "Industry fuel consumption": "Industry Fuel Consumption",
+    "Power Production": "Power Production",
+    "Power Trade": "Power Trade",
+    "System Costs": "System Costs"
   },
   "legend": {
     "Biomasse andel": "Biomass share",

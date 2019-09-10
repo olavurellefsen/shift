@@ -16,7 +16,7 @@
   },
   "options": {
     "ccs": "CCS",
-    "opt1": "Short description of opt1",
+    "bio": "Biomass importrestriktioner",
     "opt2": "Short description of opt2",
     "opt3": "Short description of opt3",
     "unavailable": "(unavailable)"
@@ -24,6 +24,9 @@
   "general": {
     "scenarios": "Scenarier",
     "CCS": "CCS",
+    "bio": "Bio",
+    "opt2": "Switch 2",
+    "opt3": "Switch 3",
     "scenario-difference": "Scenarie difference",
     "green-minus-red": "(grøn minus rød)",
     "developed-by-Tokni": "Udviklet af Tokni"
@@ -31,21 +34,21 @@
   "scenario": {
     "Reference": "Reference",
     "Share Optimism": "Share Optimism",
-    "Technology Optimism": "Technology Optimism"
+    "Technology Optimism": "Tech Optimism"
   },
   "scenario_code": {
     "Reference": "Reference",
-	"Reference_ccs": "Reference",
-	"Reference_bio": "Reference",
-	"Reference_ccs_bio": "Reference",
+    "Reference_ccs": "Reference",
+    "Reference_bio": "Reference",
+    "Reference_ccs_bio": "Reference",
     "Share Optimism": "Share Optimism",
     "Share Optimism_ccs": "Share Optimism",
     "Share Optimism_bio": "Share Optimism",
     "Share Optimism_ccs_bio": "Share Optimism",
     "Technology Optimism": "Technology Optimism",
-	"Technology Optimism_ccs": "Technology Optimism",
-	"Technology Optimism_bio": "Technology Optimism",
-    "Technology Optimism_ccs_bio": "Technology Optimism"	
+    "Technology Optimism_ccs": "Technology Optimism",
+    "Technology Optimism_bio": "Technology Optimism",
+    "Technology Optimism_ccs_bio": "Technology Optimism"
   },
   "tabs": {
     "overview": "Overblik",
@@ -133,7 +136,7 @@
     "Lattergas": "Lattergas",
     "Metan": "Metan",
     "Skov": "Skov",
-	"LULUCF": "LULUCF",
+    "LULUCF": "LULUCF",
     "Strålingseffekt": "Strålingseffekt",
     "Biobrændstoffer": "Biobrændstoffer",
     "Brænde": "Brænde",
@@ -190,7 +193,7 @@
     "Kul og Biomasse": "Kul og Biomasse",
     "Raffinaderi": "Raffinaderi",
     "Solceller Industri": "Solceller Industri",
-	"Solceller Mark": "Solceller Mark",
+    "Solceller Mark": "Solceller Mark",
     "Solceller husholdninger": "Solceller husholdninger",
     "Benzin": "Benzin",
     "Bølgeenergi": "Bølgeenergi",
@@ -307,6 +310,6 @@
     "Private service": "Private service",
     "Transportmidler (eksl gods transport)": "Transportmidler (eksl gods transport)",
     "Omkostninger per person": "Omkostninger per person",
-	"DKK/person/år": "DKK/person/år"
+    "DKK/person/år": "DKK/person/år"
   }
 }
