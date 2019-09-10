@@ -10,6 +10,7 @@ import line from '../data/line'
 const Charts = props => {
   const selectedScenario = props.scenarioSelection.scenarioSelection
   const selectedScenario2 = props.scenarioSelection.scenarioSelection2
+  const selectedCountries = props.selectedCountries
   const options = props.scenarioSelection.options
 
   return (
@@ -26,6 +27,7 @@ const Charts = props => {
             chartTitle="Biomass Primary Supply"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
             minY={0}
@@ -38,6 +40,7 @@ const Charts = props => {
             chartTitle="CO2 Emissions"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="kt"
             minY={0}
@@ -50,6 +53,7 @@ const Charts = props => {
             chartTitle="Captured CO2"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="kt"
             minY={0}
@@ -63,6 +67,7 @@ const Charts = props => {
             chartTitle="District Heating Supply"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
             minY={0}
@@ -75,6 +80,7 @@ const Charts = props => {
             chartTitle="Households Fuel Consumption"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
             minY={0}
@@ -87,6 +93,7 @@ const Charts = props => {
             chartTitle="Industry fuel consumption"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
             minY={0}
@@ -99,6 +106,7 @@ const Charts = props => {
             chartTitle="Power Production"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
             minY={0}
@@ -111,6 +119,7 @@ const Charts = props => {
             chartTitle="Power Trade"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
             minY={-85}
@@ -123,6 +132,7 @@ const Charts = props => {
             chartTitle="System Costs"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
             label="M Euro"
             minY={-4077}
@@ -140,6 +150,7 @@ const Charts = props => {
               chartTitle="Biomass Primary Supply"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="PJ"
               minY={-190}
@@ -152,6 +163,7 @@ const Charts = props => {
               chartTitle="CO2 Emissions"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="kt"
               minY={-14500}
@@ -164,6 +176,7 @@ const Charts = props => {
               chartTitle="Captured CO2"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="kt"
               minY={-10}
@@ -177,6 +190,7 @@ const Charts = props => {
               chartTitle="District Heating Supply"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="PJ"
               minY={-125}
@@ -189,6 +203,7 @@ const Charts = props => {
               chartTitle="Households Fuel Consumption"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="PJ"
               minY={-75}
@@ -201,6 +216,7 @@ const Charts = props => {
               chartTitle="Industry fuel consumption"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="PJ"
               minY={-200}
@@ -213,6 +229,7 @@ const Charts = props => {
               chartTitle="Power Production"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="PJ"
               minY={-450}
@@ -225,6 +242,7 @@ const Charts = props => {
               chartTitle="Power Trade"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="PJ"
               minY={-275}
@@ -237,6 +255,7 @@ const Charts = props => {
               chartTitle="System Costs"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
+              selectedCountries={selectedCountries}
               combinedChart={false}
               label="M Euro"
               minY={-14000}
@@ -253,6 +272,7 @@ const Charts = props => {
 Charts.propTypes = {
   scenarioSelection: PropTypes.object.isRequired,
   closeWelcome: PropTypes.func.isRequired,
+  selectedCountries: PropTypes.array.isRequired,
 }
 
 export default Charts

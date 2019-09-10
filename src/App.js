@@ -181,7 +181,7 @@ export class App extends React.Component {
               options={this.state.options}
               toggleOption={this.ToggleOption}
               selectedCountries={this.state.selectedCountries}
-              selectCountry={this.selecCountry}
+              selectCountry={this.selectCountry}
             />
           </Content>
         </Column>
@@ -197,6 +197,7 @@ export class App extends React.Component {
                   <Charts
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
+                    selectedCountries={this.state.selectedCountries}
                   />
                 )}
               />
@@ -206,6 +207,7 @@ export class App extends React.Component {
                   <ChartsTab2
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
+                    selectedCountries={this.state.selectedCountries}
                   />
                 )}
               />

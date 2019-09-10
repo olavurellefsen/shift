@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import styled from "styled-components";
-import { useTranslation } from "react-i18next";
+import React from 'react'
+import PropTypes from 'prop-types'
+import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 import {
   VictoryChart,
   VictoryLabel,
@@ -12,8 +12,8 @@ import {
   VictoryAxis,
   VictoryBar,
   VictoryLine,
-  VictoryTooltip
-} from "victory";
+  VictoryTooltip,
+} from 'victory'
 
 const ChartHeader = styled(VictoryLabel)`
   text-anchor: start;
@@ -21,50 +21,52 @@ const ChartHeader = styled(VictoryLabel)`
   font-family: inherit;
   font-size: 18px;
   font-weight: bold;
-`;
-ChartHeader.displayName = "ChartHeader";
+`
+ChartHeader.displayName = 'ChartHeader'
 
 const StackedBarChart = props => {
-  const { t } = useTranslation();
-  const stackedBar = props.stackedBar;
-  const line = props.line;  
-  const scenario = props.selectedScenario;
-  const scenario2 = props.selectedScenario2;
-  const chartName = props.chartName;
-  const chartTitle = t("chartTitle."+props.chartTitle);
-  const combinedChart = props.combinedChart;
-  const periods = [2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050];
-  let gutter, rowGutter;
-  let minY = props.minY;
-  let maxY = props.maxY;
+  const { t } = useTranslation()
+  const stackedBar = props.stackedBar
+  const line = props.line
+  const scenario = props.selectedScenario
+  const scenario2 = props.selectedScenario2
+  const selectedCountries = props.selectedCountries
+  console.log(selectedCountries)
+  const chartName = props.chartName
+  const chartTitle = t('chartTitle.' + props.chartTitle)
+  const combinedChart = props.combinedChart
+  const periods = [2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050]
+  let gutter, rowGutter
+  let minY = props.minY
+  let maxY = props.maxY
 
   if (
     !process.env.NODE_ENV ||
-    process.env.NODE_ENV === "development" ||
-    process.env.NODE_ENV === "test"
+    process.env.NODE_ENV === 'development' ||
+    process.env.NODE_ENV === 'test'
   ) {
-    gutter = 0;
-    rowGutter = 0;
+    gutter = 0
+    rowGutter = 0
   } else {
-    gutter = -40;
-    rowGutter = -5;
+    gutter = -40
+    rowGutter = -5
   }
 
-  let maxY2 = 1;
-  let minY2 = 0;
+  let maxY2 = 1
+  let minY2 = 0
   if (combinedChart === true) {
-    maxY2 = props.maxY2;
-    minY2 = props.minY2;
+    maxY2 = props.maxY2
+    minY2 = props.minY2
   }
 
-  let yDomain = [0, 1];
+  let yDomain = [0, 1]
   if (minY < 0 || minY2 < 0) {
-    let stackedRatio = minY / maxY;
-    let lineRatio = minY2 / maxY2;
-    yDomain = stackedRatio < lineRatio ? [stackedRatio, 1] : [lineRatio, 1];
+    let stackedRatio = minY / maxY
+    let lineRatio = minY2 / maxY2
+    yDomain = stackedRatio < lineRatio ? [stackedRatio, 1] : [lineRatio, 1]
   }
 
-  let dataset3 = [];
+  let dataset3 = []
   stackedBar.data.scenarios
     .filter(o => o.scenario === scenario || o.scenario === scenario2)
     .map(scenario =>
@@ -78,7 +80,7 @@ const StackedBarChart = props => {
                 c => c.indicatorGroup === chartGroup.indicatorGroup
               ) === undefined
             ) {
-              dataset3.push(JSON.parse(JSON.stringify(chartGroup)));
+              dataset3.push(JSON.parse(JSON.stringify(chartGroup)))
             } else {
               for (
                 var j = 0;
@@ -86,39 +88,39 @@ const StackedBarChart = props => {
                 j++
               ) {
                 dataset3[i].indicatorGroupValues[j].total -=
-                  chartGroup.indicatorGroupValues[j].total;
+                  chartGroup.indicatorGroupValues[j].total
               }
             }
-            return chartGroup;
+            return chartGroup
           })
         )
-    );
+    )
   // Find the minimum and maximum stacked values
-  let minValue = -0.00001;
-  let maxValue = 0.00001;
+  let minValue = -0.00001
+  let maxValue = 0.00001
   for (var i = 0; i < periods.length; i++) {
-    let totalValuePos = 0;
-    let totalValueNeg = 0;
+    let totalValuePos = 0
+    let totalValueNeg = 0
     for (var j = 0; j < dataset3.length; j++) {
-      let value = dataset3[j].indicatorGroupValues[i].total;
+      let value = dataset3[j].indicatorGroupValues[i].total
       if (value < 0) {
-        totalValueNeg += value;
+        totalValueNeg += value
       } else {
-        totalValuePos += value;
+        totalValuePos += value
       }
     }
     if (totalValuePos > maxValue) {
-      maxValue = totalValuePos;
+      maxValue = totalValuePos
     }
     if (totalValueNeg < minValue) {
-      minValue = totalValueNeg;
+      minValue = totalValueNeg
     }
   }
   if (-minValue > maxValue) {
-    maxValue = -minValue;
+    maxValue = -minValue
   }
 
-  let datasetLine3 = [];
+  let datasetLine3 = []
   if (combinedChart === true) {
     line.data.scenarios
       .filter(o => o.scenario === scenario || o.scenario === scenario2)
@@ -132,7 +134,7 @@ const StackedBarChart = props => {
                   c => c.indicatorGroup === chartGroup.indicatorGroup
                 ) === undefined
               ) {
-                datasetLine3.push(JSON.parse(JSON.stringify(chartGroup)));
+                datasetLine3.push(JSON.parse(JSON.stringify(chartGroup)))
               } else {
                 for (
                   var j = 0;
@@ -140,55 +142,55 @@ const StackedBarChart = props => {
                   j++
                 ) {
                   datasetLine3[i].indicatorGroupValues[j].total -=
-                    chartGroup.indicatorGroupValues[j].total;
+                    chartGroup.indicatorGroupValues[j].total
                 }
               }
-              return chartGroup;
+              return chartGroup
             })
           )
-      );
+      )
   }
 
   const colors = [
-    "#5cbae6",
-    "#b6d957",
-    "#fac364",
-    "#8cd3ff",
-    "#d998cb",
-    "#f2d249",
-    "#93b9c6",
-    "#ccc5a8",
-    "#ffcc00",
-    "#ff9900",
-    "#ff6600",
-    "#ff0000",
-    "#990000",
-    "#ff0099",
-    "#cc3399",
-    "#990066",
-    "#660066",
-    "#660099",
-    "#3366cc",
-    "#33ccff",
-    "#99cc33",
-    "#66cc00",
-    "#aad199",
-    "#45535c",
-    "#471442",
-    "#612e30",
-    "#7a713c",
-    "#09e682",
-    "#160154",
-    "#fc53ec",
-    "#454023",
-    "#4b7060",
-    "#4221a6",
-    "#f2aceb",
-    "#ede095",
-    "#0395f7",
-    "#7346fa",
-    "#82627f"
-  ];
+    '#5cbae6',
+    '#b6d957',
+    '#fac364',
+    '#8cd3ff',
+    '#d998cb',
+    '#f2d249',
+    '#93b9c6',
+    '#ccc5a8',
+    '#ffcc00',
+    '#ff9900',
+    '#ff6600',
+    '#ff0000',
+    '#990000',
+    '#ff0099',
+    '#cc3399',
+    '#990066',
+    '#660066',
+    '#660099',
+    '#3366cc',
+    '#33ccff',
+    '#99cc33',
+    '#66cc00',
+    '#aad199',
+    '#45535c',
+    '#471442',
+    '#612e30',
+    '#7a713c',
+    '#09e682',
+    '#160154',
+    '#fc53ec',
+    '#454023',
+    '#4b7060',
+    '#4221a6',
+    '#f2aceb',
+    '#ede095',
+    '#0395f7',
+    '#7346fa',
+    '#82627f',
+  ]
 
   return (
     <div>
@@ -209,15 +211,15 @@ const StackedBarChart = props => {
           offsetX={80}
           tickFormat={tick => {
             if (isNaN(maxValue)) {
-              return 0;
+              return 0
             }
             if (props.YPercentage) {
               return (
                 Math.round((tick * maxValue * 100) / props.divideValues, 0) +
-                "%"
-              );
+                '%'
+              )
             }
-            return Math.round((tick * maxValue) / props.divideValues, 0);
+            return Math.round((tick * maxValue) / props.divideValues, 0)
           }}
           tickValues={[-0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75]}
           label={props.label}
@@ -229,16 +231,16 @@ const StackedBarChart = props => {
             offsetX={330}
             label={props.label2}
             style={{
-              axis: { stroke: "gray" },
-              axisLabel: { fill: "gray", padding: -50 },
+              axis: { stroke: 'gray' },
+              axisLabel: { fill: 'gray', padding: -50 },
               ticks: { padding: -25 },
-              tickLabels: { fill: "gray", textAnchor: "start" }
+              tickLabels: { fill: 'gray', textAnchor: 'start' },
             }}
             tickFormat={tick =>
               `${
                 props.Y2Percentage === false
                   ? tick * maxY2
-                  : tick * maxY2 * 100 + "%"
+                  : tick * maxY2 * 100 + '%'
               }`
             }
             tickValues={[-1.0, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1.0]}
@@ -253,14 +255,16 @@ const StackedBarChart = props => {
           symbolSpacer={4}
           itemsPerRow={3}
           style={{
-            title: { fontSize: 14, leftPadding: -10 }
+            title: { fontSize: 14, leftPadding: -10 },
           }}
           colorScale={colors}
           data={dataset3.map((chartGroup, i) => ({
-            name: t("legend."+chartGroup.indicatorGroup).concat("        ").substr(0, 16),
-            fill: colors[i]
+            name: t('legend.' + chartGroup.indicatorGroup)
+              .concat('        ')
+              .substr(0, 16),
+            fill: colors[i],
           }))}
-          labelComponent={<VictoryLabel style={{ fontSize: "9px" }} />}
+          labelComponent={<VictoryLabel style={{ fontSize: '9px' }} />}
         />
         <VictoryGroup offset={10} style={{ data: { width: 10 } }}>
           <VictoryStack>
@@ -270,23 +274,23 @@ const StackedBarChart = props => {
                 data={chartGroup.indicatorGroupValues.map(chartGroupValue => ({
                   ...chartGroupValue,
                   label:
-                    "Difference: " +
-                    t("legend."+chartGroup.indicatorGroup) +
-                    ": " +
+                    'Difference: ' +
+                    t('legend.' + chartGroup.indicatorGroup) +
+                    ': ' +
                     (props.YPercentage
                       ? (
                           (chartGroupValue.total * 100) /
                           props.divideValues
-                        ).toFixed(0) + "%"
-                      : (
-                          chartGroupValue.total / props.divideValues
-                        ).toFixed(2))
+                        ).toFixed(0) + '%'
+                      : (chartGroupValue.total / props.divideValues).toFixed(
+                          2
+                        )),
                 }))}
                 x="year"
-                y={datum => datum["total"] / maxValue}
+                y={datum => datum['total'] / maxValue}
                 labelComponent={<VictoryTooltip />}
                 style={{
-                  data: { fill: colors[i] }
+                  data: { fill: colors[i] },
                 }}
               />
             ))}
@@ -300,15 +304,15 @@ const StackedBarChart = props => {
                 label: `${
                   props.Y2Percentage === false
                     ? entry.total.toFixed(0)
-                    : (entry.total * 100).toFixed(0) + "%"
-                }`
+                    : (entry.total * 100).toFixed(0) + '%'
+                }`,
               }))}
               x="year"
               style={{
-                data: { stroke: "green" },
-                labels: { fontSize: "8px" }
+                data: { stroke: 'green' },
+                labels: { fontSize: '8px' },
               }}
-              y={datum => datum["total"] / maxY2}
+              y={datum => datum['total'] / maxY2}
               animate={{ duration: 500 }}
               labelComponent={<VictoryLabel dy={7} />}
             />
@@ -316,13 +320,13 @@ const StackedBarChart = props => {
         )}
       </VictoryChart>
     </div>
-  );
-};
+  )
+}
 
 StackedBarChart.defaultProps = {
   divideValues: 1,
-  YPercentage: false
-};
+  YPercentage: false,
+}
 
 StackedBarChart.propTypes = {
   stackedBar: PropTypes.object,
@@ -340,7 +344,8 @@ StackedBarChart.propTypes = {
   divideValues: PropTypes.number,
   label2: PropTypes.string,
   YPercentage: PropTypes.bool,
-  Y2Percentage: PropTypes.bool
-};
+  Y2Percentage: PropTypes.bool,
+  selectedCountries: PropTypes.array.isRequired,
+}
 
-export default StackedBarChart;
+export default StackedBarChart

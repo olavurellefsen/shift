@@ -30,6 +30,7 @@ const StackedBarChart = props => {
   const line = props.line
   const scenario = props.selectedScenario
   const scenario2 = props.selectedScenario2
+  const selectedCountries = props.selectedCountries
   const chartName = props.chartName
   const chartTitle = t('chartTitle.' + props.chartTitle)
   const combinedChart = props.combinedChart
@@ -142,7 +143,7 @@ const StackedBarChart = props => {
     '#4346fa',
     '#52627f',
   ]
-
+console.log(selectedCountries)
   return (
     <div>
       <VictoryChart
@@ -359,6 +360,7 @@ StackedBarChart.propTypes = {
   label2: PropTypes.string,
   YPercentage: PropTypes.bool,
   Y2Percentage: PropTypes.bool,
+  selectedCountries: PropTypes.array.isRequired,
 }
 
 export default StackedBarChart
