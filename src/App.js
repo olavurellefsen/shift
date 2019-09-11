@@ -9,10 +9,6 @@ import Tabs from './tabs/Tabs'
 import TabsMobile from './tabs/Tabs.mobile'
 import Charts from './charts/Charts'
 import ChartsTab2 from './charts/ChartsTab2'
-import ChartsTab3 from './charts/ChartsTab3'
-import ChartsTab4 from './charts/ChartsTab4'
-import ChartsTab5 from './charts/ChartsTab5'
-import ChartsTab6 from './charts/ChartsTab6'
 import PageRenderer from './pages/PageRenderer'
 import Prerequisites from './pages/Prerequisites'
 import scenarioCombinations from './data/scenarioCombinations'
@@ -47,14 +43,14 @@ export const changeScenario = (name, value) => ({
   [name]: value,
 })
 
-const default_scenario = 'Frozen_policy_INT'
+const default_scenario = "Reference";
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
-  .filter(s => !s.ccs && !s.opt1 && !s.opt2 && !s.opt3)
+  .filter(s => !s.ccs && !s.bio && !s.opt2 && !s.opt3)
   .forEach(s => {
     options[s.nameNoOptions] = {}
     options[s.nameNoOptions]['ccs'] = false
-    options[s.nameNoOptions]['opt1'] = false
+    options[s.nameNoOptions]['bio'] = false
     options[s.nameNoOptions]['opt2'] = false
     options[s.nameNoOptions]['opt3'] = false
   })
@@ -71,7 +67,7 @@ export class App extends React.Component {
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: '',
       selectedCountries: ['no'],
-    }
+  }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
   }
 
@@ -84,8 +80,8 @@ export class App extends React.Component {
       return {
         scenarioSelection:
           state.scenarioSelectionNoOptions +
-          (state.options[state.scenarioSelectionNoOptions].ccs ? '_CCS' : '') +
-          (false ? '_opt1' : '') +
+          (state.options[state.scenarioSelectionNoOptions].ccs ? '_ccs' : '') +
+          (false ? '_bio' : '') +
           (false ? '_opt2' : '') +
           (false ? '_opt3' : ''),
       }
@@ -96,9 +92,9 @@ export class App extends React.Component {
           state.scenarioSelectionNoOptions2 !== ''
             ? state.scenarioSelectionNoOptions2 +
               (state.options[state.scenarioSelectionNoOptions2].ccs
-                ? '_CCS'
+                ? '_ccs'
                 : '') +
-              (false ? '_opt1' : '') +
+              (false ? '_bio' : '') +
               (false ? '_opt2' : '') +
               (false ? '_opt3' : '')
             : '',
@@ -185,7 +181,7 @@ export class App extends React.Component {
               options={this.state.options}
               toggleOption={this.ToggleOption}
               selectedCountries={this.state.selectedCountries}
-              selectCountry={this.selecCountry}
+              selectCountry={this.selectCountry}
             />
           </Content>
         </Column>
@@ -201,6 +197,7 @@ export class App extends React.Component {
                   <Charts
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
+                    selectedCountries={this.state.selectedCountries}
                   />
                 )}
               />
@@ -210,42 +207,7 @@ export class App extends React.Component {
                   <ChartsTab2
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab3"
-                render={() => (
-                  <ChartsTab3
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab4"
-                render={() => (
-                  <ChartsTab4
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab5"
-                render={() => (
-                  <ChartsTab5
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab6"
-                render={() => (
-                  <ChartsTab6
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
+                    selectedCountries={this.state.selectedCountries}
                   />
                 )}
               />
