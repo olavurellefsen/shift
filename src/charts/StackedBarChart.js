@@ -34,7 +34,7 @@ const StackedBarChart = props => {
   const chartName = props.chartName
   const chartTitle = t('chartTitle.' + props.chartTitle)
   const combinedChart = props.combinedChart
-  const periods = [2015, 2020, 2025, 2030, 2035, 2040, 2045, 2050]
+  const periods = [2010, 2020, 2030, 2040, 2050]
   let gutter, rowGutter
   if (
     !process.env.NODE_ENV ||
