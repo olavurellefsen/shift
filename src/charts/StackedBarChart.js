@@ -143,7 +143,67 @@ const StackedBarChart = props => {
     '#4346fa',
     '#52627f',
   ]
-console.log(selectedCountries)
+
+function convertToLongName(country) {
+  let selectedCountry = ''
+      switch(country) {
+        case 'dk': 
+          selectedCountry = 'Denmark'
+          break
+        case 'no':
+          selectedCountry = 'Norway'
+          break
+        case 'se':
+          selectedCountry = 'Sweden'
+          break
+        default:
+          console.log('Unknown selected country')
+          break
+      }
+      return selectedCountry
+}
+const selectedCountriesLongNames = selectedCountries.map(convertToLongName)
+const years = [2010, 2013,2020,2030,2040, 2050]
+//Useful when finding axis range
+let totalYearValues = {}
+years.forEach(year => {
+  totalYearValues[year] = 0
+})
+function createAccumulatedData(data, s, percentage) {
+  if (!s) return undefined //this will be the case for sceanrio2 if only one scenario is selected
+  let accumulatedData = {}
+  data.scenarios
+      .find(o => o.scenario === s)
+      .indicators.find(o => o.indicator === chartName)
+      .regions.forEach(r => {
+          r.indicatorGroups.forEach(indicatorGroup => {
+            if (!accumulatedData[indicatorGroup.indicatorGroup]) {
+              accumulatedData[indicatorGroup.indicatorGroup]=[]
+              years.forEach(y => {
+                accumulatedData[indicatorGroup.indicatorGroup].push({"year": y, "total": 0})
+              })
+            }
+            if (selectedCountriesLongNames.includes(r.region)) {//Only include selected countries
+              indicatorGroup.indicatorGroupValues.forEach((value, index) => {
+                if (accumulatedData[indicatorGroup.indicatorGroup][index].year !== value.year ) {
+                   //Extra check we rely on the two arrays being indexed the same way
+                  console.log("Error in array indexing")
+                }
+                accumulatedData[indicatorGroup.indicatorGroup][index].total += percentage ? value.total/selectedCountries.length : value.total
+                totalYearValues[value.year] += percentage ? value.total/selectedCountries.length : value.total
+              })
+            }
+          })
+      })
+      return accumulatedData
+
+  }
+  const accumulatedDataScenario1 = createAccumulatedData(stackedBar.data, scenario)
+  const accumulatedDataScenario2 = createAccumulatedData(stackedBar.data, scenario2)
+  let maxY = -Infinity
+  Object.keys(totalYearValues).forEach(year => {
+    maxY = Math.round(Math.max(maxY, totalYearValues[year]))
+  })
   return (
     <div>
       <VictoryChart
@@ -164,7 +224,7 @@ console.log(selectedCountries)
           tickFormat={tick =>
             `${
               props.YPercentage === false
-                ? (tick * props.maxY) / props.divideValues
+                ? (tick * maxY) / props.divideValues
                 : (tick * 100) / props.divideValues + '%'
             }`
           }
@@ -219,18 +279,14 @@ console.log(selectedCountries)
         />
         <VictoryGroup offset={10} style={{ data: { width: 10 } }}>
           <VictoryStack>
-            {stackedBar.data.scenarios
-              .find(o => o.scenario === scenario)
-              .indicators.find(o => o.indicator === chartName)
-              .regions.find(r => r.region === 'Denmark')
-              .indicatorGroups.map((chartGroup, i) => (
+            {Object.keys(accumulatedDataScenario1).map((chartGroupName, i) => (
                 <VictoryBar
-                  key={chartGroup.indicatorGroup}
-                  data={chartGroup.indicatorGroupValues.map(
+                  key={chartGroupName}
+                  data={accumulatedDataScenario1[chartGroupName].map(
                     chartGroupValue => ({
                       ...chartGroupValue,
                       label:
-                        t('legend.' + chartGroup.indicatorGroup) +
+                        t('legend.' + chartGroupName) +
                         ': ' +
                         (props.YPercentage
                           ? (
@@ -243,7 +299,7 @@ console.log(selectedCountries)
                     })
                   )}
                   x="year"
-                  y={datum => datum['total'] / props.maxY}
+                  y={datum => datum['total'] / (maxY === 0 ? 100 : maxY)}
                   labelComponent={<VictoryTooltip />}
                   style={{
                     data: { fill: colors[i] },
@@ -253,18 +309,14 @@ console.log(selectedCountries)
           </VictoryStack>
           {scenario2 !== '' && (
             <VictoryStack>
-              {stackedBar.data.scenarios
-                .find(o => o.scenario === scenario2)
-                .indicators.find(o => o.indicator === chartName)
-                .regions.find(r => r.region === 'Denmark')
-                .indicatorGroups.map((chartGroup, i) => (
+              {Object.keys(accumulatedDataScenario2).map((chartGroupName, i) => (
                   <VictoryBar
-                    key={chartGroup.indicatorGroup}
-                    data={chartGroup.indicatorGroupValues.map(
+                    key={chartGroupName}
+                    data={accumulatedDataScenario2[chartGroupName].map(
                       chartGroupValue => ({
                         ...chartGroupValue,
                         label:
-                          t('legend.' + chartGroup.indicatorGroup) +
+                          t('legend.' + chartGroupName) +
                           ': ' +
                           (props.YPercentage
                             ? (
@@ -277,7 +329,7 @@ console.log(selectedCountries)
                       })
                     )}
                     x="year"
-                    y={datum => datum['total'] / props.maxY}
+                    y={datum => datum['total'] / maxY}
                     labelComponent={<VictoryTooltip />}
                     style={{
                       data: { fill: colors2[i] },
