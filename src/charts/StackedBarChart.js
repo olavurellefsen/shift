@@ -162,28 +162,37 @@ function convertToLongName(country) {
       }
       return selectedCountry
 }
-console.log('chartName: ' + chartName)
 const selectedCountriesLongNames = selectedCountries.map(convertToLongName)
-let accumulatedData = {}
-stackedBar.data.scenarios
-    .find(o => o.scenario === scenario)
-    .indicators.find(o => o.indicator === chartName)
-    .regions.forEach(r => {
-      if (selectedCountriesLongNames.includes(r.region)) {
-        r.indicatorGroups.forEach(indicatorGroup => {
-          if (!accumulatedData[indicatorGroup.indicatorGroup]) {
-            accumulatedData[indicatorGroup.indicatorGroup] = {}
-          }
-          indicatorGroup.indicatorGroupValues.forEach(value => {
-            if (!accumulatedData[indicatorGroup.indicatorGroup][value.year]) {
-              accumulatedData[indicatorGroup.indicatorGroup][value.year] = 0
+const years = [2010, 2013,2020,2030,2040, 2050]
+function createAccumulatedData(data, s) {
+  if (!s) return undefined //this would 
+  let accumulatedData = {}
+  data.scenarios
+      .find(o => o.scenario === s)
+      .indicators.find(o => o.indicator === chartName)
+      .regions.forEach(r => {
+        if (selectedCountriesLongNames.includes(r.region)) {
+          r.indicatorGroups.forEach(indicatorGroup => {
+            if (!accumulatedData[indicatorGroup.indicatorGroup]) {
+              accumulatedData[indicatorGroup.indicatorGroup]=[]
+              years.forEach(y => {
+                accumulatedData[indicatorGroup.indicatorGroup].push({"year": y, "total": 0})
+              })
             }
-            accumulatedData[indicatorGroup.indicatorGroup][value.year] += value.total
+            indicatorGroup.indicatorGroupValues.forEach((value, index) => {
+              if (accumulatedData[indicatorGroup.indicatorGroup][index].year !== value.year ) {
+                console.log("Error in array indexing")
+              }
+              accumulatedData[indicatorGroup.indicatorGroup][index].total += value.total
+            })
           })
-        })
-      }
-    })
-  console.log(accumulatedData)
+        }
+      })
+      return accumulatedData
+
+  }
+  const accumulatedDataScenario1 = createAccumulatedData(stackedBar.data, scenario)
+  const accumulatedDataScenario2 = createAccumulatedData(stackedBar.data, scenario2)
   return (
     <div>
       <VictoryChart
@@ -259,18 +268,14 @@ stackedBar.data.scenarios
         />
         <VictoryGroup offset={10} style={{ data: { width: 10 } }}>
           <VictoryStack>
-            {stackedBar.data.scenarios
-              .find(o => o.scenario === scenario)
-              .indicators.find(o => o.indicator === chartName)
-              .regions.find(r => r.region === 'Denmark')
-              .indicatorGroups.map((chartGroup, i) => (
+            {Object.keys(accumulatedDataScenario1).map((chartGroupName, i) => (
                 <VictoryBar
-                  key={chartGroup.indicatorGroup}
-                  data={chartGroup.indicatorGroupValues.map(
+                  key={chartGroupName}
+                  data={accumulatedDataScenario1[chartGroupName].map(
                     chartGroupValue => ({
                       ...chartGroupValue,
                       label:
-                        t('legend.' + chartGroup.indicatorGroup) +
+                        t('legend.' + chartGroupName) +
                         ': ' +
                         (props.YPercentage
                           ? (
@@ -293,18 +298,14 @@ stackedBar.data.scenarios
           </VictoryStack>
           {scenario2 !== '' && (
             <VictoryStack>
-              {stackedBar.data.scenarios
-                .find(o => o.scenario === scenario2)
-                .indicators.find(o => o.indicator === chartName)
-                .regions.find(r => r.region === 'Denmark')
-                .indicatorGroups.map((chartGroup, i) => (
+              {Object.keys(accumulatedDataScenario2).map((chartGroupName, i) => (
                   <VictoryBar
-                    key={chartGroup.indicatorGroup}
-                    data={chartGroup.indicatorGroupValues.map(
+                    key={chartGroupName}
+                    data={accumulatedDataScenario2[chartGroupName].map(
                       chartGroupValue => ({
                         ...chartGroupValue,
                         label:
-                          t('legend.' + chartGroup.indicatorGroup) +
+                          t('legend.' + chartGroupName) +
                           ': ' +
                           (props.YPercentage
                             ? (
