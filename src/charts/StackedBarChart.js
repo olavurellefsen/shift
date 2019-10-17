@@ -164,14 +164,18 @@ function convertToLongName(country) {
 }
 const selectedCountriesLongNames = selectedCountries.map(convertToLongName)
 const years = [2010, 2013,2020,2030,2040, 2050]
-function createAccumulatedData(data, s) {
-  if (!s) return undefined //this would 
+//Useful when finding axis range
+let totalYearValues = {}
+years.forEach(year => {
+  totalYearValues[year] = 0
+})
+function createAccumulatedData(data, s, percentage) {
+  if (!s) return undefined //this will be the case for sceanrio2 if only one scenario is selected
   let accumulatedData = {}
   data.scenarios
       .find(o => o.scenario === s)
       .indicators.find(o => o.indicator === chartName)
       .regions.forEach(r => {
-        if (selectedCountriesLongNames.includes(r.region)) {
           r.indicatorGroups.forEach(indicatorGroup => {
             if (!accumulatedData[indicatorGroup.indicatorGroup]) {
               accumulatedData[indicatorGroup.indicatorGroup]=[]
@@ -179,20 +183,27 @@ function createAccumulatedData(data, s) {
                 accumulatedData[indicatorGroup.indicatorGroup].push({"year": y, "total": 0})
               })
             }
-            indicatorGroup.indicatorGroupValues.forEach((value, index) => {
-              if (accumulatedData[indicatorGroup.indicatorGroup][index].year !== value.year ) {
-                console.log("Error in array indexing")
-              }
-              accumulatedData[indicatorGroup.indicatorGroup][index].total += value.total
-            })
+            if (selectedCountriesLongNames.includes(r.region)) {//Only include selected countries
+              indicatorGroup.indicatorGroupValues.forEach((value, index) => {
+                if (accumulatedData[indicatorGroup.indicatorGroup][index].year !== value.year ) {
+                   //Extra check we rely on the two arrays being indexed the same way
+                  console.log("Error in array indexing")
+                }
+                accumulatedData[indicatorGroup.indicatorGroup][index].total += percentage ? value.total/selectedCountries.length : value.total
+                totalYearValues[value.year] += percentage ? value.total/selectedCountries.length : value.total
+              })
+            }
           })
-        }
       })
       return accumulatedData
 
   }
   const accumulatedDataScenario1 = createAccumulatedData(stackedBar.data, scenario)
   const accumulatedDataScenario2 = createAccumulatedData(stackedBar.data, scenario2)
+  let maxY = -Infinity
+  Object.keys(totalYearValues).forEach(year => {
+    maxY = Math.round(Math.max(maxY, totalYearValues[year]))
+  })
   return (
     <div>
       <VictoryChart
@@ -213,7 +224,7 @@ function createAccumulatedData(data, s) {
           tickFormat={tick =>
             `${
               props.YPercentage === false
-                ? (tick * props.maxY) / props.divideValues
+                ? (tick * maxY) / props.divideValues
                 : (tick * 100) / props.divideValues + '%'
             }`
           }
@@ -288,7 +299,7 @@ function createAccumulatedData(data, s) {
                     })
                   )}
                   x="year"
-                  y={datum => datum['total'] / props.maxY}
+                  y={datum => datum['total'] / (maxY === 0 ? 100 : maxY)}
                   labelComponent={<VictoryTooltip />}
                   style={{
                     data: { fill: colors[i] },
@@ -318,7 +329,7 @@ function createAccumulatedData(data, s) {
                       })
                     )}
                     x="year"
-                    y={datum => datum['total'] / props.maxY}
+                    y={datum => datum['total'] / maxY}
                     labelComponent={<VictoryTooltip />}
                     style={{
                       data: { fill: colors2[i] },
