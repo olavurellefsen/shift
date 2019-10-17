@@ -143,7 +143,47 @@ const StackedBarChart = props => {
     '#4346fa',
     '#52627f',
   ]
-console.log(selectedCountries)
+
+function convertToLongName(country) {
+  let selectedCountry = ''
+      switch(country) {
+        case 'dk': 
+          selectedCountry = 'Denmark'
+          break
+        case 'no':
+          selectedCountry = 'Norway'
+          break
+        case 'se':
+          selectedCountry = 'Sweden'
+          break
+        default:
+          console.log('Unknown selected country')
+          break
+      }
+      return selectedCountry
+}
+console.log('chartName: ' + chartName)
+const selectedCountriesLongNames = selectedCountries.map(convertToLongName)
+let accumulatedData = {}
+stackedBar.data.scenarios
+    .find(o => o.scenario === scenario)
+    .indicators.find(o => o.indicator === chartName)
+    .regions.forEach(r => {
+      if (selectedCountriesLongNames.includes(r.region)) {
+        r.indicatorGroups.forEach(indicatorGroup => {
+          if (!accumulatedData[indicatorGroup.indicatorGroup]) {
+            accumulatedData[indicatorGroup.indicatorGroup] = {}
+          }
+          indicatorGroup.indicatorGroupValues.forEach(value => {
+            if (!accumulatedData[indicatorGroup.indicatorGroup][value.year]) {
+              accumulatedData[indicatorGroup.indicatorGroup][value.year] = 0
+            }
+            accumulatedData[indicatorGroup.indicatorGroup][value.year] += value.total
+          })
+        })
+      }
+    })
+  console.log(accumulatedData)
   return (
     <div>
       <VictoryChart
