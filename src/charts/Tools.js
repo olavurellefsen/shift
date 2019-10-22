@@ -1,5 +1,3 @@
-
-import React from 'react'
 function convertToLongName(country) {
     let selectedCountry = ''
         switch(country) {

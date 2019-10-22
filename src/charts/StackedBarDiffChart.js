@@ -11,7 +11,6 @@ import {
   VictoryTheme,
   VictoryAxis,
   VictoryBar,
-  VictoryLine,
   VictoryTooltip,
 } from 'victory'
 import {createAccumulatedData} from './Tools'
@@ -28,7 +27,6 @@ ChartHeader.displayName = 'ChartHeader'
 const StackedBarChart = props => {
   const { t } = useTranslation()
   const stackedBar = props.stackedBar
-  const line = props.line
   const scenario = props.selectedScenario
   const scenario2 = props.selectedScenario2
   const selectedCountries = props.selectedCountries
