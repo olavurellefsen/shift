@@ -14,6 +14,7 @@ import {
   VictoryLine,
   VictoryTooltip,
 } from 'victory'
+import {createAccumulatedData} from './Tools'
 
 const ChartHeader = styled(VictoryLabel)`
   text-anchor: start;
@@ -66,90 +67,146 @@ const StackedBarChart = props => {
     yDomain = stackedRatio < lineRatio ? [stackedRatio, 1] : [lineRatio, 1]
   }
 
-  let dataset3 = []
-  stackedBar.data.scenarios
-    .filter(o => o.scenario === scenario || o.scenario === scenario2)
-    .map(scenario =>
-      scenario.indicators
-        .filter(o => o.indicator === chartName)
-        .filter(r => r.region === 'Denmark')
-        .map(indicator =>
-          indicator.indicatorGroups.map((chartGroup, i) => {
-            if (
-              dataset3.find(
-                c => c.indicatorGroup === chartGroup.indicatorGroup
-              ) === undefined
-            ) {
-              dataset3.push(JSON.parse(JSON.stringify(chartGroup)))
-            } else {
-              for (
-                var j = 0;
-                j < dataset3[i].indicatorGroupValues.length;
-                j++
-              ) {
-                dataset3[i].indicatorGroupValues[j].total -=
-                  chartGroup.indicatorGroupValues[j].total
-              }
-            }
-            return chartGroup
-          })
-        )
-    )
-  // Find the minimum and maximum stacked values
-  let minValue = -0.00001
-  let maxValue = 0.00001
-  for (var i = 0; i < periods.length; i++) {
-    let totalValuePos = 0
-    let totalValueNeg = 0
-    for (var j = 0; j < dataset3.length; j++) {
-      let value = dataset3[j].indicatorGroupValues[i].total
-      if (value < 0) {
-        totalValueNeg += value
-      } else {
-        totalValuePos += value
-      }
-    }
-    if (totalValuePos > maxValue) {
-      maxValue = totalValuePos
-    }
-    if (totalValueNeg < minValue) {
-      minValue = totalValueNeg
-    }
-  }
-  if (-minValue > maxValue) {
-    maxValue = -minValue
-  }
+  const dataScenario1 = createAccumulatedData(stackedBar.data, scenario, false, chartName, selectedCountries)
+  const dataScenario2 = createAccumulatedData(stackedBar.data, scenario2, false, chartName, selectedCountries)
+  const accumulatedDataScenario1 = dataScenario1[0]
+  const accumulatedDataScenario2 = scenario2 ? dataScenario2[0] : undefined
+  const totalYearValuesScenario1 = dataScenario1[1]
+  const totalYearValuesScenario2 = scenario2 ? dataScenario2[1] : undefined
 
-  let datasetLine3 = []
-  if (combinedChart === true) {
-    line.data.scenarios
-      .filter(o => o.scenario === scenario || o.scenario === scenario2)
-      .map(scenario =>
-        scenario.indicators
-          .filter(o => o.indicator === chartName)
-          .map(indicator =>
-            indicator.indicatorGroups.map((chartGroup, i) => {
-              if (
-                datasetLine3.find(
-                  c => c.indicatorGroup === chartGroup.indicatorGroup
-                ) === undefined
-              ) {
-                datasetLine3.push(JSON.parse(JSON.stringify(chartGroup)))
-              } else {
-                for (
-                  var j = 0;
-                  j < datasetLine3[i].indicatorGroupValues.length;
-                  j++
-                ) {
-                  datasetLine3[i].indicatorGroupValues[j].total -=
-                    chartGroup.indicatorGroupValues[j].total
-                }
-              }
-              return chartGroup
-            })
-          )
-      )
-  }
+  const test = stackedBar.data.scenarios
+  .filter(o => o.scenario === scenario || o.scenario === scenario2)
+  console.log(chartName)
+  console.log('test')
+  console.log(test)
+  let dataset3 = []
+  let diffData = JSON.parse(JSON.stringify(accumulatedDataScenario1))
+  console.log('accumulatedDataScenario1')
+  console.log(accumulatedDataScenario1)
+  console.log('accumulatedDataScenario2')
+  console.log(accumulatedDataScenario2)
+  Object.keys(accumulatedDataScenario2).forEach(indicatorName => {
+    accumulatedDataScenario2[indicatorName].forEach((yearValue, index) => {
+      diffData[indicatorName][index].total =  diffData[indicatorName][index].total - yearValue.total
+    })
+  }) 
+  console.log('diffData')
+  console.log(diffData)
+    // stackedBar.data.scenarios
+    //   .filter(o => o.scenario === scenario || o.scenario === scenario2)
+    //   .map(scenario => 
+    //     {
+    //       console.log('indicators')
+    //       const indicators = scenario.indicators
+    //       .filter(o => o.indicator === chartName)
+    //       .filter(o => o.regions.region === 'Denmark')
+    //       console.log(indicators)
+    //     scenario.indicators
+    //       .filter(o => o.indicator === chartName)
+    //       .filter(o => o.regions.region === 'Denmark')
+    //       .map(indicator => {
+    //         console.log("in here")
+    //         indicator.indicatorGroups.map((chartGroup, i) => {
+    //           console.log(i + ': ' +chartGroup.indicatorGroup)
+    //           console.log('scenario: ' +scenario.scenario)
+    //           //For scenario 1
+    //           if (
+    //             dataset3.find(
+    //               c => c.indicatorGroup === chartGroup.indicatorGroup
+    //             ) === undefined
+    //           ) {
+    //             dataset3.push(JSON.parse(JSON.stringify(chartGroup)))
+    //             console.log("dataset3 initilised")
+    //             console.log(dataset3)
+    //           } 
+    //           //For scenario 2
+    //           else {
+    //             for (
+    //               var j = 0;
+    //               j < dataset3[i].indicatorGroupValues.length;
+    //               j++
+    //             ) {
+    //               console.log('j: '+j)
+    //               console.log('old value')
+    //               console.log(dataset3[i].indicatorGroupValues[j].total)
+    //               dataset3[i].indicatorGroupValues[j].total -=
+    //                 chartGroup.indicatorGroupValues[j].total
+    //                 console.log('new value')
+    //               console.log(dataset3[i].indicatorGroupValues[j].total)
+    //             }
+    //           }
+    //           console.log('dataset3')
+    //           console.log(dataset3)
+    //           return chartGroup
+    //         })
+    //         return 8
+    //       }
+    //       )
+    //       return 0
+    //     }
+    //   )
+  console.log("stacket bar")
+  console.log(stackedBar.data)
+  console.log("dataset3")
+  console.log(dataset3)
+  // Find the minimum and maximum stacked values
+  let minValue = -800
+  let maxValue = 800
+  // Find the minimum and maximum stacked values
+  // let minValue = -0.00001
+  // let maxValue = 0.00001
+  // for (var i = 0; i < periods.length; i++) {
+  //   let totalValuePos = 0
+  //   let totalValueNeg = 0
+  //   for (var j = 0; j < dataset3.length; j++) {
+  //     let value = dataset3[j].indicatorGroupValues[i].total
+  //     if (value < 0) {
+  //       totalValueNeg += value
+  //     } else {
+  //       totalValuePos += value
+  //     }
+  //   }
+  //   if (totalValuePos > maxValue) {
+  //     maxValue = totalValuePos
+  //   }
+  //   if (totalValueNeg < minValue) {
+  //     minValue = totalValueNeg
+  //   }
+  // }
+  // if (-minValue > maxValue) {
+  //   maxValue = -minValue
+  // }
+
+  // let datasetLine3 = []
+  // if (combinedChart === true) {
+  //   line.data.scenarios
+  //     .filter(o => o.scenario === scenario || o.scenario === scenario2)
+  //     .map(scenario =>
+  //       scenario.indicators
+  //         .filter(o => o.indicator === chartName)
+  //         .map(indicator =>
+  //           indicator.indicatorGroups.map((chartGroup, i) => {
+  //             if (
+  //               datasetLine3.find(
+  //                 c => c.indicatorGroup === chartGroup.indicatorGroup
+  //               ) === undefined
+  //             ) {
+  //               datasetLine3.push(JSON.parse(JSON.stringify(chartGroup)))
+  //             } else {
+  //               for (
+  //                 var j = 0;
+  //                 j < datasetLine3[i].indicatorGroupValues.length;
+  //                 j++
+  //               ) {
+  //                 datasetLine3[i].indicatorGroupValues[j].total -=
+  //                   chartGroup.indicatorGroupValues[j].total
+  //               }
+  //             }
+  //             return chartGroup
+  //           })
+  //         )
+  //     )
+  
 
   const colors = [
     '#5cbae6',
@@ -258,8 +315,8 @@ const StackedBarChart = props => {
             title: { fontSize: 14, leftPadding: -10 },
           }}
           colorScale={colors}
-          data={dataset3.map((chartGroup, i) => ({
-            name: t('legend.' + chartGroup.indicatorGroup)
+          data={Object.keys(diffData).map((indicatorName, i) => ({
+            name: t('legend.' + indicatorName)
               .concat('        ')
               .substr(0, 16),
             fill: colors[i],
@@ -268,14 +325,14 @@ const StackedBarChart = props => {
         />
         <VictoryGroup offset={10} style={{ data: { width: 10 } }}>
           <VictoryStack>
-            {dataset3.map((chartGroup, i) => (
+            {Object.keys(diffData).map((indicatorName, i) => (
               <VictoryBar
-                key={chartGroup.indicatorGroup}
-                data={chartGroup.indicatorGroupValues.map(chartGroupValue => ({
+                key={indicatorName}
+                data={diffData[indicatorName].map(chartGroupValue => ({
                   ...chartGroupValue,
                   label:
                     'Difference: ' +
-                    t('legend.' + chartGroup.indicatorGroup) +
+                    t('legend.' + indicatorName) +
                     ': ' +
                     (props.YPercentage
                       ? (
@@ -296,7 +353,7 @@ const StackedBarChart = props => {
             ))}
           </VictoryStack>
         </VictoryGroup>
-        {combinedChart === true && (
+        {/* {combinedChart === true && (
           <VictoryGroup>
             <VictoryLine
               data={datasetLine3[0].indicatorGroupValues.map(entry => ({
@@ -317,7 +374,7 @@ const StackedBarChart = props => {
               labelComponent={<VictoryLabel dy={7} />}
             />
           </VictoryGroup>
-        )}
+        )} */}
       </VictoryChart>
     </div>
   )
