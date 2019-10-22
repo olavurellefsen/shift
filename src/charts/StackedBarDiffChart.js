@@ -77,14 +77,13 @@ const StackedBarChart = props => {
   const test = stackedBar.data.scenarios
   .filter(o => o.scenario === scenario || o.scenario === scenario2)
   console.log(chartName)
-  console.log('test')
-  console.log(test)
-  let dataset3 = []
+  // console.log('test')
+  // console.log(test)
   let diffData = JSON.parse(JSON.stringify(accumulatedDataScenario1))
-  console.log('accumulatedDataScenario1')
-  console.log(accumulatedDataScenario1)
-  console.log('accumulatedDataScenario2')
-  console.log(accumulatedDataScenario2)
+  // console.log('accumulatedDataScenario1')
+  // console.log(accumulatedDataScenario1)
+  // console.log('accumulatedDataScenario2')
+  // console.log(accumulatedDataScenario2)
   Object.keys(accumulatedDataScenario2).forEach(indicatorName => {
     accumulatedDataScenario2[indicatorName].forEach((yearValue, index) => {
       diffData[indicatorName][index].total =  diffData[indicatorName][index].total - yearValue.total
@@ -92,91 +91,66 @@ const StackedBarChart = props => {
   }) 
   console.log('diffData')
   console.log(diffData)
-    // stackedBar.data.scenarios
-    //   .filter(o => o.scenario === scenario || o.scenario === scenario2)
-    //   .map(scenario => 
-    //     {
-    //       console.log('indicators')
-    //       const indicators = scenario.indicators
-    //       .filter(o => o.indicator === chartName)
-    //       .filter(o => o.regions.region === 'Denmark')
-    //       console.log(indicators)
-    //     scenario.indicators
-    //       .filter(o => o.indicator === chartName)
-    //       .filter(o => o.regions.region === 'Denmark')
-    //       .map(indicator => {
-    //         console.log("in here")
-    //         indicator.indicatorGroups.map((chartGroup, i) => {
-    //           console.log(i + ': ' +chartGroup.indicatorGroup)
-    //           console.log('scenario: ' +scenario.scenario)
-    //           //For scenario 1
-    //           if (
-    //             dataset3.find(
-    //               c => c.indicatorGroup === chartGroup.indicatorGroup
-    //             ) === undefined
-    //           ) {
-    //             dataset3.push(JSON.parse(JSON.stringify(chartGroup)))
-    //             console.log("dataset3 initilised")
-    //             console.log(dataset3)
-    //           } 
-    //           //For scenario 2
-    //           else {
-    //             for (
-    //               var j = 0;
-    //               j < dataset3[i].indicatorGroupValues.length;
-    //               j++
-    //             ) {
-    //               console.log('j: '+j)
-    //               console.log('old value')
-    //               console.log(dataset3[i].indicatorGroupValues[j].total)
-    //               dataset3[i].indicatorGroupValues[j].total -=
-    //                 chartGroup.indicatorGroupValues[j].total
-    //                 console.log('new value')
-    //               console.log(dataset3[i].indicatorGroupValues[j].total)
-    //             }
-    //           }
-    //           console.log('dataset3')
-    //           console.log(dataset3)
-    //           return chartGroup
-    //         })
-    //         return 8
-    //       }
-    //       )
-    //       return 0
-    //     }
-    //   )
-  console.log("stacket bar")
-  console.log(stackedBar.data)
-  console.log("dataset3")
-  console.log(dataset3)
+  // console.log("stacket bar")
+  // console.log(stackedBar.data)
+  // console.log("dataset3")
+  // console.log(dataset3)
+  // console.log("totalYearValuesScenario1")
+  // console.log(totalYearValuesScenario1)
+  // console.log("totalYearValuesScenario2")
+  // console.log(totalYearValuesScenario2)
   // Find the minimum and maximum stacked values
-  let minValue = -800
-  let maxValue = 800
-  // Find the minimum and maximum stacked values
-  // let minValue = -0.00001
-  // let maxValue = 0.00001
-  // for (var i = 0; i < periods.length; i++) {
-  //   let totalValuePos = 0
-  //   let totalValueNeg = 0
-  //   for (var j = 0; j < dataset3.length; j++) {
-  //     let value = dataset3[j].indicatorGroupValues[i].total
-  //     if (value < 0) {
-  //       totalValueNeg += value
-  //     } else {
-  //       totalValuePos += value
-  //     }
-  //   }
-  //   if (totalValuePos > maxValue) {
-  //     maxValue = totalValuePos
-  //   }
-  //   if (totalValueNeg < minValue) {
-  //     minValue = totalValueNeg
-  //   }
-  // }
+  let maxValue = -Infinity
+  let minValue = Infinity
+  // Object.keys(totalYearValuesScenario1).forEach(year => {
+  //   console.log('year: ' + year)
+  //   maxValue = Math.round(Math.max(maxValue, totalYearValuesScenario1[year] - totalYearValuesScenario2[year]))
+  //   minValue = Math.round(Math.min(minValue, totalYearValuesScenario1[year] - totalYearValuesScenario2[year]))
+  //   console.log('maxValue: ' + maxValue)
+  //   console.log('minValue: ' + minValue)
+  // })
+  // console.log('min: ' + minValue)
+  // console.log('max: '+ maxValue)
   // if (-minValue > maxValue) {
   //   maxValue = -minValue
   // }
 
+  // console.log('maximum: '+ maxValue)
+
+  let totalYearValuesPos = {}
+  let totalYearValuesNeg = {}
+  const years = [2010, 2013,2020,2030,2040, 2050]
+  years.forEach(year => {
+    totalYearValuesPos[year] = 0
+    totalYearValuesNeg[year] = 0
+  })
+  Object.keys(diffData).forEach(indicatorName => {
+    diffData[indicatorName].forEach(yearValue => {
+      let value = yearValue.total
+      if (value < 0) {
+        totalYearValuesNeg[yearValue.year] += yearValue.total
+
+      } else {
+        totalYearValuesPos[yearValue.year] += yearValue.total
+
+      }
+    })
+  })
+  console.log('totalYearValuesPos')
+  console.log(totalYearValuesPos)
+  console.log('totalYearValuesNeg')
+  console.log(totalYearValuesNeg)
+  Object.keys(totalYearValuesPos).forEach(year => {
+    maxValue = Math.round(Math.max(maxValue, totalYearValuesPos[year]))
+    minValue = Math.round(Math.min(minValue, totalYearValuesNeg[year]))
+  })
+  console.log('min: ' + minValue)
+  console.log('max: '+ maxValue)
+  if (-minValue > maxValue) {
+    maxValue = -minValue
+  }
+
+  console.log('maximum: '+ maxValue)
   // let datasetLine3 = []
   // if (combinedChart === true) {
   //   line.data.scenarios
@@ -278,7 +252,7 @@ const StackedBarChart = props => {
             }
             return Math.round((tick * maxValue) / props.divideValues, 0)
           }}
-          tickValues={[-0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75]}
+          tickValues={[-1,-0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75,1]}
           label={props.label}
         />
         {combinedChart === true && (

@@ -52,8 +52,6 @@ export function createAccumulatedData(data, scenario, percentage, chartName, sel
               }
             })
         })
-        console.log(accumulatedData)
-        console.log(totalYearValues)
         return [accumulatedData, totalYearValues]
 }
 
