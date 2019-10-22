@@ -32,7 +32,6 @@ const StackedBarChart = props => {
   const scenario = props.selectedScenario
   const scenario2 = props.selectedScenario2
   const selectedCountries = props.selectedCountries
-  console.log(selectedCountries)
   const chartName = props.chartName
   const chartTitle = t('chartTitle.' + props.chartTitle)
   const combinedChart = props.combinedChart
@@ -71,51 +70,14 @@ const StackedBarChart = props => {
   const dataScenario2 = createAccumulatedData(stackedBar.data, scenario2, false, chartName, selectedCountries)
   const accumulatedDataScenario1 = dataScenario1[0]
   const accumulatedDataScenario2 = scenario2 ? dataScenario2[0] : undefined
-  const totalYearValuesScenario1 = dataScenario1[1]
-  const totalYearValuesScenario2 = scenario2 ? dataScenario2[1] : undefined
-
-  const test = stackedBar.data.scenarios
-  .filter(o => o.scenario === scenario || o.scenario === scenario2)
-  console.log(chartName)
-  // console.log('test')
-  // console.log(test)
   let diffData = JSON.parse(JSON.stringify(accumulatedDataScenario1))
-  // console.log('accumulatedDataScenario1')
-  // console.log(accumulatedDataScenario1)
-  // console.log('accumulatedDataScenario2')
-  // console.log(accumulatedDataScenario2)
   Object.keys(accumulatedDataScenario2).forEach(indicatorName => {
     accumulatedDataScenario2[indicatorName].forEach((yearValue, index) => {
       diffData[indicatorName][index].total =  diffData[indicatorName][index].total - yearValue.total
     })
   }) 
-  console.log('diffData')
-  console.log(diffData)
-  // console.log("stacket bar")
-  // console.log(stackedBar.data)
-  // console.log("dataset3")
-  // console.log(dataset3)
-  // console.log("totalYearValuesScenario1")
-  // console.log(totalYearValuesScenario1)
-  // console.log("totalYearValuesScenario2")
-  // console.log(totalYearValuesScenario2)
-  // Find the minimum and maximum stacked values
   let maxValue = -Infinity
   let minValue = Infinity
-  // Object.keys(totalYearValuesScenario1).forEach(year => {
-  //   console.log('year: ' + year)
-  //   maxValue = Math.round(Math.max(maxValue, totalYearValuesScenario1[year] - totalYearValuesScenario2[year]))
-  //   minValue = Math.round(Math.min(minValue, totalYearValuesScenario1[year] - totalYearValuesScenario2[year]))
-  //   console.log('maxValue: ' + maxValue)
-  //   console.log('minValue: ' + minValue)
-  // })
-  // console.log('min: ' + minValue)
-  // console.log('max: '+ maxValue)
-  // if (-minValue > maxValue) {
-  //   maxValue = -minValue
-  // }
-
-  // console.log('maximum: '+ maxValue)
 
   let totalYearValuesPos = {}
   let totalYearValuesNeg = {}
@@ -136,21 +98,14 @@ const StackedBarChart = props => {
       }
     })
   })
-  console.log('totalYearValuesPos')
-  console.log(totalYearValuesPos)
-  console.log('totalYearValuesNeg')
-  console.log(totalYearValuesNeg)
   Object.keys(totalYearValuesPos).forEach(year => {
     maxValue = Math.round(Math.max(maxValue, totalYearValuesPos[year]))
     minValue = Math.round(Math.min(minValue, totalYearValuesNeg[year]))
   })
-  console.log('min: ' + minValue)
-  console.log('max: '+ maxValue)
   if (-minValue > maxValue) {
     maxValue = -minValue
   }
 
-  console.log('maximum: '+ maxValue)
   // let datasetLine3 = []
   // if (combinedChart === true) {
   //   line.data.scenarios

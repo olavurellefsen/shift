@@ -145,70 +145,14 @@ const StackedBarChart = props => {
     '#52627f',
   ]
 
-function convertToLongName(country) {
-  let selectedCountry = ''
-      switch(country) {
-        case 'dk': 
-          selectedCountry = 'Denmark'
-          break
-        case 'no':
-          selectedCountry = 'Norway'
-          break
-        case 'se':
-          selectedCountry = 'Sweden'
-          break
-        default:
-          console.log('Unknown selected country')
-          break
-      }
-      return selectedCountry
-}
-const selectedCountriesLongNames = selectedCountries.map(convertToLongName)
-const years = [2010, 2013,2020,2030,2040, 2050]
-//Useful when finding axis range
-let totalYearValues = {}
-years.forEach(year => {
-  totalYearValues[year] = 0
-})
-// function createAccumulatedData(data, s, percentage) {
-//   if (!s) return undefined //this will be the case for sceanrio2 if only one scenario is selected
-//   let accumulatedData = {}
-//   data.scenarios
-//       .find(o => o.scenario === s)
-//       .indicators.find(o => o.indicator === chartName)
-//       .regions.forEach(r => {
-//           r.indicatorGroups.forEach(indicatorGroup => {
-//             if (!accumulatedData[indicatorGroup.indicatorGroup]) {
-//               accumulatedData[indicatorGroup.indicatorGroup]=[]
-//               years.forEach(y => {
-//                 accumulatedData[indicatorGroup.indicatorGroup].push({"year": y, "total": 0})
-//               })
-//             }
-//             if (selectedCountriesLongNames.includes(r.region)) {//Only include selected countries
-//               indicatorGroup.indicatorGroupValues.forEach((value, index) => {
-//                 if (accumulatedData[indicatorGroup.indicatorGroup][index].year !== value.year ) {
-//                    //Extra check we rely on the two arrays being indexed the same way
-//                   console.log("Error in array indexing")
-//                 }
-//                 accumulatedData[indicatorGroup.indicatorGroup][index].total += percentage ? value.total/selectedCountries.length : value.total
-//                 totalYearValues[value.year] += percentage ? value.total/selectedCountries.length : value.total
-//               })
-//             }
-//           })
-//       })
-//       return accumulatedData
-
-//   }
-  // const accumulatedDataScenario1 = createAccumulatedData(stackedBar.data, scenario)
-  // const accumulatedDataScenario2 = createAccumulatedData(stackedBar.data, scenario2)
-  const dataScenario1 = createAccumulatedData(stackedBar.data, scenario, false, chartName, selectedCountries)
+ const dataScenario1 = createAccumulatedData(stackedBar.data, scenario, false, chartName, selectedCountries)
   const dataScenario2 = createAccumulatedData(stackedBar.data, scenario2, false, chartName, selectedCountries)
   const accumulatedDataScenario1 = dataScenario1[0]
   const accumulatedDataScenario2 = scenario2 ? dataScenario2[0] : undefined
   const totalYearValuesScenario1 = dataScenario1[1]
   const totalYearValuesScenario2 = scenario2 ? dataScenario2[1] : undefined
   let maxY = -Infinity
-  Object.keys(totalYearValues).forEach(year => {
+  Object.keys(totalYearValuesScenario1).forEach(year => {
     maxY = Math.round(Math.max(maxY, totalYearValuesScenario1[year],
       scenario2 ? totalYearValuesScenario2[year] : -Infinity))
   })
