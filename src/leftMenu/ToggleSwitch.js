@@ -11,7 +11,7 @@ const SwitchBoxAround = styled.label`
   SwitchBoxAround.displayName = 'SwitchBoxAround';
 const Slider = styled.span`
   position: absolute;
-  cursor: pointer;
+  cursor:${props => (props.available ? 'pointer' : 'inherit')} ;
   top: 0;
   left: 0;
   right: 0;
@@ -35,7 +35,7 @@ const Slider = styled.span`
 const SwitchInput = styled.input`
   display:none;
   &:checked + span {
-    background-color: ${props => (props.dimmed ? '#555' : '#2196F3')};
+    background-color: ${props => (props.available ? '#2196F3' : '#555' )};
   }
   &:focus + span {
     box-shadow: 0 0 1px #2196F3;
@@ -48,18 +48,18 @@ const SwitchInput = styled.input`
 
 const ToggleSwitch = (props) => (
   <SwitchBoxAround>
-    <SwitchInput type='checkbox' checked={props.checked} dimmed={props.dimmed} onChange={()=>{}} />
-    <Slider className='slider'></Slider>
+    <SwitchInput type='checkbox' checked={props.checked} available={props.available} onChange={()=>{}} />
+    <Slider available={props.available} className='slider'></Slider>
   </SwitchBoxAround>
 )
 
 ToggleSwitch.defaultProps = {
-  dimmed: true,
+  available: true,
   checked: false
 }
 
 ToggleSwitch.propTypes = {
-  dimmed: PropTypes.bool,
+  available: PropTypes.bool,
   checked: PropTypes.bool
 }
 

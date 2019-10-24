@@ -122,11 +122,12 @@ export class App extends React.Component {
         )
         this.setState(changeScenario('scenarioSelectionNoOptions2', ''))
         this.unselectToggles(this.state.scenarioSelectionNoOptions2)
-       
+        this.setState({ showDifference: false })
       } else {
         if (value === this.state.scenarioSelectionNoOptions2) {
           this.setState(changeScenario('scenarioSelectionNoOptions2', ''))
           this.unselectToggles(this.state.scenarioSelectionNoOptions2)
+          this.setState({ showDifference: false })
         } else {
           this.setState(changeScenario('scenarioSelectionNoOptions2', value))
         }
