@@ -16,8 +16,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLeaf,
   faDatabase,
-  faBolt,
-  faBatteryFull,
+  // faBolt,
+  // faBatteryFull,
 } from '@fortawesome/free-solid-svg-icons'
 
 function cancelBubble(e) {
@@ -103,6 +103,7 @@ const ScenarioSelectionList = props => {
               >
                 <FontAwesomeIcon icon={faLeaf} />
               </Icon>
+              {/*
               <Icon
                 available={
                   scenarioCombinations.optionsAvailable[optionValue].opt2
@@ -123,7 +124,7 @@ const ScenarioSelectionList = props => {
                 selected={scenarioSwitches[optionValue].opt2}
               >
                 <FontAwesomeIcon icon={faBolt} />
-              </Icon>
+              </Icon> 
               <Icon
                 available={
                   scenarioCombinations.optionsAvailable[optionValue].opt3
@@ -145,6 +146,7 @@ const ScenarioSelectionList = props => {
               >
                 <FontAwesomeIcon icon={faBatteryFull} />
               </Icon>
+              */}
               <ReactTooltip place="top" type="dark" effect="solid" />
             </IconContainer>
           </ScenarioOption>
