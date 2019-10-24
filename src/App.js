@@ -101,6 +101,15 @@ export class App extends React.Component {
       }
     })
   }
+  unselectToggles = (scenario) => {
+    let newOptions = this.state.options
+    Object.keys(this.state.options[scenario]).forEach(option => {
+      newOptions[scenario][option] = false
+    })
+    this.setState({
+      options: newOptions,
+    })
+  }
   UpdateScenarioSelection = (e, name, value) => {
     e.preventDefault()
     if (this.state.scenarioSelectionNoOptions2 !== '') {
@@ -112,9 +121,12 @@ export class App extends React.Component {
           )
         )
         this.setState(changeScenario('scenarioSelectionNoOptions2', ''))
+        this.unselectToggles(this.state.scenarioSelectionNoOptions2)
+       
       } else {
         if (value === this.state.scenarioSelectionNoOptions2) {
           this.setState(changeScenario('scenarioSelectionNoOptions2', ''))
+          this.unselectToggles(this.state.scenarioSelectionNoOptions2)
         } else {
           this.setState(changeScenario('scenarioSelectionNoOptions2', value))
         }
@@ -126,6 +138,7 @@ export class App extends React.Component {
     }
     this.UpdateScenarioNames()
   }
+
 
   CloseWelcomeWidget = () => {
     this.setState({ showWelcome: false })
