@@ -69,7 +69,9 @@ const ScenarioSelectionList = props => {
                   if (scenarioCombinations.optionsAvailable[optionValue].ccs) {
                     props.toggleOption(optionValue, 'ccs')
                   }
-                  cancelBubble(event) //prevent onclick for scenario being fired
+                  if (optionValue === stringValue || optionValue === stringValue2) {
+                    cancelBubble(event) //prevent onclick for scenario being fired
+                  }
                 }}
                 data-tip={
                   t('options.ccs') +
@@ -90,7 +92,9 @@ const ScenarioSelectionList = props => {
                   if (scenarioCombinations.optionsAvailable[optionValue].bio) {
                     props.toggleOption(optionValue, 'bio')
                   }
-                  cancelBubble(event) //prevent onclick for scenario being fired
+                  if (optionValue === stringValue || optionValue === stringValue2) {
+                    cancelBubble(event) //prevent onclick for scenario being fired
+                  }
                 }}
                 data-tip={
                   t('options.bio') +
@@ -112,7 +116,9 @@ const ScenarioSelectionList = props => {
                   if (scenarioCombinations.optionsAvailable[optionValue].bio) {
                     props.toggleOption(optionValue, 'opt2')
                   }
-                  cancelBubble(event) //prevent onclick for scenario being fired
+                  if (optionValue === stringValue || optionValue === stringValue2) {
+                    cancelBubble(event) //prevent onclick for scenario being fired
+                  }
                 }}
                 data-tip={
                   t('options.opt2') +
@@ -133,7 +139,9 @@ const ScenarioSelectionList = props => {
                   if (scenarioCombinations.optionsAvailable[optionValue].bio) {
                     props.toggleOption(optionValue, 'opt3')
                   }
-                  cancelBubble(event) //prevent onclick for scenario being fired
+                  if (optionValue === stringValue || optionValue === stringValue2) {
+                    cancelBubble(event) //prevent onclick for scenario being fired
+                  }
                 }}
                 data-tip={
                   t('options.opt3') +
