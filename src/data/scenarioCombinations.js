@@ -18,9 +18,9 @@ regionOptions : [
 { "id": 2, "name": "Sweden", "country": "Sweden", "short_description": "Sweden", "ultra_short_description": "Sweden" }
                ], 
 optionsAvailable:  {
-       "Reference": {"ccs": true, "bio": false, "opt2": false, "opt3": false},
-       "Share Optimism": {"ccs": true, "bio": false, "opt2": false, "opt3": false},
-       "Technology Optimism": { "ccs": true, "bio": false, "opt2": false, "opt3": false  }
+       "Reference": {"ccs": true, "bio": true, "opt2": false, "opt3": false},
+       "Share Optimism": {"ccs": true, "bio": true, "opt2": false, "opt3": false},
+       "Technology Optimism": { "ccs": true, "bio": true, "opt2": false, "opt3": false  }
     }
   }
 };

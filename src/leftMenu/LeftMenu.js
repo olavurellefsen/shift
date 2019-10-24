@@ -185,9 +185,14 @@ function ScenarioSelectionMenu(props) {
         />
       </ScenarioSelection>
       <MenuSeparatorLine />
-      <ToggleDifference onClick={e => props.toggleDifference(e)}>
+      <ToggleDifference onClick={e => 
+      { if (props.scenarioSelection.scenarioSelection2 !== '') {
+        props.toggleDifference(e)
+      }
+      }
+      }>
         <ToggleSwitch
-          dimmed={props.scenarioSelection.scenarioSelection2 === ''}
+          available={props.scenarioSelection.scenarioSelection2 !== ''}
           checked={props.scenarioSelection.showDifference}
         />
         <ToggleSwitchText

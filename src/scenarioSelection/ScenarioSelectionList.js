@@ -16,8 +16,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faLeaf,
   faDatabase,
-  faBolt,
-  faBatteryFull,
+  // faBolt,
+  // faBatteryFull,
 } from '@fortawesome/free-solid-svg-icons'
 
 function cancelBubble(e) {
@@ -69,7 +69,9 @@ const ScenarioSelectionList = props => {
                   if (scenarioCombinations.optionsAvailable[optionValue].ccs) {
                     props.toggleOption(optionValue, 'ccs')
                   }
-                  cancelBubble(event) //prevent onclick for scenario being fired
+                  if (optionValue === stringValue || optionValue === stringValue2) {
+                    cancelBubble(event) //prevent onclick for scenario being fired
+                  }
                 }}
                 data-tip={
                   t('options.ccs') +
@@ -90,7 +92,9 @@ const ScenarioSelectionList = props => {
                   if (scenarioCombinations.optionsAvailable[optionValue].bio) {
                     props.toggleOption(optionValue, 'bio')
                   }
-                  cancelBubble(event) //prevent onclick for scenario being fired
+                  if (optionValue === stringValue || optionValue === stringValue2) {
+                    cancelBubble(event) //prevent onclick for scenario being fired
+                  }
                 }}
                 data-tip={
                   t('options.bio') +
@@ -103,6 +107,7 @@ const ScenarioSelectionList = props => {
               >
                 <FontAwesomeIcon icon={faLeaf} />
               </Icon>
+              {/*
               <Icon
                 available={
                   scenarioCombinations.optionsAvailable[optionValue].opt2
@@ -111,7 +116,9 @@ const ScenarioSelectionList = props => {
                   if (scenarioCombinations.optionsAvailable[optionValue].bio) {
                     props.toggleOption(optionValue, 'opt2')
                   }
-                  cancelBubble(event) //prevent onclick for scenario being fired
+                  if (optionValue === stringValue || optionValue === stringValue2) {
+                    cancelBubble(event) //prevent onclick for scenario being fired
+                  }
                 }}
                 data-tip={
                   t('options.opt2') +
@@ -123,7 +130,7 @@ const ScenarioSelectionList = props => {
                 selected={scenarioSwitches[optionValue].opt2}
               >
                 <FontAwesomeIcon icon={faBolt} />
-              </Icon>
+              </Icon> 
               <Icon
                 available={
                   scenarioCombinations.optionsAvailable[optionValue].opt3
@@ -132,7 +139,9 @@ const ScenarioSelectionList = props => {
                   if (scenarioCombinations.optionsAvailable[optionValue].bio) {
                     props.toggleOption(optionValue, 'opt3')
                   }
-                  cancelBubble(event) //prevent onclick for scenario being fired
+                  if (optionValue === stringValue || optionValue === stringValue2) {
+                    cancelBubble(event) //prevent onclick for scenario being fired
+                  }
                 }}
                 data-tip={
                   t('options.opt3') +
@@ -145,6 +154,7 @@ const ScenarioSelectionList = props => {
               >
                 <FontAwesomeIcon icon={faBatteryFull} />
               </Icon>
+              */}
               <ReactTooltip place="top" type="dark" effect="solid" />
             </IconContainer>
           </ScenarioOption>

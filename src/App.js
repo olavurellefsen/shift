@@ -81,7 +81,7 @@ export class App extends React.Component {
         scenarioSelection:
           state.scenarioSelectionNoOptions +
           (state.options[state.scenarioSelectionNoOptions].ccs ? '_ccs' : '') +
-          (false ? '_bio' : '') +
+          (state.options[state.scenarioSelectionNoOptions].bio ? '_bio' : '') +
           (false ? '_opt2' : '') +
           (false ? '_opt3' : ''),
       }
@@ -94,11 +94,20 @@ export class App extends React.Component {
               (state.options[state.scenarioSelectionNoOptions2].ccs
                 ? '_ccs'
                 : '') +
-              (false ? '_bio' : '') +
+              (state.options[state.scenarioSelectionNoOptions2].bio ? '_bio' : '') +
               (false ? '_opt2' : '') +
               (false ? '_opt3' : '')
             : '',
       }
+    })
+  }
+  unselectToggles = (scenario) => {
+    let newOptions = this.state.options
+    Object.keys(this.state.options[scenario]).forEach(option => {
+      newOptions[scenario][option] = false
+    })
+    this.setState({
+      options: newOptions,
     })
   }
   UpdateScenarioSelection = (e, name, value) => {
@@ -112,9 +121,13 @@ export class App extends React.Component {
           )
         )
         this.setState(changeScenario('scenarioSelectionNoOptions2', ''))
+        this.unselectToggles(this.state.scenarioSelectionNoOptions2)
+        this.setState({ showDifference: false })
       } else {
         if (value === this.state.scenarioSelectionNoOptions2) {
           this.setState(changeScenario('scenarioSelectionNoOptions2', ''))
+          this.unselectToggles(this.state.scenarioSelectionNoOptions2)
+          this.setState({ showDifference: false })
         } else {
           this.setState(changeScenario('scenarioSelectionNoOptions2', value))
         }
@@ -126,6 +139,7 @@ export class App extends React.Component {
     }
     this.UpdateScenarioNames()
   }
+
 
   CloseWelcomeWidget = () => {
     this.setState({ showWelcome: false })
