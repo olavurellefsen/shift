@@ -11,7 +11,6 @@ import {
   VictoryTheme,
   VictoryAxis,
   VictoryBar,
-  VictoryLine,
   VictoryTooltip,
 } from 'victory'
 import {createAccumulatedData} from './Tools'
@@ -28,7 +27,6 @@ ChartHeader.displayName = 'ChartHeader'
 const StackedBarChart = props => {
   const { t } = useTranslation()
   const stackedBar = props.stackedBar
-  const line = props.line
   const scenario = props.selectedScenario
   const scenario2 = props.selectedScenario2
   const selectedCountries = props.selectedCountries
@@ -281,7 +279,7 @@ const StackedBarChart = props => {
                       })
                     )}
                     x="year"
-                    y={datum => datum['total'] / maxY}
+                    y={datum => datum['total'] / (maxY === 0 ? 100 : maxY)}
                     labelComponent={<VictoryTooltip />}
                     style={{
                       data: { fill: colors2[i] },
@@ -291,51 +289,6 @@ const StackedBarChart = props => {
             </VictoryStack>
           )}
         </VictoryGroup>
-        {combinedChart === true && (
-          <VictoryGroup>
-            <VictoryLine
-              data={line.data.scenarios
-                .find(o => o.scenario === scenario)
-                .indicators.find(o => o.indicator === chartName)
-                .indicatorGroups[0].indicatorGroupValues.map(entry => ({
-                  ...entry,
-                  label: `${
-                    props.Y2Percentage === false
-                      ? entry.total.toFixed(0)
-                      : (entry.total * 100).toFixed(0) + '%'
-                  }`,
-                }))}
-              x="year"
-              style={{ data: { stroke: 'red' }, labels: { fontSize: '8px' } }}
-              y={datum => datum['total'] / maxY2}
-              animate={{ duration: 500 }}
-              labelComponent={<VictoryLabel dy={7} />}
-            />
-            {scenario2 !== '' && (
-              <VictoryLine
-                data={line.data.scenarios
-                  .find(o => o.scenario === scenario2)
-                  .indicators.find(o => o.indicator === chartName)
-                  .indicatorGroups[0].indicatorGroupValues.map(entry => ({
-                    ...entry,
-                    label: `${
-                      props.Y2Percentage === false
-                        ? entry.total.toFixed(0)
-                        : (entry.total * 100).toFixed(0) + '%'
-                    }`,
-                  }))}
-                x="year"
-                style={{
-                  data: { stroke: 'green' },
-                  labels: { fontSize: '8px' },
-                }}
-                y={datum => datum['total'] / maxY2}
-                animate={{ duration: 500 }}
-                labelComponent={<VictoryLabel dy={7} />}
-              />
-            )}
-          </VictoryGroup>
-        )}
       </VictoryChart>
     </div>
   )
@@ -349,7 +302,6 @@ StackedBarChart.defaultProps = {
 
 StackedBarChart.propTypes = {
   stackedBar: PropTypes.object,
-  line: PropTypes.object,
   selectedScenario: PropTypes.string.isRequired,
   selectedScenario2: PropTypes.string,
   chartName: PropTypes.string.isRequired,
