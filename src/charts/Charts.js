@@ -23,7 +23,7 @@ const Charts = props => {
           selectedScenario2 === '')) && (
         <Flex>
           <StackedBarChart
-            chartName="Biomass primary supply"
+            chartName="_Biomass Primary Supply"
             chartTitle="Biomass Primary Supply"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -36,7 +36,7 @@ const Charts = props => {
 						line={line}
           />
           <StackedBarChart
-            chartName="CO2 emissions"
+            chartName="_CO2 Emissions"
             chartTitle="CO2 Emissions"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -49,7 +49,7 @@ const Charts = props => {
 						line={line}
           />
           <StackedBarChart
-            chartName="Captured CO2"
+            chartName="_Captured CO2"
             chartTitle="Captured CO2"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -63,7 +63,7 @@ const Charts = props => {
 						line={line}
           />
           <StackedBarChart
-            chartName="District heating supply"
+            chartName="_District heating production"
             chartTitle="District Heating Supply"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -76,7 +76,7 @@ const Charts = props => {
 						line={line}
           />
           <StackedBarChart
-            chartName="Households energy use"
+            chartName="_Husholdningers varmeforbrug"
             chartTitle="Households Fuel Consumption"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -89,7 +89,7 @@ const Charts = props => {
 						line={line}
           />
           <StackedBarChart
-            chartName="Industry energy use"
+            chartName="_Industrial energy demand"
             chartTitle="Industry fuel consumption"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -102,7 +102,7 @@ const Charts = props => {
 						line={line}
           />
           <StackedBarChart
-            chartName="Power production"
+            chartName="_Elproduktion"
             chartTitle="Power Production"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -115,7 +115,7 @@ const Charts = props => {
 						line={line}
           />
           <StackedBarChart
-            chartName="Power trade"
+            chartName="_Power Trade"
             chartTitle="Power Trade"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -128,7 +128,7 @@ const Charts = props => {
 						line={line}
           />
           <StackedBarChart
-            chartName="System costs"
+            chartName="_Systemomkostninger"
             chartTitle="System Costs"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
@@ -146,7 +146,7 @@ const Charts = props => {
         selectedScenario2 !== '' && (
           <Flex>
             <StackedBarDiffChart
-              chartName="Biomass primary supply"
+              chartName="_Biomass Primary Supply"
               chartTitle="Biomass Primary Supply"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
@@ -159,7 +159,7 @@ const Charts = props => {
               line={line}
             />
             <StackedBarDiffChart
-              chartName="CO2 emissions"
+              chartName="_CO2 Emissions"
               chartTitle="CO2 Emissions"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
@@ -172,7 +172,7 @@ const Charts = props => {
               line={line}
             />
             <StackedBarDiffChart
-              chartName="Captured CO2"
+              chartName="_Captured CO2"
               chartTitle="Captured CO2"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
@@ -186,7 +186,7 @@ const Charts = props => {
               options={options}
             />
             <StackedBarDiffChart
-              chartName="District heating supply"
+              chartName="_District heating production"
               chartTitle="District Heating Supply"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
@@ -199,7 +199,7 @@ const Charts = props => {
               line={line}
             />
             <StackedBarDiffChart
-              chartName="Households energy use"
+              chartName="_Husholdningers varmeforbrug"
               chartTitle="Households Fuel Consumption"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
@@ -212,7 +212,7 @@ const Charts = props => {
               line={line}
             />
             <StackedBarDiffChart
-              chartName="Industry energy use"
+              chartName="_Industrial energy demand"
               chartTitle="Industry fuel consumption"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
@@ -225,7 +225,7 @@ const Charts = props => {
               line={line}
             />
             <StackedBarDiffChart
-              chartName="Power production"
+              chartName="_Elproduktion"
               chartTitle="Power Production"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
@@ -238,7 +238,7 @@ const Charts = props => {
               line={line}
             />
             <StackedBarDiffChart
-              chartName="Power trade"
+              chartName="_Power trade"
               chartTitle="Power Trade"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}
@@ -251,7 +251,7 @@ const Charts = props => {
               line={line}
             />
             <StackedBarDiffChart
-              chartName="System costs"
+              chartName="_Systemomkostninger"
               chartTitle="System Costs"
               selectedScenario={selectedScenario}
               selectedScenario2={selectedScenario2}

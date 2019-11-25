@@ -43,7 +43,7 @@ export const changeScenario = (name, value) => ({
   [name]: value,
 })
 
-const default_scenario = "Reference";
+const default_scenario = "Nordic_ShiftAvoid";
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
   .filter(s => !s.ccs && !s.bio && !s.opt2 && !s.opt3)
