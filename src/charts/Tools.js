@@ -17,7 +17,7 @@ function convertToLongName(country) {
         return selectedCountry
   }
   
-const years = [2010, 2013,2020,2030,2040, 2050]
+const years = [2010,2020,2030,2040, 2050]
 export function createAccumulatedData(data, scenario, percentage, chartName, selectedCountries) {
     const selectedCountriesLongNames = selectedCountries.map(convertToLongName)
     //Useful when finding axis range
