@@ -46,13 +46,13 @@ export const changeScenario = (name, value) => ({
 const default_scenario = "Nordic_ShiftAvoid";
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
-  .filter(s => !s.ccs && !s.bio && !s.ELC && !s.SAC)
+  .filter(s => !s.ccs && !s.bio && !s.opt2 && !s.opt3)
   .forEach(s => {
     options[s.nameNoOptions] = {}
     options[s.nameNoOptions]['ccs'] = false
     options[s.nameNoOptions]['bio'] = false
-    options[s.nameNoOptions]['ELC'] = false
-    options[s.nameNoOptions]['SAC'] = false
+    options[s.nameNoOptions]['opt2'] = false
+    options[s.nameNoOptions]['opt3'] = false
   })
 
 export class App extends React.Component {
@@ -82,8 +82,8 @@ export class App extends React.Component {
           state.scenarioSelectionNoOptions +
           (state.options[state.scenarioSelectionNoOptions].ccs ? '_ccs' : '') +
           (state.options[state.scenarioSelectionNoOptions].bio ? '_bio' : '') +
-          (state.options[state.scenarioSelectionNoOptions].ELC ? '_ELC' : '') +
-          (state.options[state.scenarioSelectionNoOptions].SAC ? '_SAC' : ''),
+          (state.options[state.scenarioSelectionNoOptions].opt2 ? '_ELC' : '') +
+          (state.options[state.scenarioSelectionNoOptions].opt3 ? '_SAC' : ''),
       }
     })
     this.setState(state => {
@@ -95,8 +95,8 @@ export class App extends React.Component {
                 ? '_ccs'
                 : '') +
               (state.options[state.scenarioSelectionNoOptions2].bio ? '_bio' : '') +
-              (state.options[state.scenarioSelectionNoOptions2].ELC ? '_ELC' : '') +
-              (state.options[state.scenarioSelectionNoOptions2].SAC ? '_SAC' : '')
+              (state.options[state.scenarioSelectionNoOptions2].opt2 ? '_ELC' : '') +
+              (state.options[state.scenarioSelectionNoOptions2].opt3 ? '_SAC' : '')
             : '',
       }
     })
