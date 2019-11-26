@@ -17,24 +17,23 @@
   "options": {
     "ccs": "CCS",
     "bio": "Biomass import restrictions",
-    "opt2": "Short description of opt2",
-    "opt3": "Short description of opt3",
+    "opt2": "ELC",
+    "opt3": "SAC",
     "unavailable": "(unavailable)"
   },
   "general": {
     "scenarios": "Scenarios",
     "CCS": "CCS",
     "bio": "Bio",
-    "opt2": "Switch 2",
-    "opt3": "Switch 3",
+    "opt2": "ELC",
+    "opt3": "SAC",
     "scenario-difference": "Scenario difference",
     "green-minus-red": "(green minus red)",
     "developed-by-Tokni": "Developed by Tokni"
   },
   "scenario": {
-    "Reference": "Reference",
-    "Share Optimism": "Share Optimism",
-    "Technology Optimism": "Tech Optimism"
+    "Shift": "Shift",
+    "Tech": "Tech"
   },
   "scenario_code": {
     "Reference": "Reference",
