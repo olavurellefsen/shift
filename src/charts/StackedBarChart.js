@@ -47,19 +47,19 @@ const StackedBarChart = props => {
     rowGutter = -5
   }
 
-  let maxY2 = 1
-  let minY2 = 0
-  if (combinedChart === true) {
-    maxY2 = props.maxY2
-    minY2 = props.minY2
-  }
+   let maxY2 = 1
+  // let minY2 = 0
+  // if (combinedChart === true) {
+  //   maxY2 = props.maxY2
+  //   minY2 = props.minY2
+  // }
 
-  let yDomain = [0, 1]
-  if (props.minY < 0 || minY2 < 0) {
-    let stackedRatio = props.minY / props.maxY
-    let lineRatio = minY2 / maxY2
-    yDomain = stackedRatio < lineRatio ? [stackedRatio, 1] : [lineRatio, 1]
-  }
+  // let yDomain = [0, 1]
+  // if (props.minY < 0 || minY2 < 0) {
+  //   let stackedRatio = props.minY / props.maxY
+  //   let lineRatio = minY2 / maxY2
+  //   yDomain = stackedRatio < lineRatio ? [stackedRatio, 1] : [lineRatio, 1]
+  // }
 
   const colors = [
     '#5cbae6',
@@ -162,7 +162,7 @@ const StackedBarChart = props => {
         height={380}
         padding={{ left: 80, right: 50, top: 50, bottom: 50 }}
         theme={VictoryTheme.material}
-        domain={{ y: yDomain }}
+        // domain={{ y: yDomain }} //removed to fix issue with axis labels not being updated
       >
         <ChartHeader x={90} y={24} text={chartTitle} />
         <VictoryAxis key={0} tickValues={periods} tickFormat={periods} />
