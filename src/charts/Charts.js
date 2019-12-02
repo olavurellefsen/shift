@@ -23,19 +23,6 @@ const Charts = props => {
           selectedScenario2 === '')) && (
         <Flex>
           <StackedBarChart
-            chartName="_Biomass Primary Supply"
-            chartTitle="Biomass Primary Supply"
-            selectedScenario={selectedScenario}
-            selectedScenario2={selectedScenario2}
-            selectedCountries={selectedCountries}
-            combinedChart={false}
-            label="PJ"
-            minY={0}
-            maxY={1500}
-						stackedBar={stackedBar}
-						line={line}
-          />
-          <StackedBarChart
             chartName="_CO2 Emissions"
             chartTitle="CO2 Emissions"
             selectedScenario={selectedScenario}
@@ -62,6 +49,45 @@ const Charts = props => {
 						stackedBar={stackedBar}
 						line={line}
           />
+          <StackedBarChart
+            chartName="_Biomass Primary Supply"
+            chartTitle="Biomass Primary Supply"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={0}
+            maxY={1500}
+						stackedBar={stackedBar}
+						line={line}
+          />
+          <StackedBarChart
+            chartName="_Elproduktion"
+            chartTitle="Power Production"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={0}
+            maxY={1000}
+						stackedBar={stackedBar}
+						line={line}
+          />
+          <StackedBarChart
+            chartName="_Power Trade"
+            chartTitle="Power Trade"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-200}
+            maxY={400}
+						stackedBar={stackedBar}
+						line={line}
+          />		  
           <StackedBarChart
             chartName="_District heating production"
             chartTitle="District Heating Supply"
@@ -115,32 +141,6 @@ const Charts = props => {
             line={line}
           />
           <StackedBarChart
-            chartName="_Elproduktion"
-            chartTitle="Power Production"
-            selectedScenario={selectedScenario}
-            selectedScenario2={selectedScenario2}
-            selectedCountries={selectedCountries}
-            combinedChart={false}
-            label="PJ"
-            minY={0}
-            maxY={1000}
-						stackedBar={stackedBar}
-						line={line}
-          />
-          <StackedBarChart
-            chartName="_Power Trade"
-            chartTitle="Power Trade"
-            selectedScenario={selectedScenario}
-            selectedScenario2={selectedScenario2}
-            selectedCountries={selectedCountries}
-            combinedChart={false}
-            label="PJ"
-            minY={-200}
-            maxY={400}
-						stackedBar={stackedBar}
-						line={line}
-          />
-          <StackedBarChart
             chartName="_Systemomkostninger"
             chartTitle="System Costs"
             selectedScenario={selectedScenario}
@@ -157,21 +157,8 @@ const Charts = props => {
       )}
       {props.scenarioSelection.showDifference === true &&
         selectedScenario2 !== '' && (
-          <Flex>
-          <StackedBarDiffChart
-            chartName="_Biomass Primary Supply"
-            chartTitle="Biomass Primary Supply"
-            selectedScenario={selectedScenario}
-            selectedScenario2={selectedScenario2}
-            selectedCountries={selectedCountries}
-            combinedChart={false}
-            label="PJ"
-            minY={0}
-            maxY={300}
-						stackedBar={stackedBar}
-						line={line}
-          />
-          <StackedBarDiffChart
+        <Flex>
+		  <StackedBarDiffChart
             chartName="_CO2 Emissions"
             chartTitle="CO2 Emissions"
             selectedScenario={selectedScenario}
@@ -195,6 +182,45 @@ const Charts = props => {
             minY={0}
             maxY={60000}
             options={options}
+						stackedBar={stackedBar}
+						line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_Biomass Primary Supply"
+            chartTitle="Biomass Primary Supply"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={0}
+            maxY={300}
+						stackedBar={stackedBar}
+						line={line}
+          />		  
+          <StackedBarDiffChart
+            chartName="_Elproduktion"
+            chartTitle="Power Production"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-500}
+            maxY={-500}
+						stackedBar={stackedBar}
+						line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_Power Trade"
+            chartTitle="Power Trade"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-200}
+            maxY={400}
 						stackedBar={stackedBar}
 						line={line}
           />
@@ -249,32 +275,6 @@ const Charts = props => {
             maxY={1000}
             stackedBar={stackedBar}
             line={line}
-          />
-          <StackedBarDiffChart
-            chartName="_Elproduktion"
-            chartTitle="Power Production"
-            selectedScenario={selectedScenario}
-            selectedScenario2={selectedScenario2}
-            selectedCountries={selectedCountries}
-            combinedChart={false}
-            label="PJ"
-            minY={-500}
-            maxY={-500}
-						stackedBar={stackedBar}
-						line={line}
-          />
-          <StackedBarDiffChart
-            chartName="_Power Trade"
-            chartTitle="Power Trade"
-            selectedScenario={selectedScenario}
-            selectedScenario2={selectedScenario2}
-            selectedCountries={selectedCountries}
-            combinedChart={false}
-            label="PJ"
-            minY={-200}
-            maxY={400}
-						stackedBar={stackedBar}
-						line={line}
           />
           <StackedBarDiffChart
             chartName="_Systemomkostninger"

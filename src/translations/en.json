@@ -50,11 +50,11 @@
     "Technology Optimism_ccs_bio": "Technology Optimism"
   },
   "tabs": {
-    "overview": "Overview",
-    "mainresults": "Main results",
+    "overview": "Main results",
+    "mainresults": "Transport sector",
     "mobile": {
-      "overview": "Overview",
-      "mainresults": "Results"
+      "overview": "Main results",
+      "mainresults": "Transport sector"
     }
   },
   "welcome-text": {
