@@ -249,18 +249,11 @@ export class App extends React.Component {
                   )
                 }}
               />
-              <Route path="/forudsaetninger" component={Prerequisites} />
-              <Route
-                path="/udfordringer"
+			  <Route
+                path="/findings"
                 render={() => {
                   return (
-                    <PageRenderer
-                      markdownFiles={[
-                        'descriptions/challenges.md',
-                        'descriptions/udfordringer_omstilling.md',
-                        'descriptions/udfordringer_reduktion.md',
-                      ]}
-                    />
+                    <PageRenderer markdownFiles={['descriptions/findings.md']} />
                   )
                 }}
               />

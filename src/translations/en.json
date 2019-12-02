@@ -4,13 +4,13 @@
     "mobile": {
       "about": "About SHIFT",
       "scenarios": "Scenarios",
-      "preconditions": "Key findings",
+      "findings": "Key findings",
       "subscribe": "More"
     },
     "desktop": {
       "about": "About the SHIFT project",
       "scenarios": "Description of scenarios",
-      "preconditions": "SHIFT key findings",
+      "findings": "SHIFT key findings",
       "subscribe": "Find out more"
     }
   },
