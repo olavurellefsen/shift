@@ -60,7 +60,10 @@
     }
   },
   "welcome-text": {
-    "welcome-1": "Welcome text"
+    "welcome-1": "SHIFT project scenario interface.",
+	"welcome-2": "This tool is developed in the Nordic Energy Research Flagship project SHIFT, which focus on the transition to a Nordic sustainable transport sector. In the project an energy system model of three Nordic countries (Norway, Sweden and Denmark) has been developed and used to explore scenarios for transition to carbon neutrality in these countries.",
+	"welcome-3": "On this web-page you can compare scenarios and change assumptions. All the scenarios reach carbon neutrality before 2050, but technology choice, fuel consumption and cost will change when changing assumptions about readiness of technologies and whether the countries can import biomass and bio-fuels.",
+	"welcome-4": "Close this window and start exploring..."
   },
   "chartTitle": {
     "Biomass Primary Supply": "Biomass Primary Supply",

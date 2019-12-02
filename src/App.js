@@ -233,6 +233,14 @@ export class App extends React.Component {
                   )
                 }}
               />
+			  <Route
+                path="/subscribe"
+                render={() => {
+                  return (
+                    <PageRenderer markdownFiles={['descriptions/more.md']} />
+                  )
+                }}
+              />
               <Route
                 path="/beskrivelser"
                 render={() => {
