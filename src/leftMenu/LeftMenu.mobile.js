@@ -90,12 +90,12 @@ const ToggleSwitchText = styled.div`
   margin-top: 5px;
 `;
 
-const ToggleLanguageText = styled.div`
-  font-size: 0.7em;
-  color: ${props => (props.selected ? "white" : "gray")};
-  margin-left: 3px;
-  margin-right: 3px;
-`;
+// const ToggleLanguageText = styled.div`
+//   font-size: 0.7em;
+//   color: ${props => (props.selected ? "white" : "gray")};
+//   margin-left: 3px;
+//   margin-right: 3px;
+// `;
 
 const ScenarioDifferenceText = styled.div`
   font-size: 0.7em;
@@ -129,17 +129,17 @@ const ExternalLink = styled.a`
 `;
 
 function ScenarioSelectionMenu(props) {
-  const { t, i18n } = useTranslation();
-  const language = i18n.language;
+  const { t } = useTranslation();
+ // const language = i18n.language;
 
-  const toggleLanguage = e => {
-    e.preventDefault();
-    if (language === "en") {
-      i18n.changeLanguage("dk");
-    } else {
-      i18n.changeLanguage("en");
-    }
-  };
+ // const toggleLanguage = e => {
+ //   e.preventDefault();
+ //   if (language === "en") {
+ //     i18n.changeLanguage("dk");
+ //   } else {
+ //     i18n.changeLanguage("en");
+ //   }
+ // };
 
     return (
       <MenuLayout>
