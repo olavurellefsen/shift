@@ -205,7 +205,7 @@ function ScenarioSelectionMenu(props) {
         >
           {t("general.green-minus-red")}
         </ScenarioDifferenceText>
-        <MenuSeparatorLine />
+        {/* <MenuSeparatorLine />
         <ToggleDifference onClick={e => toggleLanguage(e)}>
         <ToggleLanguageText selected={language === "dk"}>
           Danish
@@ -214,7 +214,7 @@ function ScenarioSelectionMenu(props) {
         <ToggleLanguageText selected={language === "en"}>
           English
         </ToggleLanguageText>
-      </ToggleDifference>
+      </ToggleDifference> */}
         <MenuFooter>
           <CopyrightNotice>
             <ExternalLink href="http://www.tokni.com">
