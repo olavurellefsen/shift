@@ -216,8 +216,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="kt"
-            minY={0}
-            maxY={14493}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -229,8 +229,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={119}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -242,8 +242,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={108}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -255,8 +255,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={55}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -268,8 +268,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="Mpkm"
-            minY={0}
-            maxY={72260}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -281,8 +281,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={90}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -294,8 +294,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="k vehicles"
-            minY={0}
-            maxY={4203}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -307,8 +307,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={90}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -320,8 +320,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={65}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -333,8 +333,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="Mtkm"
-            minY={0}
-            maxY={316751}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -346,8 +346,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={63}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -359,8 +359,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={48}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -372,8 +372,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="k vehicles"
-            minY={0}
-            maxY={79}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -385,8 +385,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={46}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />

@@ -32,8 +32,8 @@ const Charts = props => {
             label="kt"
             minY={-60000}
             maxY={180000}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarChart
             chartName="_Captured CO2"
@@ -46,8 +46,8 @@ const Charts = props => {
             minY={0}
             maxY={60000}
             options={options}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarChart
             chartName="_Biomass Primary Supply"
@@ -59,8 +59,8 @@ const Charts = props => {
             label="PJ"
             minY={0}
             maxY={1500}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarChart
             chartName="_Elproduktion"
@@ -72,8 +72,8 @@ const Charts = props => {
             label="PJ"
             minY={0}
             maxY={1000}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarChart
             chartName="_Power Trade"
@@ -85,8 +85,8 @@ const Charts = props => {
             label="PJ"
             minY={-200}
             maxY={400}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />		  
           <StackedBarChart
             chartName="_District heating production"
@@ -98,8 +98,8 @@ const Charts = props => {
             label="PJ"
             minY={0}
             maxY={400}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarChart
             chartName="_Husholdningers varmeforbrug"
@@ -111,8 +111,8 @@ const Charts = props => {
             label="PJ"
             minY={0}
             maxY={400}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarChart
             chartName="_Industrial energy demand"
@@ -124,8 +124,8 @@ const Charts = props => {
             label="PJ"
             minY={0}
             maxY={1000}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />
 		    <StackedBarChart
             chartName="_Transport sektorens energifor"
@@ -150,8 +150,8 @@ const Charts = props => {
             label="M Euro"
             minY={-4077}
             maxY={50000}
-						stackedBar={stackedBar}
-						line={line}
+			stackedBar={stackedBar}
+			line={line}
           />
         </Flex>
       )}
@@ -166,10 +166,10 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="kt"
-            minY={0}
-            maxY={1400}
-						stackedBar={stackedBar}
-						line={line}
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarDiffChart
             chartName="_Captured CO2"
@@ -179,11 +179,11 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="kt"
-            minY={0}
-            maxY={60000}
+            minY={-1}
+            maxY={1}
             options={options}
-						stackedBar={stackedBar}
-						line={line}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarDiffChart
             chartName="_Biomass Primary Supply"
@@ -193,10 +193,10 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={300}
-						stackedBar={stackedBar}
-						line={line}
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
           />		  
           <StackedBarDiffChart
             chartName="_Elproduktion"
@@ -206,10 +206,10 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={-500}
-            maxY={-500}
-						stackedBar={stackedBar}
-						line={line}
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarDiffChart
             chartName="_Power Trade"
@@ -219,10 +219,10 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={-200}
-            maxY={400}
-						stackedBar={stackedBar}
-						line={line}
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarDiffChart
             chartName="_District heating production"
@@ -232,10 +232,10 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={400}
-						stackedBar={stackedBar}
-						line={line}
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarDiffChart
             chartName="_Husholdningers varmeforbrug"
@@ -245,10 +245,10 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={400}
-						stackedBar={stackedBar}
-						line={line}
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
           />
           <StackedBarDiffChart
             chartName="_Industrial energy demand"
@@ -258,10 +258,10 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={1000}
-						stackedBar={stackedBar}
-						line={line}
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
           />
 		    <StackedBarDiffChart
             chartName="_Transport sektorens energifor"
@@ -271,8 +271,8 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="PJ"
-            minY={0}
-            maxY={1000}
+            minY={-1}
+            maxY={1}
             stackedBar={stackedBar}
             line={line}
           />
@@ -284,10 +284,10 @@ const Charts = props => {
             selectedCountries={selectedCountries}
             combinedChart={false}
             label="M Euro"
-            minY={-4077}
-            maxY={14104}
-						stackedBar={stackedBar}
-						line={line}
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
           />
           </Flex>
         )}
