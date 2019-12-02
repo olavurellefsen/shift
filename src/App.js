@@ -242,18 +242,10 @@ export class App extends React.Component {
                 }}
               />
               <Route
-                path="/beskrivelser"
+                path="/scenarios"
                 render={() => {
                   return (
-                    <PageRenderer
-                      markdownFiles={[
-                        'descriptions/0_intro.md',
-                        'descriptions/1_reference.md',
-                        'descriptions/2_marienlyst.md',
-                        'descriptions/3_comets.md',
-                        'descriptions/4_co2_budget.md',
-                      ]}
-                    />
+                    <PageRenderer markdownFiles={['descriptions/scenarios.md']} />
                   )
                 }}
               />

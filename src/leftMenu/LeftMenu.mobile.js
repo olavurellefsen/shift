@@ -153,10 +153,10 @@ function ScenarioSelectionMenu(props) {
               {t("menu.mobile.about")}
             </MenuItem>
             <MenuItem
-              to="/descriptions"
-              selected={props.selectedChartgroup === "/descriptions"}
+              to="/scenarios"
+              selected={props.selectedChartgroup === "/scenarios"}
             >
-              {t("menu.mobile.descriptions")}
+              {t("menu.mobile.scenarios")}
             </MenuItem>
             <MenuItem
               to="/preconditions"

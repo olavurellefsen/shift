@@ -3,13 +3,13 @@
   "menu": {
     "mobile": {
       "about": "About SHIFT",
-      "descriptions": "Scenarios",
+      "scenarios": "Scenarios",
       "preconditions": "Key findings",
       "subscribe": "More"
     },
     "desktop": {
       "about": "About the SHIFT project",
-      "descriptions": "Description of scenarios",
+      "scenarios": "Description of scenarios",
       "preconditions": "SHIFT key findings",
       "subscribe": "Find out more"
     }
