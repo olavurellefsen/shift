@@ -8646,7 +8646,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        legend.Bio Synt.
+                        Bio Synt. Nat. G
                       </tspan>
                     </text>
                     <text
@@ -8736,7 +8736,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        legend.Nat. Gas 
+                        Nat. Gas RES    
                       </tspan>
                     </text>
                     <text
@@ -10133,7 +10133,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        legend.Bio Synt.
+                        Bio Synt. Nat. G
                       </tspan>
                     </text>
                     <text
@@ -10148,7 +10148,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="219.92664359861593"
                       >
-                        legend.Biodiesel
+                        Biodiesel 1. gen
                       </tspan>
                     </text>
                     <text
@@ -10163,7 +10163,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="339.4532871972318"
                       >
-                        legend.Biodiesel
+                        Biodiesel 2. gen
                       </tspan>
                     </text>
                     <text
@@ -10298,7 +10298,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="339.4532871972318"
                       >
-                        legend.Nat. Gas 
+                        Nat. Gas IND    
                       </tspan>
                     </text>
                     <text
@@ -12266,7 +12266,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="100.4"
                       >
-                        legend.Bio Synt.
+                        Bio Synt. Nat. G
                       </tspan>
                     </text>
                     <text
@@ -12416,7 +12416,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="219.92664359861593"
                       >
-                        legend.Nat. Gas 
+                        Nat. Gas TRA    
                       </tspan>
                     </text>
                     <text
@@ -12431,7 +12431,7 @@ exports[`should render correctly 1`] = `
                         text-anchor="start"
                         x="339.4532871972318"
                       >
-                        legend.RE Kerose
+                        RE Kerosene     
                       </tspan>
                     </text>
                   </g>
