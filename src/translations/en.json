@@ -36,8 +36,10 @@
   "scenario": {
     "Shift and Avoid": "Shift & Avoid",
     "Tech Focus": "Tech Focus",
-	"Shift": "Shift",
-    "Tech": "Tech"
+    "Shift": "Shift",
+    "Tech": "Tech",
+    "nordic_tech_desc":"This scenario has a technology focus and include a range of transport <br /> technology  options and future development of them. However, no external <br /> shift and avoid measures are assumed possible for meeting the CO2 target",
+    "nordic_shift_desc":"This scenario includes an alternative transport demand development considering <br /> external shift and avoid measures (i.e., shift to more energy-efficient modes <br /> and avoided travel demand), e.g., lower car traffic levels (see details below). <br /> It includes the same technology options and performance as Nordic_Tech"
   },
   "scenario_code": {
     "Reference": "Reference",
@@ -63,9 +65,9 @@
   },
   "welcome-text": {
     "welcome-1": "SHIFT project scenario interface.",
-	"welcome-2": "This tool is developed in the Nordic Energy Research Flagship project SHIFT, which focus on the transition to a Nordic sustainable transport sector. In the project an energy system model of three Nordic countries (Norway, Sweden and Denmark) has been developed and used to explore scenarios for transition to carbon neutrality in these countries.",
-	"welcome-3": "On this web-page you can compare scenarios and change assumptions. All the scenarios reach carbon neutrality before 2050, but technology choice, fuel consumption and cost will change when changing assumptions about readiness of technologies and whether the countries can import biomass and bio-fuels.",
-	"welcome-4": "Close this window and start exploring..."
+    "welcome-2": "This tool is developed in the Nordic Energy Research Flagship project SHIFT, which focus on the transition to a Nordic sustainable transport sector. In the project an energy system model of three Nordic countries (Norway, Sweden and Denmark) has been developed and used to explore scenarios for transition to carbon neutrality in these countries.",
+    "welcome-3": "On this web-page you can compare scenarios and change assumptions. All the scenarios reach carbon neutrality before 2050, but technology choice, fuel consumption and cost will change when changing assumptions about readiness of technologies and whether the countries can import biomass and bio-fuels.",
+    "welcome-4": "Close this window and start exploring..."
   },
   "chartTitle": {
     "Biomass Primary Supply": "Biomass Primary Supply",
@@ -78,20 +80,20 @@
     "Power Trade": "Power Trade",
     "System Costs": "System Costs",
     "Transport Consumption": "Transport Consumption",
-    "CO2 Emissions in Transport":"CO2 Emissions (Transport)",
-    "Transport Consumption":"Transport Fuel Consumption",
-    "Transport Inland Consumption":"Inland Transport Fuel Consumption",
-    "Bio_Electro-fuels Consumption":"Bio-Electrofuels Consumption",
-    "Transport Pass Demand":"Passenger Transport Demand",
-    "Transport Passenger Consumption":"Passenger Transport Fuel Consumption",
-    "Car Stock":"Car Stock",
-    "Transport Cars Consumption":"Cars Fuel Consumption",
-    "Transport Aviation Consumption":"Aviation Fuel Consumption",
-    "Transport Freight Demand":"Freight Transport Demand",
-    "Transport Freight Consumption":"Freight Transport Fuel Consumption",
-    "Transport Navigation Consumption":"Navigation Fuel Consumption",
-    "Truck Stock":"Truck Stock",
-    "Transport Trucks Consumption":"Trucks Fuel Consumption"
+    "CO2 Emissions in Transport": "CO2 Emissions (Transport)",
+    "Transport Consumption": "Transport Fuel Consumption",
+    "Transport Inland Consumption": "Inland Transport Fuel Consumption",
+    "Bio_Electro-fuels Consumption": "Bio-Electrofuels Consumption",
+    "Transport Pass Demand": "Passenger Transport Demand",
+    "Transport Passenger Consumption": "Passenger Transport Fuel Consumption",
+    "Car Stock": "Car Stock",
+    "Transport Cars Consumption": "Cars Fuel Consumption",
+    "Transport Aviation Consumption": "Aviation Fuel Consumption",
+    "Transport Freight Demand": "Freight Transport Demand",
+    "Transport Freight Consumption": "Freight Transport Fuel Consumption",
+    "Transport Navigation Consumption": "Navigation Fuel Consumption",
+    "Truck Stock": "Truck Stock",
+    "Transport Trucks Consumption": "Trucks Fuel Consumption"
   },
   "legend": {
     "2 wheeler": "2 wheeler",
@@ -269,17 +271,17 @@
     "Wood pellets": "Wood pellets",
     "Wood Pellets IND": "Wood Pellets IND",
     "Wood Pellets RES": "Wood Pellets RES",
-	"Diesel Truck": "Diesel Truck",
-	"Electric Truck": "Electric Truck",
-	"Gas Truck": "Gas Truck",
-	"Gasoline Truck": "Gasoline Truck",
-	"Hybrid Truck": "Hybrid Truck",
+    "Diesel Truck": "Diesel Truck",
+    "Electric Truck": "Electric Truck",
+    "Gas Truck": "Gas Truck",
+    "Gasoline Truck": "Gasoline Truck",
+    "Hybrid Truck": "Hybrid Truck",
     "Hydrogen Truck": "Hydrogen Truck",
-	"Diesel cars": "Diesel cars",
-	"Electric cars": "Electric cars",
-	"Gas cars": "Gas cars",
-	"Gasoline cars": "Gasoline cars",
-	"Hybrid cars": "Hybrid cars",
-    "Hydrogen cars": "Hydrogen cars"		
+    "Diesel cars": "Diesel cars",
+    "Electric cars": "Electric cars",
+    "Gas cars": "Gas cars",
+    "Gasoline cars": "Gasoline cars",
+    "Hybrid cars": "Hybrid cars",
+    "Hydrogen cars": "Hydrogen cars"
   }
 }
