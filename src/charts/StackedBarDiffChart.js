@@ -104,37 +104,6 @@ const StackedBarChart = props => {
     maxValue = -minValue
   }
 
-  // let datasetLine3 = []
-  // if (combinedChart === true) {
-  //   line.data.scenarios
-  //     .filter(o => o.scenario === scenario || o.scenario === scenario2)
-  //     .map(scenario =>
-  //       scenario.indicators
-  //         .filter(o => o.indicator === chartName)
-  //         .map(indicator =>
-  //           indicator.indicatorGroups.map((chartGroup, i) => {
-  //             if (
-  //               datasetLine3.find(
-  //                 c => c.indicatorGroup === chartGroup.indicatorGroup
-  //               ) === undefined
-  //             ) {
-  //               datasetLine3.push(JSON.parse(JSON.stringify(chartGroup)))
-  //             } else {
-  //               for (
-  //                 var j = 0;
-  //                 j < datasetLine3[i].indicatorGroupValues.length;
-  //                 j++
-  //               ) {
-  //                 datasetLine3[i].indicatorGroupValues[j].total -=
-  //                   chartGroup.indicatorGroupValues[j].total
-  //               }
-  //             }
-  //             return chartGroup
-  //           })
-  //         )
-  //     )
-  
-
   const colors = [
     '#5cbae6',
     '#b6d957',
@@ -208,28 +177,6 @@ const StackedBarChart = props => {
           tickValues={[-1,-0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75,1]}
           label={props.label}
         />
-        {combinedChart === true && (
-          <VictoryAxis
-            dependentAxis
-            key={3}
-            offsetX={330}
-            label={props.label2}
-            style={{
-              axis: { stroke: 'gray' },
-              axisLabel: { fill: 'gray', padding: -50 },
-              ticks: { padding: -25 },
-              tickLabels: { fill: 'gray', textAnchor: 'start' },
-            }}
-            tickFormat={tick =>
-              `${
-                props.Y2Percentage === false
-                  ? tick * maxY2
-                  : tick * maxY2 * 100 + '%'
-              }`
-            }
-            tickValues={[-1.0, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1.0]}
-          />
-        )}
         <VictoryLegend
           x={90}
           y={50}
@@ -271,7 +218,7 @@ const StackedBarChart = props => {
                         )),
                 }))}
                 x="year"
-                y={datum => datum['total'] / maxValue}
+                y={datum => maxValue === 0 ? 0 : datum['total'] / maxValue}
                 labelComponent={<VictoryTooltip />}
                 style={{
                   data: { fill: colors[i] },
@@ -280,28 +227,6 @@ const StackedBarChart = props => {
             ))}
           </VictoryStack>
         </VictoryGroup>
-        {/* {combinedChart === true && (
-          <VictoryGroup>
-            <VictoryLine
-              data={datasetLine3[0].indicatorGroupValues.map(entry => ({
-                ...entry,
-                label: `${
-                  props.Y2Percentage === false
-                    ? entry.total.toFixed(0)
-                    : (entry.total * 100).toFixed(0) + '%'
-                }`,
-              }))}
-              x="year"
-              style={{
-                data: { stroke: 'green' },
-                labels: { fontSize: '8px' },
-              }}
-              y={datum => datum['total'] / maxY2}
-              animate={{ duration: 500 }}
-              labelComponent={<VictoryLabel dy={7} />}
-            />
-          </VictoryGroup>
-        )} */}
       </VictoryChart>
     </div>
   )
