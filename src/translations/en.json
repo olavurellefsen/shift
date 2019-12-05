@@ -29,7 +29,8 @@
     "opt3": "SAC",
     "scenario-difference": "Scenario difference",
     "green-minus-red": "(green minus red)",
-    "developed-by-Tokni": "Developed by Tokni"
+    "and-tokni": "and Tokni",
+    "developed-by": "Developed by"
   },
   "scenario": {
     "Shift and Avoid": "Shift & Avoid",

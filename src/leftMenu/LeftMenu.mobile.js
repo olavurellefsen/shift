@@ -144,7 +144,9 @@ function ScenarioSelectionMenu(props) {
     return (
       <MenuLayout>
         <MenuHeader>
+        <ExternalLink href="http://www.nordicenergy.org/flagship/project-shift/">
           <AppLogo src="./images/shift_logo_white.png" alt="logo" />
+        </ExternalLink>
           <MenuRoutes>
             <MenuItem
               to="/about"
@@ -216,11 +218,15 @@ function ScenarioSelectionMenu(props) {
         </ToggleLanguageText>
       </ToggleDifference> */}
         <MenuFooter>
-          <CopyrightNotice>
-            <ExternalLink href="http://www.tokni.com">
-              {t("general.developed-by-Tokni")}
-            </ExternalLink>
-          </CopyrightNotice>
+        <CopyrightNotice>
+        <p> {t("general.developed-by")}</p>
+          <ExternalLink href="https://energymodellinglab.com/">
+            Energy Modelling Lab
+          </ExternalLink>
+          <ExternalLink href="http://www.tokni.com">
+          {t("general.and-tokni")}
+          </ExternalLink>
+        </CopyrightNotice>
         </MenuFooter>
       </MenuLayout>
     );

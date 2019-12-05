@@ -120,6 +120,7 @@ const CopyrightNotice = styled.div`
 `;
 
 const ExternalLink = styled.a`
+margin-top: 15px;
   color: white;
   text-decoration: none;
   :hover {
@@ -233,8 +234,13 @@ function ScenarioSelectionMenu(props) {
           alt="Nordic Energy Research"
         />
         <CopyrightNotice>
+        <p> {t("general.developed-by")}</p>
+          <ExternalLink href="https://energymodellinglab.com/">
+            Energy Modelling Lab
+          </ExternalLink>
+          <br></br>
           <ExternalLink href="http://www.tokni.com">
-            {t("general.developed-by-Tokni")}
+          {t("general.and-tokni")}
           </ExternalLink>
         </CopyrightNotice>
       </MenuFooter>

@@ -18,7 +18,7 @@ exports[`should render correctly 1`] = `
             class="sc-VigVT eMOBEW"
           >
             <a
-              class="sc-ckVGcZ fVRzlZ"
+              class="sc-ckVGcZ bZUVLC"
               href="http://www.nordicenergy.org/flagship/project-shift/"
             >
               <img
@@ -331,11 +331,22 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-dxgOiQ ivNYZi"
             >
+              <p>
+                 
+                Developed by
+              </p>
               <a
-                class="sc-ckVGcZ fVRzlZ"
+                class="sc-ckVGcZ bZUVLC"
+                href="https://energymodellinglab.com/"
+              >
+                Energy Modelling Lab
+              </a>
+              <br />
+              <a
+                class="sc-ckVGcZ bZUVLC"
                 href="http://www.tokni.com"
               >
-                Developed by Tokni
+                and Tokni
               </a>
             </div>
           </div>
@@ -346,11 +357,16 @@ exports[`should render correctly 1`] = `
           <div
             class="sc-hMqMXs iUxuCD"
           >
-            <img
-              alt="logo"
-              class="sc-eNQAEJ jTZYrm"
-              src="./images/shift_logo_white.png"
-            />
+            <a
+              class="sc-jAaTju gvHfqC"
+              href="http://www.nordicenergy.org/flagship/project-shift/"
+            >
+              <img
+                alt="logo"
+                class="sc-eNQAEJ jTZYrm"
+                src="./images/shift_logo_white.png"
+              />
+            </a>
             <div
               class="sc-kkGfuU dUTbQn"
             >
@@ -637,11 +653,21 @@ exports[`should render correctly 1`] = `
             <div
               class="sc-cMljjf dkHVDp"
             >
+              <p>
+                 
+                Developed by
+              </p>
+              <a
+                class="sc-jAaTju gvHfqC"
+                href="https://energymodellinglab.com/"
+              >
+                Energy Modelling Lab
+              </a>
               <a
                 class="sc-jAaTju gvHfqC"
                 href="http://www.tokni.com"
               >
-                Developed by Tokni
+                and Tokni
               </a>
             </div>
           </div>
