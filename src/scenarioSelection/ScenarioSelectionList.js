@@ -63,7 +63,7 @@ const ScenarioSelectionList = props => {
               {narrowVersion === true &&
                 t("scenario." + option.ultra_short_description)}
             </ScenarioNameContainer>
-            <IconContainer>
+            <IconContainer narrowVersion={narrowVersion}>
               <Icon
                 available={
                   scenarioCombinations.optionsAvailable[optionValue].ccs
