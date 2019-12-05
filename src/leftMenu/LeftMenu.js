@@ -247,10 +247,16 @@ function ScenarioSelectionMenu(props) {
           </CopyrightItem>
           <CopyrightItem>
             <ExternalLink href="https://energymodellinglab.com/">
-              <AppLogo src="./images/eml.png" alt="Energy Modelling Lab" />
+              <AppLogo src="./images/eml_small.png" alt="Energy Modelling Lab" />
               <Header>Energy Modelling Lab</Header>
             </ExternalLink>
           </CopyrightItem>
+          <CopyrightItem>
+            <ExternalLink href="https://energymodelling.club/">
+              <AppLogo src="./images/emc_small.png" alt="Energy Modelling Club" />
+              <Header>Energy Modelling Club</Header>
+            </ExternalLink>
+          </CopyrightItem>          
         </CopyrightNotice>
       </MenuFooter>
     </MenuLayout>
