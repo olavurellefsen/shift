@@ -10,7 +10,6 @@ import TabsMobile from './tabs/Tabs.mobile'
 import Charts from './charts/Charts'
 import ChartsTab2 from './charts/ChartsTab2'
 import PageRenderer from './pages/PageRenderer'
-import Prerequisites from './pages/Prerequisites'
 import scenarioCombinations from './data/scenarioCombinations'
 
 ReactGA.initialize('UA-145591344-2')
@@ -43,7 +42,8 @@ export const changeScenario = (name, value) => ({
   [name]: value,
 })
 
-const default_scenario = "Nordic_ShiftAvoid";
+const default_scenario = "Nordic_Tech";
+const default_countries = ['no','se','dk'];
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
   .filter(s => !s.ccs && !s.bio && !s.opt2 && !s.opt3)
@@ -66,7 +66,7 @@ export class App extends React.Component {
       options: options,
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: '',
-      selectedCountries: ['no'],
+      selectedCountries: default_countries,
   }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
   }
