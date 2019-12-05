@@ -174,7 +174,7 @@ const StackedBarChart = props => {
           tickFormat={tick =>
             `${
               props.YPercentage === false
-                ? (tick * maxY) / props.divideValues
+                ? ((tick * maxY) / props.divideValues).toFixed(0)
                 : (tick * 100) / props.divideValues + '%'
             }`
           }
@@ -245,7 +245,7 @@ const StackedBarChart = props => {
                             ).toFixed(0) + '%'
                           : (
                               chartGroupValue.total / props.divideValues
-                            ).toFixed(2)),
+                            ).toFixed(0)),
                     })
                   )}
                   x="year"
@@ -275,7 +275,7 @@ const StackedBarChart = props => {
                               ).toFixed(0) + '%'
                             : (
                                 chartGroupValue.total / props.divideValues
-                              ).toFixed(2)),
+                              ).toFixed(0)),
                       })
                     )}
                     x="year"

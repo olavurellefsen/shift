@@ -214,7 +214,7 @@ const StackedBarChart = props => {
                           props.divideValues
                         ).toFixed(0) + '%'
                       : (chartGroupValue.total / props.divideValues).toFixed(
-                          2
+                          0
                         )),
                 }))}
                 x="year"
