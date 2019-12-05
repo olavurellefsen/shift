@@ -29,7 +29,9 @@
     "opt3": "Switch 3",
     "scenario-difference": "Scenarie difference",
     "green-minus-red": "(grøn minus rød)",
-    "developed-by-Tokni": "Udviklet af Tokni"
+    "and-tokni": "og Tokni",
+    "developed-by": "Udviklet af",
+    "countries": "Lande"
   },
   "scenario": {
     "Reference": "Reference",
