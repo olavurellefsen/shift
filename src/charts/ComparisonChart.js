@@ -6,8 +6,7 @@ import {
   VictoryTheme,
   VictoryBar,
   VictoryLabel,
-  VictoryAxis,
-  VictoryLine
+  VictoryAxis
 } from "victory";
 import scenarioCombinations from "../data/scenarioCombinations";
 import { useTranslation } from "react-i18next";
@@ -91,11 +90,6 @@ const StackedBarChart = props => {
               verticalAnchor="start"
             />
           }
-        />
-        <VictoryLine
-          y={() => 512000}
-          samples={1}
-          style={{ data: { stroke: "red" } }}
         />
       </VictoryChart>
     </div>
