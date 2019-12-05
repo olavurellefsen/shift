@@ -43,7 +43,7 @@ export const changeScenario = (name, value) => ({
   [name]: value,
 })
 
-const default_scenario = "Nordic_ShiftAvoid";
+const default_scenario = "Nordic_Tech";
 const default_countries = ['no','se','dk'];
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
