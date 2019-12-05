@@ -381,7 +381,7 @@ exports[`should render correctly 1`] = `
           <div
             class="sc-kGXeez vWbLO"
           >
-            (green minus red)
+            (red minus green)
           </div>
           <hr
             class="sc-fjdhpX bpLxdE"
@@ -787,7 +787,7 @@ exports[`should render correctly 1`] = `
           <div
             class="sc-brqgnP dWIsTX"
           >
-            (green minus red)
+            (red minus green)
           </div>
           <div
             class="sc-cMljjf jcDXLk"
