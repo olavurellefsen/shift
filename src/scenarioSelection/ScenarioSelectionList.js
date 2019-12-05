@@ -55,7 +55,9 @@ const ScenarioSelectionList = props => {
               handleChange(event, optionValue);
             }}
           >
-            <ScenarioNameContainer>
+            <ScenarioNameContainer
+              data-tip={t("scenario." + option.desc)}
+            >
               {narrowVersion === false &&
                 t("scenario." + option.short_description)}
               {narrowVersion === true &&
@@ -148,7 +150,12 @@ const ScenarioSelectionList = props => {
                 <FontAwesomeIcon icon={faUserFriends} />
                 <FontAwesomeIcon icon={faCar} />
               </Icon>
-              <ReactTooltip place="top" type="dark" effect="solid" />
+              <ReactTooltip
+                multiline={true}
+                place="top"
+                type="dark"
+                effect="solid"
+              />
             </IconContainer>
           </ScenarioOption>
         );
