@@ -95,6 +95,8 @@ exports[`should render correctly 1`] = `
               >
                 <div
                   class="sc-ifAKCX WOpjk"
+                  currentitem="false"
+                  data-tip="This scenario has a technology focus and include a range of transport <br /> technology  options and future development of them. However, no external <br /> shift and avoid measures are assumed possible for meeting the CO2 target"
                 >
                   Tech Focus
                 </div>
@@ -227,6 +229,8 @@ exports[`should render correctly 1`] = `
               >
                 <div
                   class="sc-ifAKCX WOpjk"
+                  currentitem="false"
+                  data-tip="This scenario includes an alternative transport demand development considering <br /> external shift and avoid measures (i.e., shift to more energy-efficient modes <br /> and avoided travel demand), e.g., lower car traffic levels (see details below). <br /> It includes the same technology options and performance as Nordic_Tech"
                 >
                   Shift & Avoid
                 </div>
@@ -501,6 +505,8 @@ exports[`should render correctly 1`] = `
               >
                 <div
                   class="sc-ifAKCX WOpjk"
+                  currentitem="false"
+                  data-tip="This scenario has a technology focus and include a range of transport <br /> technology  options and future development of them. However, no external <br /> shift and avoid measures are assumed possible for meeting the CO2 target"
                 >
                   Tech
                 </div>
@@ -633,6 +639,8 @@ exports[`should render correctly 1`] = `
               >
                 <div
                   class="sc-ifAKCX WOpjk"
+                  currentitem="false"
+                  data-tip="This scenario includes an alternative transport demand development considering <br /> external shift and avoid measures (i.e., shift to more energy-efficient modes <br /> and avoided travel demand), e.g., lower car traffic levels (see details below). <br /> It includes the same technology options and performance as Nordic_Tech"
                 >
                   Shift
                 </div>
