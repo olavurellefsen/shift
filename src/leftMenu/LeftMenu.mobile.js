@@ -220,7 +220,7 @@ function ScenarioSelectionMenu(props) {
         singleMode={props.scenarioSelection.scenarioSelection2 === ""}
         selected={props.scenarioSelection.showDifference}
       >
-        {t("general.green-minus-red")}
+        {t("general.red-minus-green")}
       </ScenarioDifferenceText>
       {/* <MenuSeparatorLine />
         <ToggleDifference onClick={e => toggleLanguage(e)}>
