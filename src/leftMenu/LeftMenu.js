@@ -127,7 +127,15 @@ margin-top: 15px;
     text-decoration: underline;
   }
 `;
-
+const Header = styled.div`
+  font-size: ${props => (props.narrowVersion ? "0.9em" : "1em")};
+  padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
+  margin: 0px 0px 5px 0px;
+  width: 100%;
+  height: 26px;
+  display: flex;
+  align-items: center;
+`;
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
 
@@ -173,6 +181,12 @@ function ScenarioSelectionMenu(props) {
           </MenuItem>
         </MenuRoutes>
       </MenuHeader>
+      <MenuSeparatorLine />
+      <Header narrowVersion={false}> {t("general.countries")}</Header>
+      <MapContainer
+        selectedCountries={props.selectedCountries}
+        selectCountry={props.selectCountry}
+      />
       <MenuSeparatorLine />
       <ScenarioSelection>
         <ScenarioSelectionList
@@ -222,11 +236,6 @@ function ScenarioSelectionMenu(props) {
           English
         </ToggleLanguageText>
       </ToggleDifference> */}
-      <MenuSeparatorLine />
-      <MapContainer
-        selectedCountries={props.selectedCountries}
-        selectCountry={props.selectCountry}
-      />
       <MenuSeparatorLine />
       <MenuFooter>
         <AppLogo

@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-ksYbfQ dSozXl"
+    class="sc-frDJqD iKfdZz"
   >
     <div
-      class="sc-hmzhuo iTmBZK"
+      class="sc-kvZOFW jDpAug"
     >
       <div
-        class="sc-frDJqD fHCivS"
+        class="sc-hqyNC eszutO"
       >
         <div
           class="sc-gqjmRU gIEwTt"
@@ -55,6 +55,22 @@ exports[`should render correctly 1`] = `
                 Find out more
               </a>
             </div>
+          </div>
+          <hr
+            class="sc-fjdhpX bpLxdE"
+          />
+          <div
+            class="sc-jKJlTe bkDEOK"
+          >
+             
+            Countries
+          </div>
+          <div
+            class="sc-gZMcBi cYRTWn"
+          >
+            <svg>
+              europe.svg
+            </svg>
           </div>
           <hr
             class="sc-fjdhpX bpLxdE"
@@ -311,16 +327,6 @@ exports[`should render correctly 1`] = `
             class="sc-fjdhpX bpLxdE"
           />
           <div
-            class="sc-gZMcBi cYRTWn"
-          >
-            <svg>
-              europe.svg
-            </svg>
-          </div>
-          <hr
-            class="sc-fjdhpX bpLxdE"
-          />
-          <div
             class="sc-kpOJdX cwFhaK"
           >
             <img
@@ -352,44 +358,44 @@ exports[`should render correctly 1`] = `
           </div>
         </div>
         <div
-          class="sc-jKJlTe gdwYmG"
+          class="sc-eNQAEJ fgJgDc"
         >
           <div
-            class="sc-hMqMXs iUxuCD"
+            class="sc-kEYyzF fMXnyu"
           >
             <a
-              class="sc-jAaTju gvHfqC"
+              class="sc-jDwBTQ gQDQSf"
               href="http://www.nordicenergy.org/flagship/project-shift/"
             >
               <img
                 alt="logo"
-                class="sc-eNQAEJ jTZYrm"
+                class="sc-hMqMXs fvNCmg"
                 src="./images/shift_logo_white.png"
               />
             </a>
             <div
-              class="sc-kkGfuU dUTbQn"
+              class="sc-iAyFgw iWNaSe"
             >
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-hSdWYo cPOHsU"
                 href="/about"
               >
                 About SHIFT
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-hSdWYo cPOHsU"
                 href="/scenarios"
               >
                 Scenarios
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-hSdWYo cPOHsU"
                 href="/findings"
               >
                 Key findings
               </a>
               <a
-                class="sc-iAyFgw cojSpE"
+                class="sc-hSdWYo cPOHsU"
                 href="/subscribe"
               >
                 More
@@ -397,10 +403,26 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-kEYyzF lLBqv"
+            class="sc-kkGfuU hVzRHc"
           />
           <div
-            class="sc-hSdWYo hnVnmz"
+            class="sc-gPEVay kLqoMJ"
+          >
+             
+            Countries
+          </div>
+          <div
+            class="sc-gZMcBi cYRTWn"
+          >
+            <svg>
+              europe.svg
+            </svg>
+          </div>
+          <hr
+            class="sc-kkGfuU hVzRHc"
+          />
+          <div
+            class="sc-eHgmQL enGRio"
           >
             <div
               class="sc-bdVaJa erSRMf"
@@ -620,10 +642,10 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <hr
-            class="sc-kEYyzF lLBqv"
+            class="sc-kkGfuU hVzRHc"
           />
           <div
-            class="sc-eHgmQL jTRUFG"
+            class="sc-cvbbAY RvpMU"
           >
             <label
               class="sc-htoDjs fckYJd"
@@ -637,34 +659,34 @@ exports[`should render correctly 1`] = `
               />
             </label>
             <div
-              class="sc-cvbbAY mJlvR"
+              class="sc-jWBwVP gBkJcF"
             >
               Scenario difference
             </div>
           </div>
           <div
-            class="sc-jWBwVP inHXoN"
+            class="sc-brqgnP dWIsTX"
           >
             (green minus red)
           </div>
           <div
-            class="sc-brqgnP gnAaXk"
+            class="sc-cMljjf jcDXLk"
           >
             <div
-              class="sc-cMljjf dkHVDp"
+              class="sc-jAaTju kxrxNi"
             >
               <p>
                  
                 Developed by
               </p>
               <a
-                class="sc-jAaTju gvHfqC"
+                class="sc-jDwBTQ gQDQSf"
                 href="https://energymodellinglab.com/"
               >
                 Energy Modelling Lab
               </a>
               <a
-                class="sc-jAaTju gvHfqC"
+                class="sc-jDwBTQ gQDQSf"
                 href="http://www.tokni.com"
               >
                 and Tokni
@@ -675,75 +697,75 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-hmzhuo iTmBZK"
+      class="sc-kvZOFW jDpAug"
     >
       <div
-        class="sc-frDJqD fHCivS"
+        class="sc-hqyNC eszutO"
       >
         <div
-          class="sc-jDwBTQ eAcYUk"
+          class="sc-iRbamj bWjcCF"
         >
           <a
-            class="sc-gPEVay gMMHgW"
+            class="sc-jlyJG gQkvPp"
             href="/"
           >
             Main results
           </a>
           <a
-            class="sc-gPEVay focZHD"
+            class="sc-jlyJG fZTqWR"
             href="/tab2"
           >
             Transport sector
           </a>
         </div>
         <div
-          class="sc-iRbamj kWhBWQ"
+          class="sc-gipzik dOJcQd"
         >
           <a
-            class="sc-jlyJG jCGDfd"
+            class="sc-csuQGl ehwKTk"
             href="/"
           >
             Main results
           </a>
           <a
-            class="sc-jlyJG dJGPnb"
+            class="sc-csuQGl eqgmJa"
             href="/tab2"
           >
             Transport sector
           </a>
         </div>
         <div
-          class="sc-fBuWsC jTMrhZ"
+          class="sc-dVhcbM civynI"
         >
           <div
-            class="sc-gipzik dWJjOK"
+            class="sc-Rmtcm bwATdV"
           >
             <div
-              class="sc-csuQGl hBugRj"
+              class="sc-bRBYWo bjXLPP"
             >
               <p
-                class="sc-Rmtcm gwGgYM"
+                class="sc-hzDkRC kpsoyz"
               >
                 SHIFT project scenario interface.
               </p>
               <p
-                class="sc-Rmtcm gwGgYM"
+                class="sc-hzDkRC kpsoyz"
               >
                 This tool is developed in the Nordic Energy Research Flagship project SHIFT, which focus on the transition to a Nordic sustainable transport sector. In the project an energy system model of three Nordic countries (Norway, Sweden and Denmark) has been developed and used to explore scenarios for transition to carbon neutrality in these countries.
               </p>
               <p
-                class="sc-Rmtcm gwGgYM"
+                class="sc-hzDkRC kpsoyz"
               >
                 On this web-page you can compare scenarios and change assumptions. All the scenarios reach carbon neutrality before 2050, but technology choice, fuel consumption and cost will change when changing assumptions about readiness of technologies and whether the countries can import biomass and bio-fuels.
               </p>
               <p
-                class="sc-Rmtcm gwGgYM"
+                class="sc-hzDkRC kpsoyz"
               >
                 Close this window and start exploring...
               </p>
             </div>
             <div
-              class="sc-bRBYWo bBUwtS"
+              class="sc-jhAzac jTgftj"
             >
               <span
                 class="octicon octicon-x"
@@ -751,7 +773,7 @@ exports[`should render correctly 1`] = `
             </div>
           </div>
           <div
-            class="sc-fMiknA ktVlnV"
+            class="sc-eqIVtm fnSkIv"
           >
             <div>
               <div
@@ -767,7 +789,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -2078,7 +2100,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -2923,7 +2945,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -4258,7 +4280,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -5495,7 +5517,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -6932,7 +6954,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -7973,7 +7995,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -9406,7 +9428,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -11575,7 +11597,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
@@ -13204,7 +13226,7 @@ exports[`should render correctly 1`] = `
                   width="380"
                 >
                   <text
-                    class="sc-hzDkRC kQVRFO"
+                    class="sc-fBuWsC jjiNoL"
                     dx="0"
                     dy="4.97"
                     x="90"
