@@ -10,7 +10,6 @@ import TabsMobile from './tabs/Tabs.mobile'
 import Charts from './charts/Charts'
 import ChartsTab2 from './charts/ChartsTab2'
 import PageRenderer from './pages/PageRenderer'
-import Prerequisites from './pages/Prerequisites'
 import scenarioCombinations from './data/scenarioCombinations'
 
 ReactGA.initialize('UA-145591344-2')
