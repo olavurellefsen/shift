@@ -55,7 +55,7 @@ export const IconContainer = styled.div`
 export const Icon = styled.div`
   display: flex;
   align-items: center;
-  padding-left: 5px;
+  padding-right: 5px;
   &:hover {
     cursor: ${props =>
     props.available ? "pointer" :  "default"};

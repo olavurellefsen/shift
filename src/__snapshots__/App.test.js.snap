@@ -3,13 +3,13 @@
 exports[`should render correctly 1`] = `
 <div>
   <div
-    class="sc-ksYbfQ dSozXl"
+    class="sc-eqIVtm iNXtpi"
   >
     <div
-      class="sc-hmzhuo iTmBZK"
+      class="sc-fAjcbJ cNmqQz"
     >
       <div
-        class="sc-frDJqD fHCivS"
+        class="sc-caSCKo evbImL"
       >
         <div
           class="sc-gqjmRU gIEwTt"
@@ -81,7 +81,7 @@ exports[`should render correctly 1`] = `
                   class="sc-EHOje fhxHOS"
                 >
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Include CCS technologies "
                   >
@@ -102,7 +102,7 @@ exports[`should render correctly 1`] = `
                     </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Restrict biomass import "
                   >
@@ -123,7 +123,7 @@ exports[`should render correctly 1`] = `
                     </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Increase cost of electrict vehicles "
                   >
@@ -142,16 +142,31 @@ exports[`should render correctly 1`] = `
                         fill="currentColor"
                       />
                     </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-car fa-w-16 "
+                      data-icon="car"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Include shared autonomous cars "
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-battery-full fa-w-20 "
-                      data-icon="battery-full"
+                      class="svg-inline--fa fa-user-friends fa-w-20 "
+                      data-icon="user-friends"
                       data-prefix="fas"
                       focusable="false"
                       role="img"
@@ -159,7 +174,22 @@ exports[`should render correctly 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-car fa-w-16 "
+                      data-icon="car"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
                         fill="currentColor"
                       />
                     </svg>
@@ -183,7 +213,7 @@ exports[`should render correctly 1`] = `
                   class="sc-EHOje fhxHOS"
                 >
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Include CCS technologies "
                   >
@@ -204,7 +234,7 @@ exports[`should render correctly 1`] = `
                     </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Restrict biomass import "
                   >
@@ -225,7 +255,7 @@ exports[`should render correctly 1`] = `
                     </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Increase cost of electrict vehicles "
                   >
@@ -244,16 +274,31 @@ exports[`should render correctly 1`] = `
                         fill="currentColor"
                       />
                     </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-car fa-w-16 "
+                      data-icon="car"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Include shared autonomous cars "
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-battery-full fa-w-20 "
-                      data-icon="battery-full"
+                      class="svg-inline--fa fa-user-friends fa-w-20 "
+                      data-icon="user-friends"
                       data-prefix="fas"
                       focusable="false"
                       role="img"
@@ -261,7 +306,22 @@ exports[`should render correctly 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-car fa-w-16 "
+                      data-icon="car"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
                         fill="currentColor"
                       />
                     </svg>
@@ -405,7 +465,7 @@ exports[`should render correctly 1`] = `
                   class="sc-EHOje fhxHOS"
                 >
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Include CCS technologies "
                   >
@@ -426,7 +486,7 @@ exports[`should render correctly 1`] = `
                     </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Restrict biomass import "
                   >
@@ -447,7 +507,7 @@ exports[`should render correctly 1`] = `
                     </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Increase cost of electrict vehicles "
                   >
@@ -466,16 +526,31 @@ exports[`should render correctly 1`] = `
                         fill="currentColor"
                       />
                     </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-car fa-w-16 "
+                      data-icon="car"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Include shared autonomous cars "
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-battery-full fa-w-20 "
-                      data-icon="battery-full"
+                      class="svg-inline--fa fa-user-friends fa-w-20 "
+                      data-icon="user-friends"
                       data-prefix="fas"
                       focusable="false"
                       role="img"
@@ -483,7 +558,22 @@ exports[`should render correctly 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-car fa-w-16 "
+                      data-icon="car"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
                         fill="currentColor"
                       />
                     </svg>
@@ -507,7 +597,7 @@ exports[`should render correctly 1`] = `
                   class="sc-EHOje fhxHOS"
                 >
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Include CCS technologies "
                   >
@@ -528,7 +618,7 @@ exports[`should render correctly 1`] = `
                     </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Restrict biomass import "
                   >
@@ -549,7 +639,7 @@ exports[`should render correctly 1`] = `
                     </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Increase cost of electrict vehicles "
                   >
@@ -568,16 +658,31 @@ exports[`should render correctly 1`] = `
                         fill="currentColor"
                       />
                     </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-car fa-w-16 "
+                      data-icon="car"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
+                        fill="currentColor"
+                      />
+                    </svg>
                   </div>
                   <div
-                    class="sc-bZQynM hGLnGC"
+                    class="sc-bZQynM boWVar"
                     currentitem="false"
                     data-tip="Include shared autonomous cars "
                   >
                     <svg
                       aria-hidden="true"
-                      class="svg-inline--fa fa-battery-full fa-w-20 "
-                      data-icon="battery-full"
+                      class="svg-inline--fa fa-user-friends fa-w-20 "
+                      data-icon="user-friends"
                       data-prefix="fas"
                       focusable="false"
                       role="img"
@@ -585,7 +690,22 @@ exports[`should render correctly 1`] = `
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-48 96H96v128h416V192z"
+                        d="M192 256c61.9 0 112-50.1 112-112S253.9 32 192 32 80 82.1 80 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C51.6 288 0 339.6 0 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zM480 256c53 0 96-43 96-96s-43-96-96-96-96 43-96 96 43 96 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592c26.5 0 48-21.5 48-48 0-61.9-50.1-112-112-112z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <svg
+                      aria-hidden="true"
+                      class="svg-inline--fa fa-car fa-w-16 "
+                      data-icon="car"
+                      data-prefix="fas"
+                      focusable="false"
+                      role="img"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M499.99 176h-59.87l-16.64-41.6C406.38 91.63 365.57 64 319.5 64h-127c-46.06 0-86.88 27.63-103.99 70.4L71.87 176H12.01C4.2 176-1.53 183.34.37 190.91l6 24C7.7 220.25 12.5 224 18.01 224h20.07C24.65 235.73 16 252.78 16 272v48c0 16.12 6.16 30.67 16 41.93V416c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-32h256v32c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32v-54.07c9.84-11.25 16-25.8 16-41.93v-48c0-19.22-8.65-36.27-22.07-48H494c5.51 0 10.31-3.75 11.64-9.09l6-24c1.89-7.57-3.84-14.91-11.65-14.91zm-352.06-17.83c7.29-18.22 24.94-30.17 44.57-30.17h127c19.63 0 37.28 11.95 44.57 30.17L384 208H128l19.93-49.83zM96 319.8c-19.2 0-32-12.76-32-31.9S76.8 256 96 256s48 28.71 48 47.85-28.8 15.95-48 15.95zm320 0c-19.2 0-48 3.19-48-15.95S396.8 256 416 256s32 12.76 32 31.9-12.8 31.9-32 31.9z"
                         fill="currentColor"
                       />
                     </svg>
@@ -644,10 +764,10 @@ exports[`should render correctly 1`] = `
       </div>
     </div>
     <div
-      class="sc-hmzhuo iTmBZK"
+      class="sc-fAjcbJ cNmqQz"
     >
       <div
-        class="sc-frDJqD fHCivS"
+        class="sc-caSCKo evbImL"
       >
         <div
           class="sc-jDwBTQ eAcYUk"
