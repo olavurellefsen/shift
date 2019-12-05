@@ -29,7 +29,7 @@
     "opt3": "SAC",
     "scenario-difference": "Scenario difference",
     "red-minus-green": "(red minus green)",
-    "and-tokni": "and Tokni",
+    "tokni": "Tokni",
     "developed-by": "Developed by",
     "countries": "Countries"
   },
@@ -39,7 +39,7 @@
     "Shift": "Shift",
     "Tech": "Tech",
     "nordic_tech_desc":"This scenario has a technology focus and include a range of transport <br /> technology  options and future development of them. However, no external <br /> shift and avoid measures are assumed possible for meeting the CO2 target",
-    "nordic_shift_desc":"This scenario includes an alternative transport demand development considering <br /> external shift and avoid measures (i.e., shift to more energy-efficient modes <br /> and avoided travel demand), e.g., lower car traffic levels (see details below). <br /> It includes the same technology options and performance as Nordic_Tech"
+    "nordic_shift_desc":"This scenario includes an alternative transport demand development considering <br /> external shift and avoid measures (i.e., shift to more energy-efficient modes <br /> and avoided travel demand), e.g., lower car traffic levels. <br /> It includes the same technology options and performance as Nordic_Tech"
   },
   "scenario_code": {
     "Reference": "Reference",
