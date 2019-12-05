@@ -44,6 +44,7 @@ export const changeScenario = (name, value) => ({
 })
 
 const default_scenario = "Nordic_ShiftAvoid";
+const default_countries = ['no','se','dk'];
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
   .filter(s => !s.ccs && !s.bio && !s.opt2 && !s.opt3)
@@ -66,7 +67,7 @@ export class App extends React.Component {
       options: options,
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: '',
-      selectedCountries: ['no'],
+      selectedCountries: default_countries,
   }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
   }
