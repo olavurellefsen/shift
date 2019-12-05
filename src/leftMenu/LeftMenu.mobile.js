@@ -106,7 +106,6 @@ const ScenarioDifferenceText = styled.div`
 `;
 
 const MenuFooter = styled.div`
-  padding: 5px;
   margin: 0;
   width: 100%;
   display: flex;
@@ -129,13 +128,17 @@ const ExternalLink = styled.a`
   }
 `;
 const Header = styled.div`
-  font-size: ${props => (props.narrowVersion ? "0.9em" : "1em")};
+  font-size: ${props => (props.narrowVersion ? "10px" : "12px")};
+  font-weight: bold;
   padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
   margin: 0px 0px 5px 0px;
-  width: 100%;
-  height: 26px;
-  display: flex;
-  align-items: center;
+  text-align: center;
+`;
+const Developers = styled.div`
+  font-size: ${props => (props.narrowVersion ? "10px" : "12px")};
+  padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
+  margin: 0px 0px 5px 0px;
+  text-align: center;
 `;
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
@@ -234,13 +237,17 @@ function ScenarioSelectionMenu(props) {
       </ToggleDifference> */}
       <MenuFooter>
         <CopyrightNotice>
-          <p> {t("general.developed-by")}</p>
-          <ExternalLink href="https://energymodellinglab.com/">
-            Energy Modelling Lab
-          </ExternalLink>
-          <ExternalLink href="http://www.tokni.com">
-            {t("general.and-tokni")}
-          </ExternalLink>
+        <Header narrowVersion={true}> {t("general.developed-by")}</Header>
+          <Developers narrowVersion={true}>
+            <ExternalLink href="http://www.tokni.com">
+              {t("general.tokni")}
+            </ExternalLink>
+          </Developers>
+          <Developers narrowVersion={true}>
+            <ExternalLink href="https://energymodellinglab.com/">
+              Energy Modelling Lab
+            </ExternalLink>
+          </Developers>
         </CopyrightNotice>
       </MenuFooter>
     </MenuLayout>

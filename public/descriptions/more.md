@@ -6,6 +6,8 @@ Find out more about:
 
 - [Nordic Energy Research](https://www.nordicenergy.org)
 
+- [The Energy Modelling Lab](https://www.energymodellinglab.com)
+
 - The TIMES-Nordic model – contact [Kenneth Karlsson](mailto:kenneth.karlsson@ivl.se), IVL
 
 - The web tool – [contact Tokni](https://www.tokni.com)

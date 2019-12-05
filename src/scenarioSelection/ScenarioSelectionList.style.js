@@ -10,13 +10,10 @@ export const ScenarioDivider = styled.div`
 `;
 
 export const ScenarioHeader = styled.div`
-  font-size: ${props => (props.narrowVersion ? "0.9em" : "1em")};
+  font-size: ${props => (props.narrowVersion ? "10px" : "16px")};
   padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
   margin: 0px 0px 5px 0px;
-  width: 100%;
-  height: 26px;
-  display: flex;
-  align-items: center;
+  text-align: center;
 `;
 
 export const ScenarioOption = styled.div`
@@ -24,8 +21,9 @@ export const ScenarioOption = styled.div`
   width: 100%;
   font-size: ${props => (props.narrowVersion ? "0.7em" : "0.9em")};
   display: flex;
+  flex-direction: ${props => (props.narrowVersion ? "column" : "row")};
   align-items: center;
-  height: ${props => (props.narrowVersion ? "12px" : "26px")};
+  height: 36px;
   padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
   position: relative;
   width: 100%;
@@ -50,7 +48,8 @@ export const ScenarioNameContainer = styled.div`
 
 export const IconContainer = styled.div`
   display: flex;
-`;
+  padding: ${props => (props.narrowVersion ? "10px" : "0px")};
+  `;
 
 export const Icon = styled.div`
   display: flex;
