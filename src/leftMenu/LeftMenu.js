@@ -23,7 +23,7 @@ const MenuLayout = styled.div`
 `;
 
 const MenuHeader = styled.div`
-  padding: 10px 12px 5px 0px;
+  padding: 10px 12px 5px 10px;
   margin: 0;
   width: 100%;
   display: flex;
@@ -32,10 +32,10 @@ const MenuHeader = styled.div`
 `;
 
 const AppLogo = styled.img`
-  padding-bottom: 20px;
-  width: 200px;
-  margin-left: 5px;
+  padding-bottom: 0px;
+  max-width: 160px;
   border: 0;
+  align-self: center;
 `;
 
 const MenuSeparatorLine = styled.hr`
@@ -46,7 +46,7 @@ const MenuSeparatorLine = styled.hr`
 `;
 
 const MenuRoutes = styled.div`
-  padding: 10px 12px 15px 15px;
+  padding: 10px 12px 15px 5px;
   margin: 0;
   width: 100%;
   display: flex;
@@ -105,7 +105,7 @@ const ScenarioDifferenceText = styled.div`
 `;
 
 const MenuFooter = styled.div`
-  padding: 0px;
+  padding: 20px 0;
   margin: 0;
   width: 100%;
   display: flex;
@@ -115,26 +115,32 @@ const MenuFooter = styled.div`
 
 const CopyrightNotice = styled.div`
   padding: 20px 12px 5px 15px;
-  margin: 0;
+  margin: 30px 0 0 0;
   height: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const CopyrightItem = styled.div`
+  align-self: center;
+  padding: 5px 0;
+  text-align: center;
 `;
 
 const ExternalLink = styled.a`
-margin-top: 15px;
   color: white;
   text-decoration: none;
   :hover {
     text-decoration: underline;
   }
 `;
-const Header = styled.div`
+const Header = styled.h1`
   font-size: ${props => (props.narrowVersion ? "0.9em" : "1em")};
   padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
-  margin: 0px 0px 5px 0px;
-  width: 100%;
+  margin: 5px 0px 5px 0px;
   height: 26px;
-  display: flex;
-  align-items: center;
+  align-self: center;
 `;
 function ScenarioSelectionMenu(props) {
   const { t } = useTranslation();
@@ -182,7 +188,7 @@ function ScenarioSelectionMenu(props) {
         </MenuRoutes>
       </MenuHeader>
       <MenuSeparatorLine />
-      <Header narrowVersion={false}> {t("general.countries")}</Header>
+      <Header narrowVersion={false}>{t("general.countries")}</Header>
       <MapContainer
         selectedCountries={props.selectedCountries}
         selectCountry={props.selectCountry}
@@ -226,16 +232,6 @@ function ScenarioSelectionMenu(props) {
       >
         {t("general.red-minus-green")}
       </ScenarioDifferenceText>
-      {/* <MenuSeparatorLine />
-      <ToggleDifference onClick={e => toggleLanguage(e)}>
-        <ToggleLanguageText selected={language === "dk"}>
-          Danish
-        </ToggleLanguageText>
-        <ToggleSwitch checked={language !== "dk"} dimmed={false} />
-        <ToggleLanguageText selected={language === "en"}>
-          English
-        </ToggleLanguageText>
-      </ToggleDifference> */}
       <MenuSeparatorLine />
       <MenuFooter>
         <AppLogo
@@ -243,14 +239,18 @@ function ScenarioSelectionMenu(props) {
           alt="Nordic Energy Research"
         />
         <CopyrightNotice>
-        <p> {t("general.developed-by")}</p>
-          <ExternalLink href="https://energymodellinglab.com/">
-            Energy Modelling Lab
-          </ExternalLink>
-          <br></br>
-          <ExternalLink href="http://www.tokni.com">
-          {t("general.and-tokni")}
-          </ExternalLink>
+          <Header> {t("general.developed-by")}</Header>
+          <CopyrightItem>
+            <ExternalLink href="http://www.tokni.com">
+              <AppLogo src="./images/tokni.png" alt="Tøkni" />
+            </ExternalLink>
+          </CopyrightItem>
+          <CopyrightItem>
+            <ExternalLink href="https://energymodellinglab.com/">
+              <AppLogo src="./images/eml.png" alt="Energy Modelling Lab" />
+              <Header>Energy Modelling Lab</Header>
+            </ExternalLink>
+          </CopyrightItem>
         </CopyrightNotice>
       </MenuFooter>
     </MenuLayout>
