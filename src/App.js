@@ -21,10 +21,18 @@ const Page = styled.div`
   display: flex;
   box-sizing: border-box;
 `
-const Column = styled.div`
+const LeftColumn = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: rgb(50,50,50);
+`
+const RightColumn = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
 `
 const Content = styled.div`
   flex-grow: 1; /*ensures that the container will take up the full height of the parent container*/
@@ -173,7 +181,7 @@ export class App extends React.Component {
   render() {
     return (
       <Page>
-        <Column>
+        <LeftColumn>
           <Content>
             <LeftMenu
               selectedChartgroup={this.state.scenarioSelection}
@@ -198,8 +206,8 @@ export class App extends React.Component {
               selectCountry={this.selectCountry}
             />
           </Content>
-        </Column>
-        <Column>
+        </LeftColumn>
+        <RightColumn>
           <Content>
             <Tabs selectedChartgroup={this.props.location.pathname} />
             <TabsMobile selectedChartgroup={this.props.location.pathname} />
@@ -259,7 +267,7 @@ export class App extends React.Component {
               />
             </MainSwitch>
           </Content>
-        </Column>
+        </RightColumn>
       </Page>
     )
   }
