@@ -138,7 +138,7 @@ const ExternalLink = styled.a`
 const Header = styled.h1`
   font-size: ${props => (props.narrowVersion ? "0.9em" : "1em")};
   padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
-  margin: 5px 0px 5px 0px;
+  margin: 0;
   height: 26px;
   align-self: center;
 `;
@@ -247,13 +247,13 @@ function ScenarioSelectionMenu(props) {
           </CopyrightItem>
           <CopyrightItem>
             <ExternalLink href="https://energymodellinglab.com/">
-              <AppLogo src="./images/eml_small.png" alt="Energy Modelling Lab" />
+              <AppLogo src="./images/eml.svg" alt="Energy Modelling Lab" />
               <Header>Energy Modelling Lab</Header>
             </ExternalLink>
           </CopyrightItem>
           <CopyrightItem>
             <ExternalLink href="https://energymodelling.club/">
-              <AppLogo src="./images/emc_small.png" alt="Energy Modelling Club" />
+              <AppLogo src="./images/emc.svg" alt="Energy Modelling Club" />
               <Header>Energy Modelling Club</Header>
             </ExternalLink>
           </CopyrightItem>          
