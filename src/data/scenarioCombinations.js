@@ -1,20 +1,45 @@
-﻿export default {
-  scenarioCombinations : {
-    scenarioOptions : [
-      { "id": 0, "name": "FP_NO_WIN_INT", "nameNoOptions": "FP_NO_WIN_INT", "short_description": "Frozen policy", "ultra_short_description": "Frozen policy", "ccs": false, "opt1": false, "opt2": false, "opt3": false },
-      { "id": 1, "name": "FP_NO_WIN_INT_CCS", "nameNoOptions": "FP_NO_WIN_INT", "short_description": "Frozen policy", "ultra_short_description": "Frozen policy", "ccs": true, "opt1": false, "opt2": false, "opt3": false  },
-      { "id": 2, "name": "Frozen_policy_INT", "nameNoOptions": "Frozen_policy_INT", "short_description": "Reference", "ultra_short_description": "Reference", "ccs": false, "opt1": false, "opt2": false, "opt3": false  },
-      { "id": 3, "name": "Frozen_policy_INT_CCS", "nameNoOptions": "Frozen_policy_INT", "short_description": "Reference", "ultra_short_description": "Reference", "ccs": true, "opt1": false, "opt2": false, "opt3": false  },
-      { "id": 4, "name": "DGSB_INT", "nameNoOptions": "DGSB_INT", "short_description": "DGSB", "ultra_short_description": "DGSB", "ccs": false, "opt1": false, "opt2": false, "opt3": false  },
-      { "id": 5, "name": "DGSB_INT_CCS", "nameNoOptions": "DGSB_INT", "short_description": "DGSB", "ultra_short_description": "DGSB", "ccs": true, "opt1": false, "opt2": false, "opt3": false  },
-      { "id": 6, "name": "Regeringen_INT", "nameNoOptions": "Regeringen_INT", "short_description": "Regeringens udspil", "ultra_short_description": "Regeringen", "ccs": false, "opt1": false, "opt2": false, "opt3": false  },
-      { "id": 7, "name": "Regeringen_INT_CCS", "nameNoOptions": "Regeringen_INT", "short_description": "Regeringens udspil", "ultra_short_description": "Regeringen", "ccs": true, "opt1": false, "opt2": false, "opt3": false  },
-    ],
-    optionsAvailable:  {
-       "FP_NO_WIN_INT": {"ccs": true, "opt1": false, "opt2": false, "opt3": false},
-       "Frozen_policy_INT": {"ccs": true, "opt1": false, "opt2": false, "opt3": false},
-       "DGSB_INT": { "ccs": true, "opt1": false, "opt2": false, "opt3": false  },
-       "Regeringen_INT": { "ccs": true, "opt1": false, "opt2": false, "opt3": false},
+﻿export default {scenarioCombinations : {scenarioOptions : [
+{ "id": 0, "name": "Nordic_Tech", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": false, "bio": false, "opt2": false, "opt3": false  },
+{ "id": 1, "name": "Nordic_Tech_bio", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": false, "bio": true, "opt2": false, "opt3": false  },
+{ "id": 2, "name": "Nordic_Tech_ccs", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": true, "bio": false, "opt2": false, "opt3": false  },
+{ "id": 3, "name": "Nordic_Tech_ELC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": false, "bio": false, "opt2": true, "opt3": false },
+{ "id": 4, "name": "Nordic_Tech_ccs_bio", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": true, "bio": true, "opt2": false, "opt3": false },
+{ "id": 5, "name": "Nordic_Tech_ccs_ELC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": true, "bio": false, "opt2": true, "opt3": false  },
+{ "id": 6, "name": "Nordic_Tech_bio_ELC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": false, "bio": true, "opt2": true, "opt3": false  },
+{ "id": 7, "name": "Nordic_Tech_ccs_bio_ELC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": true, "bio": true, "opt2": true, "opt3": false  },
+{ "id": 8, "name": "Nordic_Tech_SAC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": false, "bio": false, "opt2": false, "opt3": true  },
+{ "id": 9, "name": "Nordic_Tech_bio_SAC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": false, "bio": true, "opt2": false, "opt3": true  },
+{ "id": 10, "name": "Nordic_Tech_ccs_SAC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": true, "bio": false, "opt2": false, "opt3": true  },
+{ "id": 11, "name": "Nordic_Tech_ELC_SAC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": false, "bio": false, "opt2": true, "opt3": true },
+{ "id": 12, "name": "Nordic_Tech_ccs_bio_SAC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": true, "bio": true, "opt2": false, "opt3": true },
+{ "id": 13, "name": "Nordic_Tech_ccs_ELC_SAC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": true, "bio": false, "opt2": true, "opt3": true  },
+{ "id": 14, "name": "Nordic_Tech_bio_ELC_SAC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": false, "bio": true, "opt2": true, "opt3": true  },
+{ "id": 15, "name": "Nordic_Tech_ccs_bio_ELC_SAC", "nameNoOptions": "Nordic_Tech", "short_description": "Tech Focus", "ultra_short_description": "Tech","desc":"nordic_tech_desc", "ccs": true, "bio": true, "opt2": true, "opt3": true  },
+{ "id": 16, "name": "Nordic_ShiftAvoid", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": false, "bio": false, "opt2": false, "opt3": false },
+{ "id": 17, "name": "Nordic_ShiftAvoid_bio", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": false, "bio": true, "opt2": false, "opt3": false },
+{ "id": 18, "name": "Nordic_ShiftAvoid_ccs", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": true, "bio": false, "opt2": false, "opt3": false },
+{ "id": 19, "name": "Nordic_ShiftAvoid_ELC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": false, "bio": false, "opt2": true, "opt3": false },
+{ "id": 20, "name": "Nordic_ShiftAvoid_ccs_bio", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": true, "bio": true, "opt2": false, "opt3": false },
+{ "id": 21, "name": "Nordic_ShiftAvoid_bio_ELC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": false, "bio": true, "opt2": true, "opt3": false },
+{ "id": 22, "name": "Nordic_ShiftAvoid_ccs_ELC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": true, "bio": false, "opt2": true, "opt3": false },
+{ "id": 23, "name": "Nordic_ShiftAvoid_ccs_bio_ELC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": true, "bio": true, "opt2": true, "opt3": false },
+{ "id": 24, "name": "Nordic_ShiftAvoid_SAC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": false, "bio": false, "opt2": false, "opt3": true },
+{ "id": 25, "name": "Nordic_ShiftAvoid_bio_SAC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": false, "bio": true, "opt2": false, "opt3": true },
+{ "id": 26, "name": "Nordic_ShiftAvoid_ccs_SAC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": true, "bio": false, "opt2": false, "opt3": true },
+{ "id": 27, "name": "Nordic_ShiftAvoid_ELC_SAC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": false, "bio": false, "opt2": true, "opt3": true },
+{ "id": 28, "name": "Nordic_ShiftAvoid_ccs_bio_SAC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": true, "bio": true, "opt2": false, "opt3": true },
+{ "id": 29, "name": "Nordic_ShiftAvoid_bio_ELC_SAC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": false, "bio": true, "opt2": true, "opt3": true },
+{ "id": 30, "name": "Nordic_ShiftAvoid_ccs_ELC_SAC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": true, "bio": false, "opt2": true, "opt3": true },
+{ "id": 31, "name": "Nordic_ShiftAvoid_ccs_bio_ELC_SAC", "nameNoOptions": "Nordic_ShiftAvoid", "short_description": "Shift and Avoid", "ultra_short_description": "Shift","desc":"nordic_shift_desc", "ccs": true, "bio": true, "opt2": true, "opt3": true },
+],
+regionOptions : [
+{ "id": 0, "name": "Denmark", "country": "Denmark", "short_description": "Denmark", "ultra_short_description": "Denmark" },
+{ "id": 1, "name": "Norway", "country": "Norway", "short_description": "Norway", "ultra_short_description": "Norway" },
+{ "id": 2, "name": "Sweden", "country": "Sweden", "short_description": "Sweden", "ultra_short_description": "Sweden" }
+               ], 
+optionsAvailable:  {
+       "Nordic_Tech": {"ccs": true, "bio": true, "opt2": true, "opt3": true},
+       "Nordic_ShiftAvoid": {"ccs": true, "bio": true, "opt2": true, "opt3": true},
     }
   }
 };

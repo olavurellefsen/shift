@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import ScenarioSelectionList from "../scenarioSelection/ScenarioSelectionList";
 import ToggleSwitch from "./ToggleSwitch";
 import { useTranslation } from "react-i18next";
+import MapContainer from "../map/MapContainer";
 
 const MenuLayout = styled.div`
   display: none;
@@ -90,12 +91,12 @@ const ToggleSwitchText = styled.div`
   margin-top: 5px;
 `;
 
-const ToggleLanguageText = styled.div`
-  font-size: 0.7em;
-  color: ${props => (props.selected ? "white" : "gray")};
-  margin-left: 3px;
-  margin-right: 3px;
-`;
+// const ToggleLanguageText = styled.div`
+//   font-size: 0.7em;
+//   color: ${props => (props.selected ? "white" : "gray")};
+//   margin-left: 3px;
+//   margin-right: 3px;
+// `;
 
 const ScenarioDifferenceText = styled.div`
   font-size: 0.7em;
@@ -105,7 +106,6 @@ const ScenarioDifferenceText = styled.div`
 `;
 
 const MenuFooter = styled.div`
-  padding: 5px;
   margin: 0;
   width: 100%;
   display: flex;
@@ -127,85 +127,105 @@ const ExternalLink = styled.a`
     text-decoration: underline;
   }
 `;
-
+const Header = styled.div`
+  font-size: ${props => (props.narrowVersion ? "10px" : "12px")};
+  font-weight: bold;
+  padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
+  margin: 0px 0px 5px 0px;
+  text-align: center;
+`;
+const Developers = styled.div`
+  font-size: ${props => (props.narrowVersion ? "10px" : "12px")};
+  padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
+  margin: 0px 0px 5px 0px;
+  text-align: center;
+`;
 function ScenarioSelectionMenu(props) {
-  const { t, i18n } = useTranslation();
-  const language = i18n.language;
+  const { t } = useTranslation();
+  // const language = i18n.language;
 
-  const toggleLanguage = e => {
-    e.preventDefault();
-    if (language === "en") {
-      i18n.changeLanguage("dk");
-    } else {
-      i18n.changeLanguage("en");
-    }
-  };
+  // const toggleLanguage = e => {
+  //   e.preventDefault();
+  //   if (language === "en") {
+  //     i18n.changeLanguage("dk");
+  //   } else {
+  //     i18n.changeLanguage("en");
+  //   }
+  // };
 
-    return (
-      <MenuLayout>
-        <MenuHeader>
+  return (
+    <MenuLayout>
+      <MenuHeader>
+        <ExternalLink href="http://www.nordicenergy.org/flagship/project-shift/">
           <AppLogo src="./images/shift_logo_white.png" alt="logo" />
-          <MenuRoutes>
-            <MenuItem
-              to="/about"
-              selected={props.selectedChartgroup === "/about"}
-            >
-              {t("menu.mobile.about")}
-            </MenuItem>
-            <MenuItem
-              to="/descriptions"
-              selected={props.selectedChartgroup === "/descriptions"}
-            >
-              {t("menu.mobile.descriptions")}
-            </MenuItem>
-            <MenuItem
-              to="/preconditions"
-              selected={props.selectedChartgroup === "/preconditions"}
-            >
-              {t("menu.mobile.preconditions")}
-            </MenuItem>
-            <MenuItem
-              to="/subscribe"
-              selected={props.selectedChartgroup === "/subscribe"}
-            >
-              {t("menu.mobile.subscribe")}
-            </MenuItem>
-          </MenuRoutes>
-        </MenuHeader>
-        <MenuSeparatorLine />
-        <ScenarioSelection>
-          <ScenarioSelectionList
-            updateScenarioSelection={props.updateScenarioSelection}
-            name="scenarioSelection"
-            selectedValue={props.scenarioSelection.scenarioSelectionNoOptions}
-            selectedValue2={props.scenarioSelection.scenarioSelectionNoOptions2}
-            scenarioCombinations={props.scenarioCombinations}
-            dimensionTitle={t("general.scenarios")}
-            narrowVersion={true}
-            options={props.options}
-          toggleOption={props.toggleOption}
-          />
-        </ScenarioSelection>
-        <MenuSeparatorLine />
-        <ToggleDifference onClick={e => props.toggleDifference(e)}>
-          <ToggleSwitch
-            dimmed={props.scenarioSelection.scenarioSelection2 === ""}
-            checked={props.scenarioSelection.showDifference}
-          />
-          <ToggleSwitchText
-            singleMode={props.scenarioSelection.scenarioSelection2 === ""}
-            selected={props.scenarioSelection.showDifference}
+        </ExternalLink>
+        <MenuRoutes>
+          <MenuItem
+            to="/about"
+            selected={props.selectedChartgroup === "/about"}
           >
-            {t("general.scenario-difference")}
-          </ToggleSwitchText>
-        </ToggleDifference>
-        <ScenarioDifferenceText
+            {t("menu.mobile.about")}
+          </MenuItem>
+          <MenuItem
+            to="/scenarios"
+            selected={props.selectedChartgroup === "/scenarios"}
+          >
+            {t("menu.mobile.scenarios")}
+          </MenuItem>
+          <MenuItem
+            to="/findings"
+            selected={props.selectedChartgroup === "/findings"}
+          >
+            {t("menu.mobile.findings")}
+          </MenuItem>
+          <MenuItem
+            to="/subscribe"
+            selected={props.selectedChartgroup === "/subscribe"}
+          >
+            {t("menu.mobile.subscribe")}
+          </MenuItem>
+        </MenuRoutes>
+      </MenuHeader>
+      <MenuSeparatorLine />
+      <Header narrowVersion={true}> {t("general.countries")}</Header>
+      <MapContainer
+        selectedCountries={props.selectedCountries}
+        selectCountry={props.selectCountry}
+      />
+      <MenuSeparatorLine />
+      <ScenarioSelection>
+        <ScenarioSelectionList
+          updateScenarioSelection={props.updateScenarioSelection}
+          name="scenarioSelection"
+          selectedValue={props.scenarioSelection.scenarioSelectionNoOptions}
+          selectedValue2={props.scenarioSelection.scenarioSelectionNoOptions2}
+          scenarioCombinations={props.scenarioCombinations}
+          dimensionTitle={t("general.scenarios")}
+          narrowVersion={true}
+          options={props.options}
+          toggleOption={props.toggleOption}
+        />
+      </ScenarioSelection>
+      <MenuSeparatorLine />
+      <ToggleDifference onClick={e => props.toggleDifference(e)}>
+        <ToggleSwitch
+          dimmed={props.scenarioSelection.scenarioSelection2 === ""}
+          checked={props.scenarioSelection.showDifference}
+        />
+        <ToggleSwitchText
           singleMode={props.scenarioSelection.scenarioSelection2 === ""}
           selected={props.scenarioSelection.showDifference}
         >
-          {t("general.green-minus-red")}
-        </ScenarioDifferenceText>
-        <MenuSeparatorLine />
+          {t("general.scenario-difference")}
+        </ToggleSwitchText>
+      </ToggleDifference>
+      <ScenarioDifferenceText
+        singleMode={props.scenarioSelection.scenarioSelection2 === ""}
+        selected={props.scenarioSelection.showDifference}
+      >
+        {t("general.red-minus-green")}
+      </ScenarioDifferenceText>
+      {/* <MenuSeparatorLine />
         <ToggleDifference onClick={e => toggleLanguage(e)}>
         <ToggleLanguageText selected={language === "dk"}>
           Danish
@@ -214,18 +234,25 @@ function ScenarioSelectionMenu(props) {
         <ToggleLanguageText selected={language === "en"}>
           English
         </ToggleLanguageText>
-      </ToggleDifference>
-        <MenuFooter>
-          <CopyrightNotice>
+      </ToggleDifference> */}
+      <MenuFooter>
+        <CopyrightNotice>
+        <Header narrowVersion={true}> {t("general.developed-by")}</Header>
+          <Developers narrowVersion={true}>
             <ExternalLink href="http://www.tokni.com">
-              {t("general.developed-by-Tokni")}
+              {t("general.tokni")}
             </ExternalLink>
-          </CopyrightNotice>
-        </MenuFooter>
-      </MenuLayout>
-    );
-  }
-
+          </Developers>
+          <Developers narrowVersion={true}>
+            <ExternalLink href="https://energymodellinglab.com/">
+              Energy Modelling Lab
+            </ExternalLink>
+          </Developers>
+        </CopyrightNotice>
+      </MenuFooter>
+    </MenuLayout>
+  );
+}
 
 ScenarioSelectionMenu.propTypes = {
   selectedChartgroup: PropTypes.string.isRequired,
@@ -234,7 +261,9 @@ ScenarioSelectionMenu.propTypes = {
   scenarioCombinations: PropTypes.object.isRequired,
   toggleDifference: PropTypes.func.isRequired,
   options: PropTypes.any.isRequired,
-  toggleOption: PropTypes.func.isRequired
+  toggleOption: PropTypes.func.isRequired,
+  selectedCountries: PropTypes.array.isRequired,
+  selectCountry: PropTypes.func.isRequired
 };
 
 export default ScenarioSelectionMenu;

@@ -9,12 +9,7 @@ import Tabs from './tabs/Tabs'
 import TabsMobile from './tabs/Tabs.mobile'
 import Charts from './charts/Charts'
 import ChartsTab2 from './charts/ChartsTab2'
-import ChartsTab3 from './charts/ChartsTab3'
-import ChartsTab4 from './charts/ChartsTab4'
-import ChartsTab5 from './charts/ChartsTab5'
-import ChartsTab6 from './charts/ChartsTab6'
 import PageRenderer from './pages/PageRenderer'
-import Prerequisites from './pages/Prerequisites'
 import scenarioCombinations from './data/scenarioCombinations'
 
 ReactGA.initialize('UA-145591344-2')
@@ -47,14 +42,15 @@ export const changeScenario = (name, value) => ({
   [name]: value,
 })
 
-const default_scenario = 'Frozen_policy_INT'
+const default_scenario = "Nordic_Tech";
+const default_countries = ['no','se','dk'];
 const options = []
 scenarioCombinations.scenarioCombinations.scenarioOptions
-  .filter(s => !s.ccs && !s.opt1 && !s.opt2 && !s.opt3)
+  .filter(s => !s.ccs && !s.bio && !s.opt2 && !s.opt3)
   .forEach(s => {
     options[s.nameNoOptions] = {}
     options[s.nameNoOptions]['ccs'] = false
-    options[s.nameNoOptions]['opt1'] = false
+    options[s.nameNoOptions]['bio'] = false
     options[s.nameNoOptions]['opt2'] = false
     options[s.nameNoOptions]['opt3'] = false
   })
@@ -70,8 +66,8 @@ export class App extends React.Component {
       options: options,
       scenarioSelectionNoOptions: default_scenario,
       scenarioSelectionNoOptions2: '',
-      selectedCountries: ['no'],
-    }
+      selectedCountries: default_countries,
+  }
     this.scenarioCombinations = scenarioCombinations.scenarioCombinations
   }
 
@@ -84,10 +80,10 @@ export class App extends React.Component {
       return {
         scenarioSelection:
           state.scenarioSelectionNoOptions +
-          (state.options[state.scenarioSelectionNoOptions].ccs ? '_CCS' : '') +
-          (false ? '_opt1' : '') +
-          (false ? '_opt2' : '') +
-          (false ? '_opt3' : ''),
+          (state.options[state.scenarioSelectionNoOptions].ccs ? '_ccs' : '') +
+          (state.options[state.scenarioSelectionNoOptions].bio ? '_bio' : '') +
+          (state.options[state.scenarioSelectionNoOptions].opt2 ? '_ELC' : '') +
+          (state.options[state.scenarioSelectionNoOptions].opt3 ? '_SAC' : ''),
       }
     })
     this.setState(state => {
@@ -96,13 +92,22 @@ export class App extends React.Component {
           state.scenarioSelectionNoOptions2 !== ''
             ? state.scenarioSelectionNoOptions2 +
               (state.options[state.scenarioSelectionNoOptions2].ccs
-                ? '_CCS'
+                ? '_ccs'
                 : '') +
-              (false ? '_opt1' : '') +
-              (false ? '_opt2' : '') +
-              (false ? '_opt3' : '')
+              (state.options[state.scenarioSelectionNoOptions2].bio ? '_bio' : '') +
+              (state.options[state.scenarioSelectionNoOptions2].opt2 ? '_ELC' : '') +
+              (state.options[state.scenarioSelectionNoOptions2].opt3 ? '_SAC' : '')
             : '',
       }
+    })
+  }
+  unselectToggles = (scenario) => {
+    let newOptions = this.state.options
+    Object.keys(this.state.options[scenario]).forEach(option => {
+      newOptions[scenario][option] = false
+    })
+    this.setState({
+      options: newOptions,
     })
   }
   UpdateScenarioSelection = (e, name, value) => {
@@ -116,9 +121,13 @@ export class App extends React.Component {
           )
         )
         this.setState(changeScenario('scenarioSelectionNoOptions2', ''))
+        this.unselectToggles(this.state.scenarioSelectionNoOptions2)
+        this.setState({ showDifference: false })
       } else {
         if (value === this.state.scenarioSelectionNoOptions2) {
           this.setState(changeScenario('scenarioSelectionNoOptions2', ''))
+          this.unselectToggles(this.state.scenarioSelectionNoOptions2)
+          this.setState({ showDifference: false })
         } else {
           this.setState(changeScenario('scenarioSelectionNoOptions2', value))
         }
@@ -130,6 +139,7 @@ export class App extends React.Component {
     }
     this.UpdateScenarioNames()
   }
+
 
   CloseWelcomeWidget = () => {
     this.setState({ showWelcome: false })
@@ -185,7 +195,7 @@ export class App extends React.Component {
               options={this.state.options}
               toggleOption={this.ToggleOption}
               selectedCountries={this.state.selectedCountries}
-              selectCountry={this.selecCountry}
+              selectCountry={this.selectCountry}
             />
           </Content>
         </Column>
@@ -201,6 +211,7 @@ export class App extends React.Component {
                   <Charts
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
+                    selectedCountries={this.state.selectedCountries}
                   />
                 )}
               />
@@ -210,42 +221,7 @@ export class App extends React.Component {
                   <ChartsTab2
                     scenarioSelection={this.state}
                     closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab3"
-                render={() => (
-                  <ChartsTab3
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab4"
-                render={() => (
-                  <ChartsTab4
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab5"
-                render={() => (
-                  <ChartsTab5
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
-                  />
-                )}
-              />
-              <Route
-                path="/tab6"
-                render={() => (
-                  <ChartsTab6
-                    scenarioSelection={this.state}
-                    closeWelcome={this.CloseWelcomeWidget}
+                    selectedCountries={this.state.selectedCountries}
                   />
                 )}
               />
@@ -257,34 +233,27 @@ export class App extends React.Component {
                   )
                 }}
               />
-              <Route
-                path="/beskrivelser"
+			  <Route
+                path="/subscribe"
                 render={() => {
                   return (
-                    <PageRenderer
-                      markdownFiles={[
-                        'descriptions/0_intro.md',
-                        'descriptions/1_reference.md',
-                        'descriptions/2_marienlyst.md',
-                        'descriptions/3_comets.md',
-                        'descriptions/4_co2_budget.md',
-                      ]}
-                    />
+                    <PageRenderer markdownFiles={['descriptions/more.md']} />
                   )
                 }}
               />
-              <Route path="/forudsaetninger" component={Prerequisites} />
               <Route
-                path="/udfordringer"
+                path="/scenarios"
                 render={() => {
                   return (
-                    <PageRenderer
-                      markdownFiles={[
-                        'descriptions/challenges.md',
-                        'descriptions/udfordringer_omstilling.md',
-                        'descriptions/udfordringer_reduktion.md',
-                      ]}
-                    />
+                    <PageRenderer markdownFiles={['descriptions/scenarios.md']} />
+                  )
+                }}
+              />
+			  <Route
+                path="/findings"
+                render={() => {
+                  return (
+                    <PageRenderer markdownFiles={['descriptions/findings.md']} />
                   )
                 }}
               />

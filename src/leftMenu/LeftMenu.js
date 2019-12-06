@@ -1,16 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import breakpoint from 'styled-components-breakpoint'
-import { Link } from 'react-router-dom'
-import ScenarioSelectionList from '../scenarioSelection/ScenarioSelectionList'
-import ToggleSwitch from './ToggleSwitch'
-import { useTranslation } from 'react-i18next'
-import MapContainer from '../map/MapContainer'
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import breakpoint from "styled-components-breakpoint";
+import { Link } from "react-router-dom";
+import ScenarioSelectionList from "../scenarioSelection/ScenarioSelectionList";
+import ToggleSwitch from "./ToggleSwitch";
+import { useTranslation } from "react-i18next";
+import MapContainer from "../map/MapContainer";
 
 const MenuLayout = styled.div`
   display: none;
-  ${breakpoint('desktop')`
+  ${breakpoint("desktop")`
     display: flex;  
     min-height: 100vh;
     flex-direction: column;
@@ -20,42 +20,42 @@ const MenuLayout = styled.div`
     background: rgb(50, 50, 50);
     visibility: visible;
   `}
-`
+`;
 
 const MenuHeader = styled.div`
-  padding: 10px 12px 5px 0px;
+  padding: 10px 12px 5px 10px;
   margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: top;
-`
+`;
 
 const AppLogo = styled.img`
-  padding-bottom: 20px;
-  width: 200px;
-  margin-left: 5px;
+  padding-bottom: 0px;
+  max-width: 160px;
   border: 0;
-`
+  align-self: center;
+`;
 
 const MenuSeparatorLine = styled.hr`
   margin: 0.25em 12px 0.25em 15px;
   border-color: #555;
   border-width: 1px;
   width: 100hh;
-`
+`;
 
 const MenuRoutes = styled.div`
-  padding: 10px 12px 15px 15px;
+  padding: 10px 12px 15px 5px;
   margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const MenuItem = styled(Link)`
-  font-weight: ${props => (props.selected ? 'bold' : 'normal')};
+  font-weight: ${props => (props.selected ? "bold" : "normal")};
   font-size: 1em;
   margin: 0;
   padding-top: 5px;
@@ -68,27 +68,27 @@ const MenuItem = styled(Link)`
     text-decoration: underline;
     cursor: pointer;
   }
-  color: ${props => (props.selected ? 'yellow' : 'inherit')};
-`
+  color: ${props => (props.selected ? "yellow" : "inherit")};
+`;
 
 const ScenarioSelection = styled.div`
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
-`
+`;
 
 const ToggleDifference = styled.div`
   padding: 15px;
   display: flex;
   justify-content: start;
   align-content: center;
-`
+`;
 
 const ToggleSwitchText = styled.div`
   color: ${props =>
-    props.singleMode ? 'gray' : props.selected ? '#2196F3' : 'white'};
+    props.singleMode ? "gray" : props.selected ? "#2196F3" : "white"};
   margin-left: 10px;
-`
+`;
 
 // const ToggleLanguageText = styled.div`
 //   color: ${props => (props.selected ? "white" : "gray")};
@@ -99,25 +99,34 @@ const ToggleSwitchText = styled.div`
 const ScenarioDifferenceText = styled.div`
   font-size: 0.7em;
   color: ${props =>
-    props.singleMode ? 'gray' : props.selected ? '#2196F3' : 'white'};
+    props.singleMode ? "gray" : props.selected ? "#2196F3" : "white"};
   margin-left: 60px;
   margin-bottom: 10px;
-`
+`;
 
 const MenuFooter = styled.div`
-  padding: 0px;
+  padding: 20px 0;
   margin: 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const CopyrightNotice = styled.div`
   padding: 20px 12px 5px 15px;
-  margin: 0;
+  margin: 30px 0 0 0;
   height: 26px;
-`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const CopyrightItem = styled.div`
+  align-self: center;
+  padding: 5px 0;
+  text-align: center;
+`;
 
 const ExternalLink = styled.a`
   color: white;
@@ -125,10 +134,16 @@ const ExternalLink = styled.a`
   :hover {
     text-decoration: underline;
   }
-`
-
+`;
+const Header = styled.h1`
+  font-size: ${props => (props.narrowVersion ? "0.9em" : "1em")};
+  padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
+  margin: 5px 0px 5px 0px;
+  height: 26px;
+  align-self: center;
+`;
 function ScenarioSelectionMenu(props) {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   // const toggleLanguage = e => {
   //   e.preventDefault();
@@ -142,34 +157,42 @@ function ScenarioSelectionMenu(props) {
   return (
     <MenuLayout>
       <MenuHeader>
-        <AppLogo src="./images/shift_logo_white.png" alt="logo" />
+        <ExternalLink href="http://www.nordicenergy.org/flagship/project-shift/">
+          <AppLogo src="./images/shift_logo_white.png" alt="logo" />
+        </ExternalLink>
         <MenuRoutes>
           <MenuItem
             to="/about"
-            selected={props.selectedChartgroup === '/about'}
+            selected={props.selectedChartgroup === "/about"}
           >
-            {t('menu.desktop.about')}
+            {t("menu.desktop.about")}
           </MenuItem>
           <MenuItem
-            to="/descriptions"
-            selected={props.selectedChartgroup === '/descriptions'}
+            to="/scenarios"
+            selected={props.selectedChartgroup === "/scenarios"}
           >
-            {t('menu.desktop.descriptions')}
+            {t("menu.desktop.scenarios")}
           </MenuItem>
           <MenuItem
-            to="/preconditions"
-            selected={props.selectedChartgroup === '/preconditions'}
+            to="/findings"
+            selected={props.selectedChartgroup === "/findings"}
           >
-            {t('menu.desktop.preconditions')}
+            {t("menu.desktop.findings")}
           </MenuItem>
           <MenuItem
             to="/subscribe"
-            selected={props.selectedChartgroup === '/subscribe'}
+            selected={props.selectedChartgroup === "/subscribe"}
           >
-            {t('menu.desktop.subscribe')}
+            {t("menu.desktop.subscribe")}
           </MenuItem>
         </MenuRoutes>
       </MenuHeader>
+      <MenuSeparatorLine />
+      <Header narrowVersion={false}>{t("general.countries")}</Header>
+      <MapContainer
+        selectedCountries={props.selectedCountries}
+        selectCountry={props.selectCountry}
+      />
       <MenuSeparatorLine />
       <ScenarioSelection>
         <ScenarioSelectionList
@@ -178,57 +201,66 @@ function ScenarioSelectionMenu(props) {
           selectedValue={props.scenarioSelection.scenarioSelectionNoOptions}
           selectedValue2={props.scenarioSelection.scenarioSelectionNoOptions2}
           scenarioCombinations={props.scenarioCombinations}
-          dimensionTitle={t('general.scenarios')}
+          dimensionTitle={t("general.scenarios")}
           narrowVersion={false}
           options={props.options}
           toggleOption={props.toggleOption}
         />
       </ScenarioSelection>
       <MenuSeparatorLine />
-      <ToggleDifference onClick={e => props.toggleDifference(e)}>
+      <ToggleDifference
+        onClick={e => {
+          if (props.scenarioSelection.scenarioSelection2 !== "") {
+            props.toggleDifference(e);
+          }
+        }}
+      >
         <ToggleSwitch
-          dimmed={props.scenarioSelection.scenarioSelection2 === ''}
+          available={props.scenarioSelection.scenarioSelection2 !== ""}
           checked={props.scenarioSelection.showDifference}
         />
         <ToggleSwitchText
-          singleMode={props.scenarioSelection.scenarioSelection2 === ''}
+          singleMode={props.scenarioSelection.scenarioSelection2 === ""}
           selected={props.scenarioSelection.showDifference}
         >
-          {t('general.scenario-difference')}
+          {t("general.scenario-difference")}
         </ToggleSwitchText>
       </ToggleDifference>
       <ScenarioDifferenceText
-        singleMode={props.scenarioSelection.scenarioSelection2 === ''}
+        singleMode={props.scenarioSelection.scenarioSelection2 === ""}
         selected={props.scenarioSelection.showDifference}
       >
-        {t('general.green-minus-red')}
+        {t("general.red-minus-green")}
       </ScenarioDifferenceText>
-      {/* <MenuSeparatorLine />
-      <ToggleDifference onClick={e => toggleLanguage(e)}>
-        <ToggleLanguageText selected={language === "dk"}>
-          Danish
-        </ToggleLanguageText>
-        <ToggleSwitch checked={language !== "dk"} dimmed={false} />
-        <ToggleLanguageText selected={language === "en"}>
-          English
-        </ToggleLanguageText>
-      </ToggleDifference> */}
-      <MenuSeparatorLine />
-      <MapContainer
-        selectedCountries={props.selectedCountries}
-        selectCountry={props.selectCountry}
-      />
       <MenuSeparatorLine />
       <MenuFooter>
-        <AppLogo src="./images/nordic_energy_research_cropped.png" alt="Nordic Energy Research" />
+        <AppLogo
+          src="./images/nordic_energy_research_cropped.png"
+          alt="Nordic Energy Research"
+        />
         <CopyrightNotice>
-          <ExternalLink href="http://www.tokni.com">
-            {t('general.developed-by-Tokni')}
-          </ExternalLink>
+          <Header> {t("general.developed-by")}</Header>
+          <CopyrightItem>
+            <ExternalLink href="http://www.tokni.com">
+              <AppLogo src="./images/tokni.png" alt="Tøkni" />
+            </ExternalLink>
+          </CopyrightItem>
+          <CopyrightItem>
+            <ExternalLink href="https://energymodellinglab.com/">
+              <AppLogo src="./images/eml_small.png" alt="Energy Modelling Lab" />
+              <Header>Energy Modelling Lab</Header>
+            </ExternalLink>
+          </CopyrightItem>
+          <CopyrightItem>
+            <ExternalLink href="https://energymodelling.club/">
+              <AppLogo src="./images/emc_small.png" alt="Energy Modelling Club" />
+              <Header>Energy Modelling Club</Header>
+            </ExternalLink>
+          </CopyrightItem>          
         </CopyrightNotice>
       </MenuFooter>
     </MenuLayout>
-  )
+  );
 }
 
 ScenarioSelectionMenu.propTypes = {
@@ -240,7 +272,7 @@ ScenarioSelectionMenu.propTypes = {
   options: PropTypes.any.isRequired,
   toggleOption: PropTypes.func.isRequired,
   selectedCountries: PropTypes.array.isRequired,
-  selectCountry: PropTypes.func.isRequired,
-}
+  selectCountry: PropTypes.func.isRequired
+};
 
-export default ScenarioSelectionMenu
+export default ScenarioSelectionMenu;

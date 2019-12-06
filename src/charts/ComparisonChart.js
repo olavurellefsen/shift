@@ -6,8 +6,7 @@ import {
   VictoryTheme,
   VictoryBar,
   VictoryLabel,
-  VictoryAxis,
-  VictoryLine
+  VictoryAxis
 } from "victory";
 import scenarioCombinations from "../data/scenarioCombinations";
 import { useTranslation } from "react-i18next";
@@ -32,7 +31,7 @@ const StackedBarChart = props => {
   const scenarios = scenarioCombinations.scenarioCombinations.scenarioOptions
     .filter(o => 
       o.ccs === options[o.nameNoOptions].ccs 
-      && o.opt1 === options[o.nameNoOptions].opt1 
+      && o.bio === options[o.nameNoOptions].bio 
       && o.opt2 === options[o.nameNoOptions].opt2 
       && o.opt3 === options[o.nameNoOptions].opt3)
     .map(scenario => scenario.name);
@@ -91,11 +90,6 @@ const StackedBarChart = props => {
               verticalAnchor="start"
             />
           }
-        />
-        <VictoryLine
-          y={() => 512000}
-          samples={1}
-          style={{ data: { stroke: "red" } }}
         />
       </VictoryChart>
     </div>

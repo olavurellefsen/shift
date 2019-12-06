@@ -49,18 +49,6 @@ function Tabs(props) {
       <TabItem to="/tab2" selected={props.selectedChartgroup === "/tab2"}>
         {t("tabs.mainresults")}
       </TabItem>
-      <TabItem to="/tab3" selected={props.selectedChartgroup === "/tab3"}>
-        {t("tabs.supplysector")}
-      </TabItem>
-      <TabItem to="/tab4" selected={props.selectedChartgroup === "/tab4"}>
-        {t("tabs.transportsector")}
-      </TabItem>
-      <TabItem to="/tab5" selected={props.selectedChartgroup === "/tab5"}>
-        {t("tabs.industry")}
-      </TabItem>
-      <TabItem to="/tab6" selected={props.selectedChartgroup === "/tab6"}>
-        {t("tabs.households")}
-      </TabItem>
     </TabLayout>
   );
 }

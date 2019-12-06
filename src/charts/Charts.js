@@ -1,17 +1,17 @@
-﻿import React from "react";
-import PropTypes from "prop-types";
-import Welcome from "../alert/Welcome";
-import StackedBarChart from "./StackedBarChart";
-import StackedBarDiffChart from "./StackedBarDiffChart";
-import ComparisonChart from "./ComparisonChart";
-import { MainArea, Flex } from "./Charts.style";
-import stackedBar from "../data/stackedBar";
-import line from "../data/line";
+﻿import React from 'react'
+import PropTypes from 'prop-types'
+import Welcome from '../alert/Welcome'
+import StackedBarChart from './StackedBarChart'
+import StackedBarDiffChart from './StackedBarDiffChart'
+import { MainArea, Flex } from './Charts.style'
+import stackedBar from '../data/stackedBar'
+import line from '../data/line'
 
 const Charts = props => {
-  const selectedScenario = props.scenarioSelection.scenarioSelection;
-  const selectedScenario2 = props.scenarioSelection.scenarioSelection2;
-  const options = props.scenarioSelection.options;
+  const selectedScenario = props.scenarioSelection.scenarioSelection
+  const selectedScenario2 = props.scenarioSelection.scenarioSelection2
+  const selectedCountries = props.selectedCountries
+  const options = props.scenarioSelection.options
 
   return (
     <MainArea>
@@ -20,240 +20,285 @@ const Charts = props => {
       )}
       {(props.scenarioSelection.showDifference === false ||
         (props.scenarioSelection.showDifference === true &&
-          selectedScenario2 === "")) && (
+          selectedScenario2 === '')) && (
         <Flex>
           <StackedBarChart
-            chartName="_CO2 emissioner"
-            chartTitle="CO2 emissioner og %-reduktion"
+            chartName="_CO2 Emissions"
+            chartTitle="CO2 Emissions"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
-            combinedChart={true}
-            label="Kt"
-            minY={0}
-            maxY={40000}
-            minY2={0}
-            maxY2={1}
-            label2="CO2 reduktion (1990)"
-            Y2Percentage={true}
-            stackedBar={stackedBar}
-            line={line}
-          />
-          <StackedBarChart
-            chartName="_Anden_drivhusgas_udledning"
-            chartTitle="Anden drivhusgas udledning"
-            selectedScenario={selectedScenario}
-            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
-            label="kt CO2e"
-            minY={0}
-            maxY={40000}
+            label="kt"
+            minY={-60000}
+            maxY={180000}
             stackedBar={stackedBar}
             line={line}
-          />
-          <ComparisonChart
-            chartName="_CO2 emissioner akkumuleret"
-            chartTitle="Akkumuleret CO2 emissioner"
-            selectedScenario={selectedScenario}
-            selectedScenario2={selectedScenario2}
-            combinedChart={true}
-            label="Mt"
-            minY={0}
-            maxY={1200000}
-            minY2={0}
-            maxY2={1200000}
-            Y2Percentage={false}
-            stackedBar={stackedBar}
-            line={line}
-            options={options}
           />
           <StackedBarChart
-            chartName="_Energi forbrug i Danmark"
-            chartTitle="Energiforbrug og VE-andel"
+            chartName="_Captured CO2"
+            chartTitle="Captured CO2"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
-            combinedChart={true}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="kt"
+            minY={0}
+            maxY={60000}
+            options={options}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarChart
+            chartName="_Biomass Primary Supply"
+            chartTitle="Biomass Primary Supply"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={0}
+            maxY={1500}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarChart
+            chartName="_Elproduktion"
+            chartTitle="Power Production"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
             label="PJ"
             minY={0}
             maxY={1000}
-            minY2={0}
-            maxY2={1}
-            label2="Vedvarende energi andel"
-            Y2Percentage={true}
             stackedBar={stackedBar}
             line={line}
           />
           <StackedBarChart
-            chartName="_Wind_OFF_cap"
-            chartTitle="Antal havmølleparker (á 800MW)"
+            chartName="_Power Trade"
+            chartTitle="Power Trade"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
-            label="stk"
+            label="PJ"
+            minY={-200}
+            maxY={400}
+            stackedBar={stackedBar}
+            line={line}
+          />		  
+          <StackedBarChart
+            chartName="_District heating production"
+            chartTitle="District Heating Supply"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
             minY={0}
-            maxY={24}
+            maxY={400}
             stackedBar={stackedBar}
             line={line}
           />
           <StackedBarChart
-            chartName="_Solcelle_cap"
-            chartTitle="Solcelle areal"
+            chartName="_Husholdningers varmeforbrug"
+            chartTitle="Households Fuel Consumption"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
-            label="km2"
+            label="PJ"
             minY={0}
-            maxY={300}
+            maxY={400}
             stackedBar={stackedBar}
             line={line}
           />
           <StackedBarChart
-            chartName="_Andel_importeret_Biomasse"
-            chartTitle="Andel importeret Biomasse"
+            chartName="_Industrial energy demand"
+            chartTitle="Industry fuel consumption"
             selectedScenario={selectedScenario}
             selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
             combinedChart={false}
-            label="Andel"
+            label="PJ"
             minY={0}
-            maxY={1}
-            YPercentage={true}
+            maxY={1000}
             stackedBar={stackedBar}
             line={line}
           />
-		  <StackedBarChart 
-		    chartName='_Omkostninger per person'
-			chartTitle='Omkostninger per person'
-			selectedScenario={selectedScenario}
-			selectedScenario2={selectedScenario2}
-			combinedChart={false}
-			label='DKK/person' 
-			minY={0} 
-			maxY={3000} 
+		    <StackedBarChart
+            chartName="_Transport sektorens energifor"
+            chartTitle="Transport Consumption"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={0}
+            maxY={600}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarChart
+            chartName="_Systemomkostninger"
+            chartTitle="System Costs"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="M Euro"
+            minY={-4077}
+            maxY={50000}
 			stackedBar={stackedBar}
-            line={line}
-		   />
+			line={line}
+          />
         </Flex>
       )}
       {props.scenarioSelection.showDifference === true &&
-        selectedScenario2 !== "" && (
-          <Flex>
-            <StackedBarDiffChart
-              chartName="_CO2 emissioner"
-              chartTitle="CO2 emissioner og %-reduktion"
-              selectedScenario={selectedScenario}
-              selectedScenario2={selectedScenario2}
-              combinedChart={true}
-              label="Kt"
-              minY={-16000}
-              maxY={16000}
-              minY2={-1}
-              maxY2={1}
-              label2="CO2 reduktion (1990)"
-              Y2Percentage={true}
-              stackedBar={stackedBar}
-              line={line}
-            />
-            <StackedBarDiffChart
-              chartName="_Anden_drivhusgas_udledning"
-              chartTitle="Anden drivhusgas udledning"
-              selectedScenario={selectedScenario}
-              selectedScenario2={selectedScenario2}
-              combinedChart={false}
-              label="kt CO2e"
-              minY={-16000}
-              maxY={16000}
-              stackedBar={stackedBar}
-              line={line}
-            />
-            <ComparisonChart
-              chartName="_CO2 emissioner akkumuleret"
-              chartTitle="Akkumuleret CO2 emissioner"
-              selectedScenario={selectedScenario}
-              selectedScenario2={selectedScenario2}
-              combinedChart={true}
-              label="Mt"
-              minY={0}
-              maxY={1200000}
-              minY2={0}
-              maxY2={1200000}
-              Y2Percentage={false}
-              stackedBar={stackedBar}
-              line={line}
+        selectedScenario2 !== '' && (
+        <Flex>
+		  <StackedBarDiffChart
+            chartName="_CO2 Emissions"
+            chartTitle="CO2 Emissions"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="kt"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_Captured CO2"
+            chartTitle="Captured CO2"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="kt"
+            minY={-1}
+            maxY={1}
             options={options}
-            />
-            <StackedBarDiffChart
-              chartName="_Energi forbrug i Danmark"
-              chartTitle="Energiforbrug og VE-andel"
-              selectedScenario={selectedScenario}
-              selectedScenario2={selectedScenario2}
-              combinedChart={true}
-              label="PJ"
-              minY={-400}
-              maxY={400}
-              minY2={-1}
-              maxY2={1}
-              label2="Vedvarende energi andel"
-              Y2Percentage={true}
-              stackedBar={stackedBar}
-              line={line}
-            />
-            <StackedBarDiffChart
-              chartName="_Wind_OFF_cap"
-              chartTitle="Antal havmølleparker (á 800MW)"
-              selectedScenario={selectedScenario}
-              selectedScenario2={selectedScenario2}
-              combinedChart={false}
-              label="stk"
-              minY={-24}
-              maxY={24}
-              stackedBar={stackedBar}
-              line={line}
-            />
-            <StackedBarDiffChart
-              chartName="_Solcelle_cap"
-              chartTitle="Solcelle areal"
-              selectedScenario={selectedScenario}
-              selectedScenario2={selectedScenario2}
-              combinedChart={false}
-              label="km2"
-              minY={-1000}
-              maxY={1000}
-              stackedBar={stackedBar}
-              line={line}
-            />
-            <StackedBarDiffChart
-              chartName="_Andel_importeret_Biomasse"
-              chartTitle="Andel importeret Biomasse"
-              selectedScenario={selectedScenario}
-              selectedScenario2={selectedScenario2}
-              combinedChart={false}
-              label="Andel"
-              minY={-1}
-              maxY={1}
-              YPercentage={true}
-              stackedBar={stackedBar}
-              line={line}
-            />
-		    <StackedBarChart 
-		      chartName='_Omkostninger per person'
-			  chartTitle='Omkostninger per person i forhold til reference'
-			  selectedScenario={selectedScenario}
-			  selectedScenario2={selectedScenario2}
-			  combinedChart={false}
-			  label='DKK/person' 
-			  minY={-1} 
-			  maxY={1} 
-              stackedBar={stackedBar}
-              line={line}
-		   />
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_Biomass Primary Supply"
+            chartTitle="Biomass Primary Supply"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />		  
+          <StackedBarDiffChart
+            chartName="_Elproduktion"
+            chartTitle="Power Production"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_Power Trade"
+            chartTitle="Power Trade"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_District heating production"
+            chartTitle="District Heating Supply"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_Husholdningers varmeforbrug"
+            chartTitle="Households Fuel Consumption"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_Industrial energy demand"
+            chartTitle="Industry fuel consumption"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />
+		    <StackedBarDiffChart
+            chartName="_Transport sektorens energifor"
+            chartTitle="Transport Consumption"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="PJ"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />
+          <StackedBarDiffChart
+            chartName="_Systemomkostninger"
+            chartTitle="System Costs"
+            selectedScenario={selectedScenario}
+            selectedScenario2={selectedScenario2}
+            selectedCountries={selectedCountries}
+            combinedChart={false}
+            label="M Euro"
+            minY={-1}
+            maxY={1}
+            stackedBar={stackedBar}
+            line={line}
+          />
           </Flex>
         )}
     </MainArea>
-  );
-};
+  )
+}
 
 Charts.propTypes = {
   scenarioSelection: PropTypes.object.isRequired,
-  closeWelcome: PropTypes.func.isRequired
-};
+  closeWelcome: PropTypes.func.isRequired,
+  selectedCountries: PropTypes.array.isRequired,
+}
 
-export default Charts;
+export default Charts
