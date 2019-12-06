@@ -11,14 +11,13 @@ import MapContainer from "../map/MapContainer";
 const MenuLayout = styled.div`
   display: none;
   ${breakpoint("desktop")`
-    display: flex;  
-    min-height: 100vh;
+    display: flex;
     flex-direction: column;
-    flex-shrink: 0;
     width: 220px;
     color: white;
     background: rgb(50, 50, 50);
     visibility: visible;
+    overflow: visible;
   `}
 `;
 
@@ -32,7 +31,7 @@ const MenuHeader = styled.div`
 `;
 
 const AppLogo = styled.img`
-  padding-bottom: 0px;
+  padding: 0px;
   max-width: 160px;
   border: 0;
   align-self: center;
@@ -58,8 +57,7 @@ const MenuItem = styled(Link)`
   font-weight: ${props => (props.selected ? "bold" : "normal")};
   font-size: 1em;
   margin: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 2px 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -78,7 +76,7 @@ const ScenarioSelection = styled.div`
 `;
 
 const ToggleDifference = styled.div`
-  padding: 15px;
+  padding: 5px 15px;
   display: flex;
   justify-content: start;
   align-content: center;
@@ -101,11 +99,11 @@ const ScenarioDifferenceText = styled.div`
   color: ${props =>
     props.singleMode ? "gray" : props.selected ? "#2196F3" : "white"};
   margin-left: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 `;
 
 const MenuFooter = styled.div`
-  padding: 20px 0;
+  padding: 10px 0;
   margin: 0;
   width: 100%;
   display: flex;
@@ -115,7 +113,7 @@ const MenuFooter = styled.div`
 
 const CopyrightNotice = styled.div`
   padding: 20px 12px 5px 15px;
-  margin: 30px 0 0 0;
+  margin: 10px 0 0 0;
   height: 26px;
   display: flex;
   flex-direction: column;
@@ -234,10 +232,12 @@ function ScenarioSelectionMenu(props) {
       </ScenarioDifferenceText>
       <MenuSeparatorLine />
       <MenuFooter>
-        <AppLogo
-          src="./images/nordic_energy_research_cropped.png"
-          alt="Nordic Energy Research"
-        />
+        <ExternalLink href="https://www.nordicenergy.org">
+          <AppLogo
+            src="./images/nordic_energy_research_cropped.png"
+            alt="Nordic Energy Research"
+          />
+        </ExternalLink>
         <CopyrightNotice>
           <Header> {t("general.developed-by")}</Header>
           <CopyrightItem>
@@ -247,16 +247,10 @@ function ScenarioSelectionMenu(props) {
           </CopyrightItem>
           <CopyrightItem>
             <ExternalLink href="https://energymodellinglab.com/">
-              <AppLogo src="./images/eml.svg" alt="Energy Modelling Lab" />
+              <AppLogo src="./images/emc-eml.png" alt="Energy Modelling Lab" />
               <Header>Energy Modelling Lab</Header>
             </ExternalLink>
           </CopyrightItem>
-          <CopyrightItem>
-            <ExternalLink href="https://energymodelling.club/">
-              <AppLogo src="./images/emc.svg" alt="Energy Modelling Club" />
-              <Header>Energy Modelling Club</Header>
-            </ExternalLink>
-          </CopyrightItem>          
         </CopyrightNotice>
       </MenuFooter>
     </MenuLayout>

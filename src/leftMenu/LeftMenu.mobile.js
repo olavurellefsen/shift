@@ -23,7 +23,7 @@ const MenuLayout = styled.div`
 `;
 
 const AppLogo = styled.img`
-  width: 80px;
+  width: 70px;
   margin: 5px;
   border: 0;
 `;
@@ -57,8 +57,7 @@ const MenuItem = styled(Link)`
   font-weight: ${props => (props.selected ? "bold" : "normal")};
   font-size: 0.7em;
   margin: 0;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -114,10 +113,9 @@ const MenuFooter = styled.div`
 `;
 
 const CopyrightNotice = styled.div`
-  font-size: 0.7em;
-  padding: 5px;
+  font-size: 8px;
+  padding: 2px;
   margin: 0;
-  width: 100%;
 `;
 
 const ExternalLink = styled.a`
@@ -134,9 +132,9 @@ const Header = styled.div`
   margin: 0px 0px 5px 0px;
   text-align: center;
 `;
-const Developers = styled.div`
+const CopyrightItem = styled.div`
   font-size: ${props => (props.narrowVersion ? "10px" : "12px")};
-  padding: ${props => (props.narrowVersion ? "5px" : "0 12px 0 15px")};
+  padding: ${props => (props.narrowVersion ? "5px" : "0")};
   margin: 0px 0px 5px 0px;
   text-align: center;
 `;
@@ -236,18 +234,25 @@ function ScenarioSelectionMenu(props) {
         </ToggleLanguageText>
       </ToggleDifference> */}
       <MenuFooter>
+        <ExternalLink href="https://www.nordicenergy.org">
+          <AppLogo
+            src="./images/nordic_energy_research_cropped.png"
+            alt="Nordic Energy Research"
+          />
+        </ExternalLink>
         <CopyrightNotice>
-        <Header narrowVersion={true}> {t("general.developed-by")}</Header>
-          <Developers narrowVersion={true}>
+          <Header> {t("general.developed-by")}</Header>
+          <CopyrightItem>
             <ExternalLink href="http://www.tokni.com">
-              {t("general.tokni")}
+              <AppLogo src="./images/tokni.png" alt="Tøkni" />
             </ExternalLink>
-          </Developers>
-          <Developers narrowVersion={true}>
+          </CopyrightItem>
+          <CopyrightItem>
             <ExternalLink href="https://energymodellinglab.com/">
-              Energy Modelling Lab
+              <AppLogo src="./images/emc-eml.png" alt="Energy Modelling Lab" />
+              <Header>Energy Modelling Lab</Header>
             </ExternalLink>
-          </Developers>
+          </CopyrightItem>
         </CopyrightNotice>
       </MenuFooter>
     </MenuLayout>
