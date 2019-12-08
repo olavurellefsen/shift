@@ -242,13 +242,15 @@ function ScenarioSelectionMenu(props) {
           <Header> {t("general.developed-by")}</Header>
           <CopyrightItem>
             <ExternalLink href="http://www.tokni.com">
-              <AppLogo src="./images/tokni.png" alt="Tøkni" />
+              <AppLogo src="./images/tokni.png" alt="Tøkni" data-tip="Tøkni - Nordic Software Consultancy"/>
             </ExternalLink>
           </CopyrightItem>
           <CopyrightItem>
+            <ExternalLink href="https://energymodelling.club/">
+              <AppLogo src="./images/emc.png" alt="Energy Modelling Club" maxWidth="75px" data-tip="Energy Modelling Club"/>
+            </ExternalLink>
             <ExternalLink href="https://energymodellinglab.com/">
-              <AppLogo src="./images/emc-eml.png" alt="Energy Modelling Lab" />
-              <Header>Energy Modelling Lab</Header>
+              <AppLogo src="./images/eml.png" alt="Energy Modelling Lab" maxWidth="75px" data-tip="Energy Modelling Lab"/>
             </ExternalLink>
           </CopyrightItem>
         </CopyrightNotice>
