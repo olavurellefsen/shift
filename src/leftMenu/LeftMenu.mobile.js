@@ -154,7 +154,7 @@ function ScenarioSelectionMenu(props) {
   return (
     <MenuLayout>
       <MenuHeader>
-        <ExternalLink href="http://www.nordicenergy.org/flagship/project-shift/">
+        <ExternalLink target="_blank" rel="noopener noreferrer" href="http://www.nordicenergy.org/flagship/project-shift/">
           <AppLogo src="./images/shift_logo_white.png" alt="logo" />
         </ExternalLink>
         <MenuRoutes>
@@ -234,7 +234,7 @@ function ScenarioSelectionMenu(props) {
         </ToggleLanguageText>
       </ToggleDifference> */}
       <MenuFooter>
-        <ExternalLink href="https://www.nordicenergy.org">
+        <ExternalLink target="_blank" rel="noopener noreferrer" href="https://www.nordicenergy.org">
           <AppLogo
             src="./images/nordic_energy_research_cropped.png"
             alt="Nordic Energy Research"
@@ -243,15 +243,15 @@ function ScenarioSelectionMenu(props) {
         <CopyrightNotice>
           <Header> {t("general.developed-by")}</Header>
           <CopyrightItem>
-            <ExternalLink href="http://www.tokni.com">
+            <ExternalLink target="_blank" rel="noopener noreferrer" href="http://www.tokni.com">
               <AppLogo src="./images/tokni.png" alt="Tøkni" data-tip="Tøkni - Nordic Software Consultancy"/>
             </ExternalLink>
           </CopyrightItem>
           <CopyrightItem>
-            <ExternalLink href="https://energymodelling.club/">
+            <ExternalLink target="_blank" rel="noopener noreferrer" href="https://energymodelling.club/">
               <AppLogo src="./images/emc.png" alt="Energy Modelling Club" maxWidth="75px" data-tip="Energy Modelling Club"/>
             </ExternalLink>
-            <ExternalLink href="https://energymodellinglab.com/">
+            <ExternalLink target="_blank" rel="noopener noreferrer" href="https://energymodellinglab.com/">
               <AppLogo src="./images/eml.png" alt="Energy Modelling Lab" maxWidth="75px" data-tip="Energy Modelling Lab"/>
             </ExternalLink>
           </CopyrightItem>
